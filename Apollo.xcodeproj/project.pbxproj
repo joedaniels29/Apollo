@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D869C50B1DB7BBF100E1C072 /* Interface.storyboard */; };
+		D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C50E1DB7BBF100E1C072 /* Assets.xcassets */; };
+		D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D869C51D1DB7BBF200E1C072 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C51C1DB7BBF200E1C072 /* InterfaceController.swift */; };
+		D869C51F1DB7BBF200E1C072 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */; };
+		D869C5211DB7BBF200E1C072 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5201DB7BBF200E1C072 /* NotificationController.swift */; };
+		D869C5231DB7BBF200E1C072 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5221DB7BBF200E1C072 /* ComplicationController.swift */; };
+		D869C5251DB7BBF200E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C5241DB7BBF200E1C072 /* Assets.xcassets */; };
+		D869C5291DB7BBF200E1C072 /* ApolloMicro.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D869C5091DB7BBF100E1C072 /* ApolloMicro.app */; };
 		D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */; };
 		D8F2D1331DB65EA400BDB634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1321DB65EA400BDB634 /* ViewController.swift */; };
 		D8F2D1361DB65EA400BDB634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1341DB65EA400BDB634 /* Main.storyboard */; };
@@ -30,6 +39,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D869C5171DB7BBF100E1C072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D869C5141DB7BBF100E1C072;
+			remoteInfo = "ApolloMicro Extension";
+		};
+		D869C5271DB7BBF200E1C072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D869C5081DB7BBF100E1C072;
+			remoteInfo = ApolloMicro;
+		};
 		D8F2D1421DB65EA400BDB634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
@@ -68,6 +91,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D869C52F1DB7BBF200E1C072 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D869C5311DB7BBF200E1C072 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D869C5291DB7BBF200E1C072 /* ApolloMicro.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F2D1B91DB6AA8000BDB634 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +127,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D869C5091DB7BBF100E1C072 /* ApolloMicro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloMicro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D869C50C1DB7BBF100E1C072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D869C50E1DB7BBF100E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D869C5101DB7BBF100E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ApolloMicro Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D869C51B1DB7BBF100E1C072 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D869C51C1DB7BBF200E1C072 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D869C5201DB7BBF200E1C072 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D869C5221DB7BBF200E1C072 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D869C5241DB7BBF200E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D869C5261DB7BBF200E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F2D12D1DB65EA400BDB634 /* ApolloM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F2D1321DB65EA400BDB634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +180,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D869C5121DB7BBF100E1C072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F2D12A1DB65EA400BDB634 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,10 +247,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D869C50A1DB7BBF100E1C072 /* ApolloMicro */ = {
+			isa = PBXGroup;
+			children = (
+				D869C50B1DB7BBF100E1C072 /* Interface.storyboard */,
+				D869C50E1DB7BBF100E1C072 /* Assets.xcassets */,
+				D869C5101DB7BBF100E1C072 /* Info.plist */,
+			);
+			path = ApolloMicro;
+			sourceTree = "<group>";
+		};
+		D869C5191DB7BBF100E1C072 /* ApolloMicro Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D869C51C1DB7BBF200E1C072 /* InterfaceController.swift */,
+				D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */,
+				D869C5201DB7BBF200E1C072 /* NotificationController.swift */,
+				D869C5221DB7BBF200E1C072 /* ComplicationController.swift */,
+				D869C5241DB7BBF200E1C072 /* Assets.xcassets */,
+				D869C5261DB7BBF200E1C072 /* Info.plist */,
+				D869C51A1DB7BBF100E1C072 /* Supporting Files */,
+			);
+			path = "ApolloMicro Extension";
+			sourceTree = "<group>";
+		};
+		D869C51A1DB7BBF100E1C072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D869C51B1DB7BBF100E1C072 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D8F2D1241DB65EA400BDB634 = {
 			isa = PBXGroup;
 			children = (
-				D8F2D12F1DB65EA400BDB634 /* Apollo */,
+				D8F2D12F1DB65EA400BDB634 /* ApolloMobile */,
 				D8F2D1441DB65EA400BDB634 /* ApolloTests */,
 				D8F2D14F1DB65EA400BDB634 /* ApolloUITests */,
 				D8F2D1641DB662F700BDB634 /* AppoloService */,
@@ -194,6 +290,8 @@
 				D8F2D18C1DB664BF00BDB634 /* ApolloX */,
 				D8F2D19E1DB664BF00BDB634 /* ApolloXTests */,
 				D8F2D1A91DB664BF00BDB634 /* ApolloXUITests */,
+				D869C50A1DB7BBF100E1C072 /* ApolloMicro */,
+				D869C5191DB7BBF100E1C072 /* ApolloMicro Extension */,
 				D8F2D1741DB6637A00BDB634 /* Frameworks */,
 				D8F2D12E1DB65EA400BDB634 /* Products */,
 			);
@@ -210,11 +308,13 @@
 				D8F2D18B1DB664BF00BDB634 /* ApolloX.app */,
 				D8F2D19B1DB664BF00BDB634 /* ApolloXTests.xctest */,
 				D8F2D1A61DB664BF00BDB634 /* ApolloXUITests.xctest */,
+				D869C5091DB7BBF100E1C072 /* ApolloMicro.app */,
+				D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8F2D12F1DB65EA400BDB634 /* Apollo */ = {
+		D8F2D12F1DB65EA400BDB634 /* ApolloMobile */ = {
 			isa = PBXGroup;
 			children = (
 				D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */,
@@ -224,7 +324,7 @@
 				D8F2D1391DB65EA400BDB634 /* LaunchScreen.storyboard */,
 				D8F2D13C1DB65EA400BDB634 /* Info.plist */,
 			);
-			path = Apollo;
+			path = ApolloMobile;
 			sourceTree = "<group>";
 		};
 		D8F2D1441DB65EA400BDB634 /* ApolloTests */ = {
@@ -318,6 +418,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D869C5081DB7BBF100E1C072 /* ApolloMicro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D869C5301DB7BBF200E1C072 /* Build configuration list for PBXNativeTarget "ApolloMicro" */;
+			buildPhases = (
+				D869C5071DB7BBF100E1C072 /* Resources */,
+				D869C52F1DB7BBF200E1C072 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D869C5181DB7BBF100E1C072 /* PBXTargetDependency */,
+			);
+			name = ApolloMicro;
+			productName = ApolloMicro;
+			productReference = D869C5091DB7BBF100E1C072 /* ApolloMicro.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D869C5141DB7BBF100E1C072 /* ApolloMicro Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D869C52E1DB7BBF200E1C072 /* Build configuration list for PBXNativeTarget "ApolloMicro Extension" */;
+			buildPhases = (
+				D869C5111DB7BBF100E1C072 /* Sources */,
+				D869C5121DB7BBF100E1C072 /* Frameworks */,
+				D869C5131DB7BBF100E1C072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApolloMicro Extension";
+			productName = "ApolloMicro Extension";
+			productReference = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D8F2D12C1DB65EA400BDB634 /* ApolloM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8F2D1551DB65EA400BDB634 /* Build configuration list for PBXNativeTarget "ApolloM" */;
@@ -325,10 +459,12 @@
 				D8F2D1291DB65EA400BDB634 /* Sources */,
 				D8F2D12A1DB65EA400BDB634 /* Frameworks */,
 				D8F2D12B1DB65EA400BDB634 /* Resources */,
+				D869C5311DB7BBF200E1C072 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D869C5281DB7BBF200E1C072 /* PBXTargetDependency */,
 			);
 			name = ApolloM;
 			productName = Apollo;
@@ -470,6 +606,16 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Joseph Daniels";
 				TargetAttributes = {
+					D869C5081DB7BBF100E1C072 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 55WZH7L5M4;
+						ProvisioningStyle = Automatic;
+					};
+					D869C5141DB7BBF100E1C072 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 55WZH7L5M4;
+						ProvisioningStyle = Automatic;
+					};
 					D8F2D12C1DB65EA400BDB634 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 55WZH7L5M4;
@@ -537,11 +683,30 @@
 				D8F2D18A1DB664BF00BDB634 /* ApolloX */,
 				D8F2D19A1DB664BF00BDB634 /* ApolloXTests */,
 				D8F2D1A51DB664BF00BDB634 /* ApolloXUITests */,
+				D869C5081DB7BBF100E1C072 /* ApolloMicro */,
+				D869C5141DB7BBF100E1C072 /* ApolloMicro Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D869C5071DB7BBF100E1C072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */,
+				D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D869C5131DB7BBF100E1C072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D869C5251DB7BBF200E1C072 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F2D12B1DB65EA400BDB634 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,6 +773,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D869C5111DB7BBF100E1C072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D869C5211DB7BBF200E1C072 /* NotificationController.swift in Sources */,
+				D869C5231DB7BBF200E1C072 /* ComplicationController.swift in Sources */,
+				D869C51F1DB7BBF200E1C072 /* ExtensionDelegate.swift in Sources */,
+				D869C51D1DB7BBF200E1C072 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F2D1291DB65EA400BDB634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,6 +854,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D869C5181DB7BBF100E1C072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D869C5141DB7BBF100E1C072 /* ApolloMicro Extension */;
+			targetProxy = D869C5171DB7BBF100E1C072 /* PBXContainerItemProxy */;
+		};
+		D869C5281DB7BBF200E1C072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D869C5081DB7BBF100E1C072 /* ApolloMicro */;
+			targetProxy = D869C5271DB7BBF200E1C072 /* PBXContainerItemProxy */;
+		};
 		D8F2D1431DB65EA400BDB634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8F2D12C1DB65EA400BDB634 /* ApolloM */;
@@ -706,6 +892,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D869C50B1DB7BBF100E1C072 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D869C50C1DB7BBF100E1C072 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		D8F2D1341DB65EA400BDB634 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -749,6 +943,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D869C52A1DB7BBF200E1C072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				IBSC_MODULE = ApolloMicro_Extension;
+				INFOPLIST_FILE = ApolloMicro/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D869C52B1DB7BBF200E1C072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				IBSC_MODULE = ApolloMicro_Extension;
+				INFOPLIST_FILE = ApolloMicro/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		D869C52C1DB7BBF200E1C072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D869C52D1DB7BBF200E1C072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		D8F2D1531DB65EA400BDB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1105,6 +1369,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D869C52E1DB7BBF200E1C072 /* Build configuration list for PBXNativeTarget "ApolloMicro Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D869C52C1DB7BBF200E1C072 /* Debug */,
+				D869C52D1DB7BBF200E1C072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D869C5301DB7BBF200E1C072 /* Build configuration list for PBXNativeTarget "ApolloMicro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D869C52A1DB7BBF200E1C072 /* Debug */,
+				D869C52B1DB7BBF200E1C072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D8F2D1281DB65EA400BDB634 /* Build configuration list for PBXProject "Apollo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1121,6 +1401,7 @@
 				D8F2D1571DB65EA400BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1581DB65EA400BDB634 /* Build configuration list for PBXNativeTarget "ApolloTests" */ = {
 			isa = XCConfigurationList;
@@ -1129,6 +1410,7 @@
 				D8F2D15A1DB65EA400BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D15B1DB65EA400BDB634 /* Build configuration list for PBXNativeTarget "ApolloUITests" */ = {
 			isa = XCConfigurationList;
@@ -1137,6 +1419,7 @@
 				D8F2D15D1DB65EA400BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D16C1DB662F700BDB634 /* Build configuration list for PBXNativeTarget "AppoloService" */ = {
 			isa = XCConfigurationList;
@@ -1145,6 +1428,7 @@
 				D8F2D16E1DB662F700BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1831DB6637A00BDB634 /* Build configuration list for PBXNativeTarget "ApolloMonitor" */ = {
 			isa = XCConfigurationList;
@@ -1153,6 +1437,7 @@
 				D8F2D1851DB6637A00BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1AD1DB664BF00BDB634 /* Build configuration list for PBXNativeTarget "ApolloX" */ = {
 			isa = XCConfigurationList;
@@ -1161,6 +1446,7 @@
 				D8F2D1AF1DB664BF00BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1B01DB664BF00BDB634 /* Build configuration list for PBXNativeTarget "ApolloXTests" */ = {
 			isa = XCConfigurationList;
@@ -1169,6 +1455,7 @@
 				D8F2D1B21DB664BF00BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1B31DB664BF00BDB634 /* Build configuration list for PBXNativeTarget "ApolloXUITests" */ = {
 			isa = XCConfigurationList;
@@ -1177,6 +1464,7 @@
 				D8F2D1B51DB664BF00BDB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

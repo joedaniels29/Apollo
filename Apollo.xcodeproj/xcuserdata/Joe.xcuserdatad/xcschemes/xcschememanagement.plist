@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ApolloMicro (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>ApolloMicro (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ApolloMicro.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ApolloMonitor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D869C5081DB7BBF100E1C072</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D8F2D12C1DB65EA400BDB634</key>
 		<dict>
 			<key>primary</key>
