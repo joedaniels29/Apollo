@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8F2D18A1DB664BF00BDB634"
-               BuildableName = "ApolloX.app"
-               BlueprintName = "ApolloX"
-               ReferencedContainer = "container:Apollo.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D869C5351DB7BDE400E1C072"
-               BuildableName = "ApolloPickaxe.appex"
-               BlueprintName = "ApolloPickaxe"
+               BlueprintIdentifier = "D8F2D12C1DB65EA400BDB634"
+               BuildableName = "ApolloM.app"
+               BlueprintName = "ApolloM"
                ReferencedContainer = "container:Apollo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,29 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8F2D19A1DB664BF00BDB634"
-               BuildableName = "ApolloXTests.xctest"
-               BlueprintName = "ApolloXTests"
-               ReferencedContainer = "container:Apollo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8F2D1A51DB664BF00BDB634"
-               BuildableName = "ApolloXUITests.xctest"
-               BlueprintName = "ApolloXUITests"
-               ReferencedContainer = "container:Apollo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D869C55A1DB7D54300E1C072"
-               BuildableName = "ApolloTests.xctest"
-               BlueprintName = "ApolloTests"
+               BlueprintIdentifier = "D869C57D1DB7D5E600E1C072"
+               BuildableName = "ApolloIOSTests.xctest"
+               BlueprintName = "ApolloIOSTests"
                ReferencedContainer = "container:Apollo.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -76,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8F2D18A1DB664BF00BDB634"
-            BuildableName = "ApolloX.app"
-            BlueprintName = "ApolloX"
+            BlueprintIdentifier = "D8F2D12C1DB65EA400BDB634"
+            BuildableName = "ApolloM.app"
+            BlueprintName = "ApolloM"
             ReferencedContainer = "container:Apollo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -99,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8F2D18A1DB664BF00BDB634"
-            BuildableName = "ApolloX.app"
-            BlueprintName = "ApolloX"
+            BlueprintIdentifier = "D8F2D12C1DB65EA400BDB634"
+            BuildableName = "ApolloM.app"
+            BlueprintName = "ApolloM"
             ReferencedContainer = "container:Apollo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -118,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8F2D18A1DB664BF00BDB634"
-            BuildableName = "ApolloX.app"
-            BlueprintName = "ApolloX"
+            BlueprintIdentifier = "D8F2D12C1DB65EA400BDB634"
+            BuildableName = "ApolloM.app"
+            BlueprintName = "ApolloM"
             ReferencedContainer = "container:Apollo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -1,15 +1,15 @@
 //
-//  ApolloTests.swift
-//  ApolloTests
+//  ApolloIOSTests.swift
+//  ApolloIOSTests
 //
-//  Created by Joseph Daniels on 18/10/2016.
+//  Created by Joseph Daniels on 19/10/2016.
 //  Copyright © 2016 Joseph Daniels. All rights reserved.
 //
 
 import XCTest
-@testable import Apollo
+@testable import ApolloIOS
 
-class ApolloTests: XCTestCase {
+class ApolloIOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
