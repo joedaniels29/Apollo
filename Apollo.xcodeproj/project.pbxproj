@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81B7F3F1DB9529A00DD62B6 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
+		D81B7F401DB9529B00DD62B6 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
+		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
+		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
+		D81B7F4B1DB99B1E00DD62B6 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F491DB99AFB00DD62B6 /* Apollo.framework */; };
 		D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D869C50B1DB7BBF100E1C072 /* Interface.storyboard */; };
 		D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C50E1DB7BBF100E1C072 /* Assets.xcassets */; };
 		D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -25,18 +30,13 @@
 		D869C54A1DB7BDE400E1C072 /* ApolloPickaxe.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5361DB7BDE400E1C072 /* ApolloPickaxe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D869C55C1DB7D54300E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5531DB7D54200E1C072 /* Apollo.framework */; };
 		D869C5651DB7D54300E1C072 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D869C5551DB7D54300E1C072 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D869C5681DB7D54300E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5531DB7D54200E1C072 /* Apollo.framework */; };
-		D869C5691DB7D54300E1C072 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5531DB7D54200E1C072 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D869C57F1DB7D5E600E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; };
 		D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5851DB7D5E700E1C072 /* ApolloIOSTests.swift */; };
 		D869C5881DB7D5E700E1C072 /* ApolloIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D869C5781DB7D5E600E1C072 /* ApolloIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D869C58B1DB7D5E700E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; };
 		D869C58C1DB7D5E700E1C072 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D869C5941DB7D74200E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; };
 		D869C5A31DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
 		D869C5A41DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
-		D869C5A51DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
-		D869C5A61DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
 		D869C5A81DB8471700E1C072 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59D1DB8471700E1C072 /* ApolloTests.swift */; };
 		D869C5AA1DB8471700E1C072 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59D1DB8471700E1C072 /* ApolloTests.swift */; };
 		D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */; };
@@ -61,6 +61,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D81B7F4C1DB99B7500DD62B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D869C5521DB7D54200E1C072;
+			remoteInfo = "Apollo macOS";
+		};
 		D869C5171DB7BBF100E1C072 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
@@ -83,13 +90,6 @@
 			remoteInfo = ApolloPickaxe;
 		};
 		D869C55D1DB7D54300E1C072 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D869C5521DB7D54200E1C072;
-			remoteInfo = Apollo;
-		};
-		D869C5661DB7D54300E1C072 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
 			proxyType = 1;
@@ -177,17 +177,6 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D869C56D1DB7D54300E1C072 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D869C5691DB7D54300E1C072 /* Apollo.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D869C5901DB7D5E700E1C072 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +203,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
+		D81B7F451DB98EC300DD62B6 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D81B7F491DB99AFB00DD62B6 /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Apollo.framework; sourceTree = "<group>"; };
 		D869C5091DB7BBF100E1C072 /* ApolloMicro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloMicro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C50C1DB7BBF100E1C072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D869C50E1DB7BBF100E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -309,7 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5941DB7D74200E1C072 /* Apollo.framework in Frameworks */,
+				D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +369,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5681DB7D54300E1C072 /* Apollo.framework in Frameworks */,
+				D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */,
+				D81B7F4B1DB99B1E00DD62B6 /* Apollo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				D869C5551DB7D54300E1C072 /* Apollo.h */,
+				D81B7F451DB98EC300DD62B6 /* module.modulemap */,
 				D869C5561DB7D54300E1C072 /* Info.plist */,
 			);
 			path = Apollo;
@@ -606,6 +600,7 @@
 		D8F2D1741DB6637A00BDB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D81B7F431DB98B2700DD62B6 /* Ruby.framework */,
 				D8F2D1751DB6637A00BDB634 /* NotificationCenter.framework */,
 				D869C5371DB7BDE400E1C072 /* Cocoa.framework */,
 			);
@@ -635,6 +630,7 @@
 		D8F2D18C1DB664BF00BDB634 /* ApolloX */ = {
 			isa = PBXGroup;
 			children = (
+				D81B7F491DB99AFB00DD62B6 /* Apollo.framework */,
 				D8F2D18D1DB664BF00BDB634 /* AppDelegate.swift */,
 				D8F2D18F1DB664BF00BDB634 /* ViewController.swift */,
 				D8F2D1911DB664BF00BDB634 /* Assets.xcassets */,
@@ -907,14 +903,13 @@
 				D8F2D1881DB664BF00BDB634 /* Frameworks */,
 				D8F2D1891DB664BF00BDB634 /* Resources */,
 				D8F2D1B91DB6AA8000BDB634 /* Embed App Extensions */,
-				D869C56D1DB7D54300E1C072 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D81B7F4D1DB99B7500DD62B6 /* PBXTargetDependency */,
 				D8F2D1B81DB6AA8000BDB634 /* PBXTargetDependency */,
 				D869C5491DB7BDE400E1C072 /* PBXTargetDependency */,
-				D869C5671DB7D54300E1C072 /* PBXTargetDependency */,
 			);
 			name = ApolloX;
 			productName = ApolloX;
@@ -1238,7 +1233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5A51DB8471700E1C072 /* Apollo.swift in Sources */,
+				D81B7F3F1DB9529A00DD62B6 /* Apollo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1246,8 +1241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5A61DB8471700E1C072 /* Apollo.swift in Sources */,
 				D869C5AA1DB8471700E1C072 /* ApolloTests.swift in Sources */,
+				D81B7F401DB9529B00DD62B6 /* Apollo.swift in Sources */,
 				D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1321,6 +1316,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D81B7F4D1DB99B7500DD62B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D869C5521DB7D54200E1C072 /* Apollo macOS */;
+			targetProxy = D81B7F4C1DB99B7500DD62B6 /* PBXContainerItemProxy */;
+		};
 		D869C5181DB7BBF100E1C072 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D869C5141DB7BBF100E1C072 /* ApolloMicro Extension */;
@@ -1340,11 +1340,6 @@
 			isa = PBXTargetDependency;
 			target = D869C5521DB7D54200E1C072 /* Apollo macOS */;
 			targetProxy = D869C55D1DB7D54300E1C072 /* PBXContainerItemProxy */;
-		};
-		D869C5671DB7D54300E1C072 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D869C5521DB7D54200E1C072 /* Apollo macOS */;
-			targetProxy = D869C5661DB7D54300E1C072 /* PBXContainerItemProxy */;
 		};
 		D869C5811DB7D5E600E1C072 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1555,6 +1550,7 @@
 		D869C56B1DB7D54300E1C072 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1569,10 +1565,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = Apollo/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = /usr/lib;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1583,6 +1581,7 @@
 		D869C56C1DB7D54300E1C072 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1597,10 +1596,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = Apollo/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = /usr/lib;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1761,6 +1762,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1807,6 +1809,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1976,7 +1979,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ApolloX",
+				);
 				INFOPLIST_FILE = ApolloX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1994,7 +2002,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ApolloX",
+				);
 				INFOPLIST_FILE = ApolloX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -2089,6 +2102,7 @@
 				D869C52D1DB7BBF200E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C5301DB7BBF200E1C072 /* Build configuration list for PBXNativeTarget "ApolloMicro" */ = {
 			isa = XCConfigurationList;
@@ -2097,6 +2111,7 @@
 				D869C52B1DB7BBF200E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C54B1DB7BDE400E1C072 /* Build configuration list for PBXNativeTarget "ApolloPickaxe" */ = {
 			isa = XCConfigurationList;
@@ -2105,6 +2120,7 @@
 				D869C54D1DB7BDE400E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C56A1DB7D54300E1C072 /* Build configuration list for PBXNativeTarget "Apollo macOS" */ = {
 			isa = XCConfigurationList;
@@ -2113,6 +2129,7 @@
 				D869C56C1DB7D54300E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C56E1DB7D54300E1C072 /* Build configuration list for PBXNativeTarget "ApolloTests" */ = {
 			isa = XCConfigurationList;
@@ -2121,6 +2138,7 @@
 				D869C5701DB7D54300E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C58D1DB7D5E700E1C072 /* Build configuration list for PBXNativeTarget "Apollo iOS" */ = {
 			isa = XCConfigurationList;
@@ -2129,6 +2147,7 @@
 				D869C58F1DB7D5E700E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D869C5911DB7D5E700E1C072 /* Build configuration list for PBXNativeTarget "ApolloIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -2137,6 +2156,7 @@
 				D869C5931DB7D5E700E1C072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1281DB65EA400BDB634 /* Build configuration list for PBXProject "Apollo" */ = {
 			isa = XCConfigurationList;

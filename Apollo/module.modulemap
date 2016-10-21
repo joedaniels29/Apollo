@@ -1,0 +1,39 @@
+//
+//  Config.private.modulemap
+//  Apollo
+//
+//  Created by Joseph Daniels on 20/10/2016.
+//  Copyright © 2016 Joseph Daniels. All rights reserved.
+//
+framework module Apollo{
+//    header "Apollo/Apollo.h"
+//    module Ruby {
+//        header "/System/Library/Frameworks/Ruby.framework/Ruby.h"
+//        
+//        export *
+//    }
+//    
+//    
+}
+
+//module Apollo{
+//    header "Apollo.h"
+    //    module Ruby {
+    //        header "/System/Library/Frameworks/Ruby.framework/Ruby.h"
+    //
+//    export *
+    //    }
+    //
+    //
+//}
+
+
+
+ module Ruby [system] [extern_c]{
+    umbrella header "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.0/Headers/ruby.h"
+//    link  "libruby"
+
+    export *
+    module * { export * }
+
+}
