@@ -31,9 +31,9 @@ enum ServiceRecord:ServiceStatusable {
 
 //Itinerary.scheduler(named:.)
 
-class Itinerary: ImmediateSchedulerType {
-    struct Name {
-        var name:String
+public class Itinerary: ImmediateSchedulerType {
+    public struct Name {
+        public var name:String
         static let didFinishLaunching = Name(name: "didFinishLaunching")
         static let willFinishLaunching = Name(name: "willFinishLaunching")
     }
@@ -45,7 +45,7 @@ class Itinerary: ImmediateSchedulerType {
 
     var  valid:Bool = true
     
-    func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> Disposable) -> Disposable {
+    public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> Disposable) -> Disposable {
         guard valid  else {
             print("invalid schedule: \(name.name)")
             return action(state) }
@@ -62,7 +62,7 @@ class Itinerary: ImmediateSchedulerType {
     	name = named
     }
     
-    static func scheduler(named: Itinerary.Name) -> ImmediateSchedulerType {
+    public static func scheduler(named: Itinerary.Name) -> Itinerary{
         if instances[named.name] == nil {
             instances[named.name] = Itinerary(named:named)
         }
@@ -70,7 +70,7 @@ class Itinerary: ImmediateSchedulerType {
         return instances[named.name]!
     }
 
-    func flush() {
+    public  func flush() {
         while !Itinerary.tasks.isEmpty { Itinerary.tasks.removeFirst()() }
     }
     

@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        Apollo.main()
+//        Apollo.main()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

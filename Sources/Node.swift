@@ -31,26 +31,26 @@ class A{
 protocol Node{
 }
 
-final class MainNode:Node{
+final class LocalNode:Node{
     
     
     
-    static let name:String = A.wrap(string:"MainNode")
+    static let name:String = A.wrap(string:"LocalNode")
     let scheduler : SerialDispatchQueueScheduler
-    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
+//    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
     init(){
         
-        scheduler = SerialDispatchQueueScheduler(queue: queue,
-                                     internalSerialQueueName: MainNode.name)
+        scheduler = SerialDispatchQueueScheduler(queue: DispatchQueue.init(label: LocalNode.name),
+                                     internalSerialQueueName: LocalNode.name)
     }
     
-    let instance = MainNode()
+    let instance = LocalNode()
     var started:Bool = false
     func start(){
-        queue.sync {
+//        queue.sync {
             self.started = true
             //servies start.
-        }
+//        }
     }
     
     
