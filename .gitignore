@@ -29,3 +29,5 @@ iOSInjectionProject/
 .build/
 
 Packages/
+.build/
+Carthage/

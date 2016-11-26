@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ApolloX/AppDelegate.swift"
-            timestampString = "498703744.71775"
+            filePath = "Apollo/Services/SimpleService.swift"
+            timestampString = "501169956.859921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "applicationDidFinishLaunching(_:)"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "wrapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,14 +25,30 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sources/Apollo.swift"
-            timestampString = "498704096.365571"
+            filePath = "Apollo/Services/Notifications/NotificationsRequest.swift"
+            timestampString = "501175868.428308"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "main()"
-            landmarkType = "9">
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "UNUserNotificationCenter"
+            landmarkType = "4">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Apollo/Services/Notifications/NotificationsRequest.swift"
+            timestampString = "501175990.203983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "UNUserNotificationCenter"
+            landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,0 +1,21 @@
+//
+//  Config.private.modulemap
+//  Apollo
+//
+//  Created by Joseph Daniels on 20/10/2016.
+//  Copyright © 2016 Joseph Daniels. All rights reserved.
+//
+//module Apollo{
+//    header "Apollo/Apollo.h"
+//}
+
+//module Apollo{
+//    header "Apollo.h"
+    //    module Ruby {
+    //        header "/System/Library/Frameworks/Ruby.framework/Ruby.h"
+    //
+//    export *
+    //    }
+    //
+    //
+//}

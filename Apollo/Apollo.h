@@ -6,7 +6,7 @@
 //  Copyright © 2016 Joseph Daniels. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for Apollo.
 FOUNDATION_EXPORT double ApolloVersionNumber;
