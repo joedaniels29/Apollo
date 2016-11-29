@@ -4,9 +4,11 @@
 //
 
 import Foundation
-import UserNotifications
 import RxSwift
 import RxCocoa
+#if os(iOS) || os(watchOS)
+
+import UserNotifications
 //
 open class NotificationCenter:NSObject, UNUserNotificationCenterDelegate{
     var sharedCenter = NotificationCenter()
@@ -33,3 +35,4 @@ open class NotificationCenter:NSObject, UNUserNotificationCenterDelegate{
 
     
 }
+#endif

@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		123A00129AD04C05BD32F173 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A05DD7B91A790E339BA47 /* Service.swift */; };
-		123A0044C622EFFDEE515CFA /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01136B0B358BA0C30961 /* NotificationCenter.swift */; };
-		123A0051B0AB8C070992A80E /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01136B0B358BA0C30961 /* NotificationCenter.swift */; };
-		123A02880103EA28BB63C3C2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A05DD7B91A790E339BA47 /* Service.swift */; };
-		123A034AC9B34FDB8BA6FC13 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01136B0B358BA0C30961 /* NotificationCenter.swift */; };
-		123A0387A2B562228600BCE9 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A033A73EF3621B42857F9 /* NotificationsRequest.swift */; };
-		123A04AD3B581069E7ED2495 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A033A73EF3621B42857F9 /* NotificationsRequest.swift */; };
-		123A0607F41FF7DE18E71082 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A033A73EF3621B42857F9 /* NotificationsRequest.swift */; };
-		123A075C49ADB6A7722FF6E4 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01136B0B358BA0C30961 /* NotificationCenter.swift */; };
-		123A0A556398BF8E37417417 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A033A73EF3621B42857F9 /* NotificationsRequest.swift */; };
-		D81B7F3F1DB9529A00DD62B6 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
-		D81B7F401DB9529B00DD62B6 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
+		19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC03D08D0D020A5CD82D82 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC095D9583110DE2526440 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BC043971A8F3F52CE917B5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC0622DD8DD94D84BDC853 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC095D9583110DE2526440 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BC06801CB0C34E5BE1A247 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC07F7738E37AE04D55BEB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC08AFE4CA7AC4E197E830 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC09CDA0C6D3CDC2A10CFC /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
+		19BC0B30DCFDCBC402F20BC1 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
+		19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
+		19BC0C6E767B8BF916523382 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0C7195B5FBEEFA7FEE56 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
+		19BC0D312C53F5AC7BC62650 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC0D38EDF6B40854330FFF /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
+		19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC0FC998D932AA4B8E76A4 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
-		D85569941DDCDBD900B70D8C /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D869C5551DB7D54300E1C072 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D85569951DDCDC2700B70D8C /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D869C5551DB7D54300E1C072 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D85569981DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D85569991DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699A1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
@@ -40,8 +44,8 @@
 		D85569A91DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
 		D85569AA1DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
 		D85569AB1DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
-		D865454D1DC81B6C00E066D8 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865454A1DC81B6C00E066D8 /* Node.swift */; };
-		D865454E1DC81B6C00E066D8 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865454A1DC81B6C00E066D8 /* Node.swift */; };
+		D856D4401DEDF3AA00778A43 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
+		D856D4411DEDF3AB00778A43 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D869C50B1DB7BBF100E1C072 /* Interface.storyboard */; };
 		D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C50E1DB7BBF100E1C072 /* Assets.xcassets */; };
 		D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -63,10 +67,6 @@
 		D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5851DB7D5E700E1C072 /* ApolloIOSTests.swift */; };
 		D869C58B1DB7D5E700E1C072 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; };
 		D869C58C1DB7D5E700E1C072 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5761DB7D5E600E1C072 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D869C5A31DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
-		D869C5A41DB8471700E1C072 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59A1DB8471700E1C072 /* Apollo.swift */; };
-		D894B8861DEA18CE00625D61 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A05DD7B91A790E339BA47 /* Service.swift */; };
-		D894B8871DEA18CE00625D61 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A05DD7B91A790E339BA47 /* Service.swift */; };
 		D894B8891DEA194500625D61 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B8881DEA194500625D61 /* ServiceTests.swift */; };
 		D894B88B1DEA195500625D61 /* ItinerarySchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B88A1DEA195500625D61 /* ItinerarySchedulerTests.swift */; };
 		D894B88C1DEA26D400625D61 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
@@ -83,8 +83,6 @@
 		D894B8A01DEA288500625D61 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B8881DEA194500625D61 /* ServiceTests.swift */; };
 		D894B8A11DEA288500625D61 /* ItinerarySchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B88A1DEA195500625D61 /* ItinerarySchedulerTests.swift */; };
 		D8E16EE21DC837C1003EDFF7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */; };
-		D8E16EE71DC84300003EDFF7 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E16EE51DC83F2B003EDFF7 /* SimpleService.swift */; };
-		D8E16EE81DC84300003EDFF7 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E16EE51DC83F2B003EDFF7 /* SimpleService.swift */; };
 		D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */; };
 		D8F2D1331DB65EA400BDB634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1321DB65EA400BDB634 /* ViewController.swift */; };
 		D8F2D1361DB65EA400BDB634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1341DB65EA400BDB634 /* Main.storyboard */; };
@@ -272,17 +270,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		123A01136B0B358BA0C30961 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
-		123A033A73EF3621B42857F9 /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
-		123A05DD7B91A790E339BA47 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		D81110891DDA51C30024D58C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		19BC02208AC89A3EC5469A82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
+		19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		19BC06AF41BE8C40B50A0B3F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
+		19BC06E420FE8226113420F7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		19BC0700AF182C98E8EEB02D /* ApolloServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloServer.swift; sourceTree = "<group>"; };
+		19BC095D9583110DE2526440 /* Apollo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
+		19BC0B25DEE952D065E8D86C /* ApolloServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloServerTests.swift; sourceTree = "<group>"; };
+		19BC0C4D18590D7D677FBD97 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
 		D85569961DDCE28100B70D8C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D85569971DDCE28100B70D8C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		D85569A21DDCE2A000B70D8C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D85569A31DDCE2A000B70D8C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		D86545341DC8137F00E066D8 /* ApolloM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApolloM.entitlements; sourceTree = "<group>"; };
-		D865454A1DC81B6C00E066D8 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		D869C5091DB7BBF100E1C072 /* ApolloMicro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloMicro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C50C1DB7BBF100E1C072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D869C50E1DB7BBF100E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -305,7 +308,6 @@
 		D869C5441DB7BDE400E1C072 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		D869C5461DB7BDE400E1C072 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		D869C5531DB7D54200E1C072 /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D869C5551DB7D54300E1C072 /* Apollo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
 		D869C5561DB7D54300E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D869C55B1DB7D54300E1C072 /* ApolloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C5641DB7D54300E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -315,14 +317,11 @@
 		D869C5851DB7D5E700E1C072 /* ApolloIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloIOSTests.swift; sourceTree = "<group>"; };
 		D869C5871DB7D5E700E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D869C5981DB8471700E1C072 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		D869C59A1DB8471700E1C072 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		D869C59D1DB8471700E1C072 /* ApolloTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloTests.swift; sourceTree = "<group>"; };
 		D869C59E1DB8471700E1C072 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		D894B8881DEA194500625D61 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		D894B88A1DEA195500625D61 /* ItinerarySchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItinerarySchedulerTests.swift; sourceTree = "<group>"; };
-		D8E16EE01DC8273E003EDFF7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		D8E16EE51DC83F2B003EDFF7 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
 		D8F2D12D1DB65EA400BDB634 /* ApolloM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F2D1321DB65EA400BDB634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -492,24 +491,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		123A075914495B4C6EC36DCF /* Services */ = {
+		19BC0607ED8208059AD6F1D4 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				123A087F65EE72F0C8037E6C /* Notifications */,
-				123A05DD7B91A790E339BA47 /* Service.swift */,
-				D81110891DDA51C30024D58C /* MyPlayground.playground */,
-				D8E16EE51DC83F2B003EDFF7 /* SimpleService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		123A087F65EE72F0C8037E6C /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				123A033A73EF3621B42857F9 /* NotificationsRequest.swift */,
-				123A01136B0B358BA0C30961 /* NotificationCenter.swift */,
+				19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */,
+				19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		19BC0795B30088CE533ADEE2 /* ApolloServer */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0700AF182C98E8EEB02D /* ApolloServer.swift */,
+			);
+			path = ApolloServer;
+			sourceTree = "<group>";
+		};
+		19BC07BE490550C4E7B1F91F /* ApolloServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0B25DEE952D065E8D86C /* ApolloServerTests.swift */,
+			);
+			path = ApolloServerTests;
+			sourceTree = "<group>";
+		};
+		19BC0BB5938033EE7E77160C /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0C850BBA3C7F419BDD43 /* Services */,
+				19BC095D9583110DE2526440 /* Apollo.h */,
+				19BC0C4D18590D7D677FBD97 /* Apollo.swift */,
+				19BC02208AC89A3EC5469A82 /* Node.swift */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		19BC0C850BBA3C7F419BDD43 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0607ED8208059AD6F1D4 /* Notifications */,
+				19BC06E420FE8226113420F7 /* Service.swift */,
+				19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D869C50A1DB7BBF100E1C072 /* ApolloMicro */ = {
@@ -571,9 +596,8 @@
 			children = (
 				D85569961DDCE28100B70D8C /* RxCocoa.framework */,
 				D85569971DDCE28100B70D8C /* RxSwift.framework */,
-				D869C5551DB7D54300E1C072 /* Apollo.h */,
 				D869C5561DB7D54300E1C072 /* Info.plist */,
-				123A075914495B4C6EC36DCF /* Services */,
+				19BC06AF41BE8C40B50A0B3F /* MyPlayground.playground */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -608,9 +632,8 @@
 		D869C5991DB8471700E1C072 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D869C59A1DB8471700E1C072 /* Apollo.swift */,
-				D865454A1DC81B6C00E066D8 /* Node.swift */,
-				D8E16EE01DC8273E003EDFF7 /* MyPlayground.playground */,
+				19BC0BB5938033EE7E77160C /* Apollo */,
+				19BC0795B30088CE533ADEE2 /* ApolloServer */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -620,6 +643,7 @@
 			children = (
 				D869C59C1DB8471700E1C072 /* ApolloTests */,
 				D869C59E1DB8471700E1C072 /* LinuxMain.swift */,
+				19BC07BE490550C4E7B1F91F /* ApolloServerTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -794,7 +818,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85569951DDCDC2700B70D8C /* Apollo.h in Headers */,
+				19BC03D08D0D020A5CD82D82 /* Apollo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,7 +826,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85569941DDCDBD900B70D8C /* Apollo.h in Headers */,
+				19BC0622DD8DD94D84BDC853 /* Apollo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1368,9 +1392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5A31DB8471700E1C072 /* Apollo.swift in Sources */,
-				D8E16EE81DC84300003EDFF7 /* SimpleService.swift in Sources */,
-				D894B8861DEA18CE00625D61 /* Service.swift in Sources */,
+				D856D4401DEDF3AA00778A43 /* NotificationsRequest.swift in Sources */,
+				19BC08AFE4CA7AC4E197E830 /* Service.swift in Sources */,
+				19BC0C7195B5FBEEFA7FEE56 /* SimpleService.swift in Sources */,
+				19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1378,11 +1403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5A41DB8471700E1C072 /* Apollo.swift in Sources */,
+				D856D4411DEDF3AB00778A43 /* NotificationsRequest.swift in Sources */,
 				D894B89B1DEA288400625D61 /* ServiceTests.swift in Sources */,
-				D894B8871DEA18CE00625D61 /* Service.swift in Sources */,
 				D894B89A1DEA288400625D61 /* ApolloTests.swift in Sources */,
 				D894B89C1DEA288400625D61 /* ItinerarySchedulerTests.swift in Sources */,
+				19BC07F7738E37AE04D55BEB /* Service.swift in Sources */,
+				19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1390,12 +1416,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81B7F3F1DB9529A00DD62B6 /* Apollo.swift in Sources */,
-				D865454D1DC81B6C00E066D8 /* Node.swift in Sources */,
-				123A04AD3B581069E7ED2495 /* NotificationsRequest.swift in Sources */,
-				D8E16EE71DC84300003EDFF7 /* SimpleService.swift in Sources */,
-				123A02880103EA28BB63C3C2 /* Service.swift in Sources */,
-				123A034AC9B34FDB8BA6FC13 /* NotificationCenter.swift in Sources */,
+				19BC0D38EDF6B40854330FFF /* NotificationsRequest.swift in Sources */,
+				19BC0FC998D932AA4B8E76A4 /* NotificationCenter.swift in Sources */,
+				19BC0D312C53F5AC7BC62650 /* Service.swift in Sources */,
+				19BC0B30DCFDCBC402F20BC1 /* SimpleService.swift in Sources */,
+				19BC06801CB0C34E5BE1A247 /* Apollo.swift in Sources */,
+				19BC0C6E767B8BF916523382 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1403,15 +1429,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81B7F401DB9529B00DD62B6 /* Apollo.swift in Sources */,
 				D894B8A01DEA288500625D61 /* ServiceTests.swift in Sources */,
 				D894B8A11DEA288500625D61 /* ItinerarySchedulerTests.swift in Sources */,
 				D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */,
-				D865454E1DC81B6C00E066D8 /* Node.swift in Sources */,
 				D894B89F1DEA288500625D61 /* ApolloTests.swift in Sources */,
-				123A0387A2B562228600BCE9 /* NotificationsRequest.swift in Sources */,
-				123A00129AD04C05BD32F173 /* Service.swift in Sources */,
-				123A075C49ADB6A7722FF6E4 /* NotificationCenter.swift in Sources */,
+				19BC09CDA0C6D3CDC2A10CFC /* NotificationsRequest.swift in Sources */,
+				19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */,
+				19BC043971A8F3F52CE917B5 /* Service.swift in Sources */,
+				19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */,
+				19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1421,8 +1447,6 @@
 			files = (
 				D8F2D1331DB65EA400BDB634 /* ViewController.swift in Sources */,
 				D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */,
-				123A0607F41FF7DE18E71082 /* NotificationsRequest.swift in Sources */,
-				123A0051B0AB8C070992A80E /* NotificationCenter.swift in Sources */,
 				D894B8891DEA194500625D61 /* ServiceTests.swift in Sources */,
 				D894B88B1DEA195500625D61 /* ItinerarySchedulerTests.swift in Sources */,
 			);
@@ -1432,8 +1456,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123A0A556398BF8E37417417 /* NotificationsRequest.swift in Sources */,
-				123A0044C622EFFDEE515CFA /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
