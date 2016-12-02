@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Dispatch
 import RxSwift
 import XCTest
 @testable import Apollo
@@ -83,8 +84,9 @@ class ItinerarySchedulerTests: XCTestCase {
 
     static var allTests: [(String, (ItinerarySchedulerTests) -> () throws -> Void)] {
         return [
-                ("testItinerarySchedulerSimply", testItinerarySchedulerSimply),
-                ("testItinerarySchedulerSimply", testItinerarySchedulerSimply),
+                ("testSimply", testSimply),
+                ("testSubscribeOn", testSubscribeOn),
+                ("testItinerarySchedulerAsync", testItinerarySchedulerAsync),
         ]
     }
 }
