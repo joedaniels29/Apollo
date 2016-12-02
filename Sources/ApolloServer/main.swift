@@ -1,3 +1,4 @@
+import Foundation
 import RxSwift
 import Apollo
 
@@ -12,7 +13,7 @@ public struct ApolloServer {
 
 
 
-dispatch_main()
+dispatchMain()
 
 
 //class ApolloQueue:

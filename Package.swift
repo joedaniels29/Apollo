@@ -8,7 +8,7 @@ var targets = [
 ]
 
 #if os(macOS) || os(Linux)
-targets.append(Target(name:"ApolloServer"))
+targets.append(Target(name:"ApolloServer", dependencies:["Apollo"]))
 #endif
 
 

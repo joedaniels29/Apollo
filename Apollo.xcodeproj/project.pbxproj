@@ -276,7 +276,7 @@
 		19BC06AF41BE8C40B50A0B3F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
 		19BC06E420FE8226113420F7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		19BC0700AF182C98E8EEB02D /* ApolloServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloServer.swift; sourceTree = "<group>"; };
+		19BC0700AF182C98E8EEB02D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		19BC095D9583110DE2526440 /* Apollo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
 		19BC0B25DEE952D065E8D86C /* ApolloServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloServerTests.swift; sourceTree = "<group>"; };
 		19BC0C4D18590D7D677FBD97 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
@@ -503,7 +503,7 @@
 		19BC0795B30088CE533ADEE2 /* ApolloServer */ = {
 			isa = PBXGroup;
 			children = (
-				19BC0700AF182C98E8EEB02D /* ApolloServer.swift */,
+				19BC0700AF182C98E8EEB02D /* main.swift */,
 			);
 			path = ApolloServer;
 			sourceTree = "<group>";
