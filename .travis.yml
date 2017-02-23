@@ -4,12 +4,22 @@ os:
 language: generic
 sudo: required
 dist: trusty
-osx_image: xcode8.0
-install:
-  - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
+osx_image:
+    - xcode8
+    - xcode8.1
+    - xcode8.2
 env:
-  - SWIFT_VERSION=3.0.2
-  - SWIFT_VERSION=3.1-DEV
+    global:
+        - IS_TRAVIS=true
+    matrix:
+        - SWIFT_VERSION=3.0.2 BUILDTYPE=swiftbuild
+        - SWIFT_VERSION=3.1-DEV  BUILDTYPE=swiftbuild
+        - BUILDTYPE=xcrun
+matrix:
+    exclude:
+        env: BUILDTYPE=xcrun
+        os: linux
+
+
 script:
-  - swift build
-  - swift test
+  - ./Scripts/Apollo.sh
