@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8F2D1621DB662F700BDB634"
-               BuildableName = "AppoloService.xpc"
-               BlueprintName = "AppoloService"
+               BuildableName = "ApolloService.xpc"
+               BlueprintName = "ApolloService"
                ReferencedContainer = "container:Apollo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F2D1621DB662F700BDB634"
-            BuildableName = "AppoloService.xpc"
-            BlueprintName = "AppoloService"
+            BuildableName = "ApolloService.xpc"
+            BlueprintName = "ApolloService"
             ReferencedContainer = "container:Apollo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8F2D1621DB662F700BDB634"
-            BuildableName = "AppoloService.xpc"
-            BlueprintName = "AppoloService"
+            BuildableName = "ApolloService.xpc"
+            BlueprintName = "ApolloService"
             ReferencedContainer = "container:Apollo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

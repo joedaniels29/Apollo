@@ -7,9 +7,9 @@
 //
 
 import XCTest
-
+import Foundation
 @testable import Apollo
-
+//UserDefaults.standard.object(forKey: "") as? NSData
 class ServiceTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.

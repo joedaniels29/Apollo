@@ -8,50 +8,144 @@
 
 import Foundation
 import RxSwift
-import Dispatch
+import RxCocoa
 
+#if os(iOS)
 
-class A{
-    static let title:String = "Apollo"
-    static func wrap(string: String) -> String{
+import UIKit
+
+#elseif os(watchOS)
+
+import UIKit
+import WatchKit
+
+#elseif os(macOS)
+
+import AppKit
+
+#elseif os(Linux)
+
+import GlibC
+
+//something like that
+#endif
+class A {
+    static let title: String = "Apollo"
+    static func wrap(string: String) -> String {
         return "\(A.title)::\(string)"
     }
-    static func warn(_ string: String) -> String{
-        return wrap(string:"WARN::\(string)")
+
+    static func warn(_ string: String) -> String {
+        return wrap(string: "WARN::\(string)")
     }
-    static func err(_ string: String) -> String{
-        return wrap(string:"WARN::\(string)")
+
+    static func err(_ string: String) -> String {
+        return wrap(string: "WARN::\(string)")
     }
-    static func info(_ string: String) -> String{
-        return wrap(string:"WARN::\(string)")
+
+    static func info(_ string: String) -> String {
+        return wrap(string: "WARN::\(string)")
     }
-    
-    
 }
-protocol Node{
+public protocol Node {
+//
 }
 
-final class LocalNode:Node{
-    
-    
-    
-    static let name:String = A.wrap(string:"LocalNode")
-    let scheduler : SerialDispatchQueueScheduler
-//    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
-    init(){
-        
-        scheduler = SerialDispatchQueueScheduler(queue: DispatchQueue.init(label: LocalNode.name),
-                                     internalSerialQueueName: LocalNode.name)
+public final class RemoteNode: Node {
+
+//    subscript(type:Service.Type) -> Service? {
+//        return services.first { type(of: $0) == type}
+//    }
+}
+public final class LocalNode: Node {
+
+    static let name: String = A.wrap(string: "LocalNode")
+
+    var context: AnyObject!
+    public let scheduler: SerialDispatchQueueScheduler
+    public let q: DispatchQueue
+	
+    //    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
+    init() {
+        q = DispatchQueue.init(label: LocalNode.name)
+        scheduler = SerialDispatchQueueScheduler(queue: q,
+                                                 internalSerialQueueName: LocalNode.name)
+        services.append(Welcome())
     }
-    
-    let instance = LocalNode()
-    var started:Bool = false
-    func start(){
-//        queue.sync {
+
+    public static let instance = LocalNode()
+    var started: Bool = false
+    public func start(context: NSObject) {
+        guard !started  else {
+            fatalError()
+        }
+            guard !self.started  else {
+                fatalError()
+            }
             self.started = true
-            //servies start.
-//        }
+            self.context = context
+                self.startServices()
     }
-    
-    
+    var services = [Service]()
+    var disposeBag = DisposeBag()
+    subscript(type:Service.Type) -> Service? {
+        return services.first { type(of: $0) == type}
+    }
+
+
+
+
+
+    func startServices() {
+        for s in self.services {
+            s.observable.subscribe {
+                        switch ($0) {
+                        case .next(_):() //print(s.name)
+                        case .error(let error): self.service(s, didError: error)
+                        case .completed: self.serviceDidComplete(s)
+                        }
+                    }.addDisposableTo(self.disposeBag)
+        }
+    }
+
+    var didFinishLaunching: Observable<()> {
+#if os(watchOS)
+        return Reactive(self.context).sentMessage(#selector(WKExtensionDelegate.applicationDidFinishLaunching())).map { _ in
+            return ()
+        }.take(1)
+#elseif os(iOS)
+        return Reactive(self.context).sentMessage(#selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))).map { _ in
+            return ()
+        }.take(1)
+#elseif os(macOS)
+    return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))).map { _ in
+        return ()
+        }.take(1)
+#endif
+    }
+
+
+
+    var willTerminate: Observable<()> {
+#if os(iOS)
+        return Reactive(self.context).sentMessage(#selector(UIApplicationDelegate.applicationWillTerminate(_ :))).map { _ in
+            return ()
+        }.take(1)
+#elseif os(macOS)
+        return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationWillTerminate(_:))).map { _ in
+            return ()
+        }.take(1)
+#endif
+    }
+
+
+    private func service(_ service: Service, didError: Any) {
+		    fmt(service: service, print: "Completed")
+    }
+    fileprivate func fmt(service:Service, print msg:String) {
+        print("[\(service.name)] — \(DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .medium)) ::: \(msg)")
+    }
+    private func serviceDidComplete(_ service: Service) {
+        fmt(service: service, print: "Completed")
+    }
 }

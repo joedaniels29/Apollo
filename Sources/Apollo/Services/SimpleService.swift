@@ -9,13 +9,12 @@
 import Foundation
 import RxSwift
 
-extension ObservableType where Self.E:ServiceStatusable {
-    func  wrapped() -> Observable<ServiceStatusable>{
-        return Observable.of(.just(ServiceRecord.starting as ServiceStatusable),
-                   self.map{$0 as ServiceStatusable},
-                   .just(ServiceRecord.terminated as ServiceStatusable)).concat()
-        
+public class Welcome : Service{
+    public var observable: Observable<ServiceStatusable> {
+        return .empty()
     }
-    
+    public var name: String {
+        return "Apollo Launch!"
+    }
 
 }

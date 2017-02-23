@@ -86,6 +86,16 @@
                ReferencedContainer = "container:Apollo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D86362951E5A155F0032DAD4"
+               BuildableName = "ApolloSupportOSXTests.xctest"
+               BlueprintName = "ApolloSupportOSXTests"
+               ReferencedContainer = "container:Apollo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

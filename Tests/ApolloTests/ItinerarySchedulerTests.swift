@@ -14,7 +14,7 @@ import XCTest
 
 class ItinerarySchedulerTests: XCTestCase {
     let bag = DisposeBag()
-    let bgQueue = DispatchQueue()
+    let bgQueue = DispatchQueue(label: "bgQueue")
 
 
     func testItinerarySchedulerAsync() {
@@ -33,7 +33,6 @@ class ItinerarySchedulerTests: XCTestCase {
             await.fulfill()
         })
         .addDisposableTo(bag)
-        testItinerarySchedulerSimply
         func sample() {
             Itinerary.scheduler(named: name).flush()
             XCTAssert(somethingToSetInObservable == "Hey")
@@ -59,7 +58,6 @@ class ItinerarySchedulerTests: XCTestCase {
             await.fulfill()
         })
         .addDisposableTo(bag)
-        testItinerarySchedulerSimply
         func sample() {
             Itinerary.scheduler(named: name).flush()
             XCTAssert(somethingToSetInObservable == "Hey")
@@ -70,12 +68,13 @@ class ItinerarySchedulerTests: XCTestCase {
     }
 
     func testSimply() {
+        let name = Itinerary.Name(name:"a")
         let simple = Observable.just("Ohai").subscribeOn(Itinerary.scheduler(named: name))
         let await = self.expectation(description: "completion of Itinerary")
         simple.subscribe(onNext:{await.fulfill()}).addDisposableTo(bag)
         func sample() {
             Itinerary.scheduler(named: name).flush()
-            XCTAssert(somethingToSetInObservable == "Hey")
+//            XCTAssert(somethingToSetInObservable == "Hey")
         }
         sample()
         waitForExpectations(timeout: 1, handler: nil)

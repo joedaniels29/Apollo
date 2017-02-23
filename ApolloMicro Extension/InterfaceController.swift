@@ -18,10 +18,14 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
     
+    @IBAction func ayGurl() {
+        print("fire")
+    }
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
+    @IBOutlet var action: WKInterfaceButton!
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

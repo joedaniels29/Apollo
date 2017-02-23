@@ -1,6 +1,6 @@
 //
 //  AppoloServiceProtocol.h
-//  AppoloService
+//  ApolloService
 //
 //  Created by Joseph Daniels on 18/10/2016.
 //  Copyright © 2016 Joseph Daniels. All rights reserved.
@@ -19,7 +19,7 @@
 /*
  To use the service from an application or other process, use NSXPCConnection to establish a connection to the service by doing something like this:
 
-     _connectionToService = [[NSXPCConnection alloc] initWithServiceName:@"JD.AppoloService"];
+     _connectionToService = [[NSXPCConnection alloc] initWithServiceName:@"JD.ApolloService"];
      _connectionToService.remoteObjectInterface = [NSXPCInterface interfaceWithProtocol:@protocol(AppoloServiceProtocol)];
      [_connectionToService resume];
 

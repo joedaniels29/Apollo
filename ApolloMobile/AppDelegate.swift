@@ -5,19 +5,38 @@
 //  Created by Joseph Daniels on 18/10/2016.
 //  Copyright © 2016 Joseph Daniels. All rights reserved.
 //
-
-import UIKit
+import Foundation
 import Apollo
+import RxSwift
+import RxCocoa
+#if os(iOS)
+import UIKit
+#elseif os(watchOS)
+import UIKit
+import WatchKit
+#elseif os(macOS)
+import AppKit
+#elseif os(Linux)
+import GlibC //something like that
+#endif
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    static func x(){
+        
+    }
     var window: UIWindow?
-
+    var o:Observable<[Any]>?
+    var o2:Observable<[Any]>?
+    var d = DisposeBag()
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        LocalNode.instance.start(context: self)
+        return false
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+//        print("ohai!")
         return true
     }
 
@@ -42,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
 
 }
 

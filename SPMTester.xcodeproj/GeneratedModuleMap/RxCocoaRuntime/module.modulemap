@@ -1,5 +1,0 @@
-framework module RxCocoaRuntime {
-    umbrella header "/Users/Joe/Projects/Mine/Apollo/Packages/RxSwift-3.0.0/Sources/RxCocoaRuntime/include/RxCocoaRuntime.h"
-    link framework "RxCocoaRuntime"
-    export *
-}

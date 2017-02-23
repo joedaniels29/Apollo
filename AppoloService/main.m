@@ -1,13 +1,13 @@
 //
 //  main.m
-//  AppoloService
+//  ApolloService
 //
 //  Created by Joseph Daniels on 18/10/2016.
 //  Copyright © 2016 Joseph Daniels. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "AppoloService.h"
+#import "ApolloService.h"
 
 @interface ServiceDelegate : NSObject <NSXPCListenerDelegate>
 @end
@@ -22,7 +22,7 @@
     newConnection.exportedInterface = [NSXPCInterface interfaceWithProtocol:@protocol(AppoloServiceProtocol)];
     
     // Next, set the object that the connection exports. All messages sent on the connection to this service will be sent to the exported object to handle. The connection retains the exported object.
-    AppoloService *exportedObject = [AppoloService new];
+    ApolloService *exportedObject = [ApolloService new];
     newConnection.exportedObject = exportedObject;
     
     // Resuming the connection allows the system to deliver more incoming messages.
