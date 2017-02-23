@@ -12,7 +12,10 @@
 		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
 		19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
 		19BC01415DC852BB2C8E51E5 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC01814011562A1453CFC5 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC0188F4BAB254B22481D0 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC01983073395483CCB862 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
+		19BC01DEEC437B0CC7971E21 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
 		19BC035CF206C7767DCD2401 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
@@ -34,6 +37,7 @@
 		19BC0A6004BA78F6CD2F13B0 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC0A67DE0FF94DBA968440 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
 		19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
+		19BC0B13E68A29383BBBABB0 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC0B30DCFDCBC402F20BC1 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
 		19BC0BB9BE419B4DBC282041 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0C2789301E13FB93EEE8 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
@@ -305,6 +309,7 @@
 		19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntime.m; sourceTree = "<group>"; };
 		19BC02208AC89A3EC5469A82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
+		19BC0336CF4CDBC83A62F8ED /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protobuf; sourceTree = "<group>"; };
 		19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		19BC0384847193CE65D7659A /* ObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCRuntime.h; sourceTree = "<group>"; };
 		19BC05B7F23303A00C42E910 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
@@ -609,6 +614,13 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		19BC06FC0A3AA5715D9F372C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		19BC0795B30088CE533ADEE2 /* ApolloServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +696,7 @@
 				19BC0C4D18590D7D677FBD97 /* Apollo.swift */,
 				19BC02208AC89A3EC5469A82 /* Node.swift */,
 				19BC0B133F321944FDFF4EC5 /* extensions */,
+				19BC0336CF4CDBC83A62F8ED /* Protobuf */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -867,6 +880,7 @@
 				D869C5841DB7D5E700E1C072 /* ApolloIOSTests */,
 				D8F2D1741DB6637A00BDB634 /* Frameworks */,
 				D8F2D12E1DB65EA400BDB634 /* Products */,
+				19BC06FC0A3AA5715D9F372C /* Scripts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1464,6 +1478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC01814011562A1453CFC5 /* Protobuf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1471,6 +1486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC01DEEC437B0CC7971E21 /* Protobuf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1478,6 +1494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC0B13E68A29383BBBABB0 /* Protobuf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1485,6 +1502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC01983073395483CCB862 /* Protobuf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

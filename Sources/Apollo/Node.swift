@@ -25,7 +25,7 @@ import AppKit
 
 #elseif os(Linux)
 
-import GlibC
+import Glibc
 
 //something like that
 #endif

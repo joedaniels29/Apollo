@@ -17,7 +17,7 @@ import WatchKit
 #elseif os(macOS)
 import AppKit
 #elseif os(Linux)
-import GlibC //something like that
+import Glibc //something like that
 #endif
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
