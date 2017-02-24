@@ -68,7 +68,7 @@ public protocol EagerPeriodicService: Service{
 
 }
 
-public class Itinerary: ImmediateSchedulerType {
+open class Itinerary: ImmediateSchedulerType {
     public struct Name {
         public var name: String
         public static let didFinishLaunching = Name(name: "didFinishLaunching")
@@ -81,7 +81,7 @@ public class Itinerary: ImmediateSchedulerType {
 
     var valid: Bool = true
 
-    public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> Disposable) -> Disposable {
+    open func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> Disposable) -> Disposable {
         guard valid  else {
             print("invalid schedule: \(name.name)")
             return action(state)
@@ -101,7 +101,7 @@ public class Itinerary: ImmediateSchedulerType {
         name = named
     }
 
-    public static func scheduler(named: Itinerary.Name) -> Itinerary {
+    open static func scheduler(_ named: Itinerary.Name) -> Itinerary {
         if instances[named.name] == nil {
             instances[named.name] = Itinerary(named: named)
         }
@@ -109,7 +109,7 @@ public class Itinerary: ImmediateSchedulerType {
         return instances[named.name]!
     }
 
-    public func flush() {
+    open func flush() {
         while !Itinerary.tasks.isEmpty {
             Itinerary.tasks.removeFirst()()
         }

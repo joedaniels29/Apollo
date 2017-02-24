@@ -4,10 +4,7 @@ os:
 language: generic
 sudo: required
 dist: trusty
-osx_image:
-    - xcode8
-    - xcode8.1
-    - xcode8.2
+osx_image: xcode8.2
 env:
     global:
         - IS_TRAVIS=true

@@ -11,13 +11,13 @@ enum PersistantTimeConfig {
 }
 extension Observable where Element: SignedInteger {
 
-    public static func interval(for: String,
+    public static func interval(_ `for`: String,
                                 period: RxTimeInterval,
                                 scheduler: SchedulerType) -> Observable<Element> {
-        return persistentTimer(for: `for`, dueTime: 0, period: period, scheduler: scheduler)
+        return persistentTimer(`for`, dueTime: 0, period: period, scheduler: scheduler)
     }
 
-    public static func persistentTimer(for: String,
+    public static func persistentTimer(_ `for`: String,
                                        dueTime: RxTimeInterval,
                                        period: RxTimeInterval? = nil,
                                        scheduler: SchedulerType) -> Observable<Element> {

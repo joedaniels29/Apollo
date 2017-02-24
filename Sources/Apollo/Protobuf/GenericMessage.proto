@@ -1,42 +1,40 @@
 syntax = "proto3";
 
 
-message NodeDescription{
-	string nodeUUID = 1;
+message NodeDescription {
+    string nodeUUID = 1;
     repeated ServiceDescription services = 2;
     repeated TaskStatus history = 3;
 }
 
 
-message Address{
-	string nodeUUID = 1;
+message Address {
+    string nodeUUID = 1;
     string serviceUUID = 2;
 }
 
 
-
-message Letter{
+message Letter {
     string uuid = 1;
     Adress from = 2;
     Adress to = 3;
     repeated LetterPage contents = 4;
 }
 
-message LetterPage{
+message LetterPage {
     string uuid = 1;
     string messageKind = 2;
     Any datum = 3;
 }
 
 
-
 message GenericMessage {
     string service = 1;
     string title = 2;
-	oneof x {
+    oneof x {
         string subtitle = 4;
-	    string author = 5;
-	}
+        string author = 5;
+    }
     bytes data = 3;
 }
 

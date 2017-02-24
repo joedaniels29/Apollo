@@ -9,11 +9,11 @@
 import Foundation
 import RxSwift
 
-public class Welcome : Service{
-    public var observable: Observable<ServiceStatusable> {
+open class Welcome : Service{
+    open var observable: Observable<ServiceStatusable> {
         return .empty()
     }
-    public var name: String {
+    open var name: String {
         return "Apollo Launch!"
     }
 

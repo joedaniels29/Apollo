@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BC0067FA33ACB9480E0CCF /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC00E4BC0D3CA162EFB44C /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
 		19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
 		19BC01415DC852BB2C8E51E5 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
@@ -18,13 +18,9 @@
 		19BC01DEEC437B0CC7971E21 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
-		19BC035CF206C7767DCD2401 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
-		19BC03D08D0D020A5CD82D82 /* Apollo.hz in Headers */ = {isa = PBXBuildFile; fileRef = 19BC095D9583110DE2526440 /* Apollo.hz */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC040AAAC954AAD791C667 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC043971A8F3F52CE917B5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
-		19BC061B8C23FDE302767002 /* MotionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4B0F41703289A1B793 /* MotionCapture.swift */; };
-		19BC0622DD8DD94D84BDC853 /* Apollo.hz in Headers */ = {isa = PBXBuildFile; fileRef = 19BC095D9583110DE2526440 /* Apollo.hz */; settings = {ATTRIBUTES = (Public, ); }; };
-		19BC065E7C08A44C3B627DAA /* MotionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4B0F41703289A1B793 /* MotionCapture.swift */; };
+		19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC06801CB0C34E5BE1A247 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
 		19BC06BDBA9773ABF7A05302 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
 		19BC071368DD05DCC751AF48 /* MotionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4B0F41703289A1B793 /* MotionCapture.swift */; };
@@ -36,6 +32,7 @@
 		19BC09CDA0C6D3CDC2A10CFC /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		19BC0A6004BA78F6CD2F13B0 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC0A67DE0FF94DBA968440 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		19BC0B13E68A29383BBBABB0 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC0B30DCFDCBC402F20BC1 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
@@ -48,10 +45,11 @@
 		19BC0CEC154CA7EF672D071B /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0D312C53F5AC7BC62650 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
 		19BC0D38EDF6B40854330FFF /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
+		19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
 		19BC0E2C269DF2F3B559C7FF /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
-		19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; };
+		19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC0FC998D932AA4B8E76A4 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
 		19BC0FF85218F5358E31302B /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
@@ -60,7 +58,9 @@
 		D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539E1E11F7B700377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
-		D85569981DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
+		D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
+		D835893D1E5F8811002CD57A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
+		D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D85569991DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699A1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699B1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
@@ -107,7 +107,6 @@
 		D894B8911DEA27EA00625D61 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D894B8921DEA27EA00625D61 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D894B8941DEA281B00625D61 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D894B8951DEA281B00625D61 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; };
 		D894B8961DEA281B00625D61 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D894B89A1DEA288400625D61 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59D1DB8471700E1C072 /* ApolloTests.swift */; };
 		D894B89B1DEA288400625D61 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B8881DEA194500625D61 /* ServiceTests.swift */; };
@@ -115,6 +114,11 @@
 		D894B89F1DEA288500625D61 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C59D1DB8471700E1C072 /* ApolloTests.swift */; };
 		D894B8A01DEA288500625D61 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B8881DEA194500625D61 /* ServiceTests.swift */; };
 		D894B8A11DEA288500625D61 /* ItinerarySchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B88A1DEA195500625D61 /* ItinerarySchedulerTests.swift */; };
+		D8A07F1A1E5F7AE00092F1EB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
+		D8A07F1B1E5F7AE00092F1EB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; };
+		D8A07F1D1E5F7AE00092F1EB /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; };
+		D8A07F1E1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; };
+		D8A07F1F1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E16EE21DC837C1003EDFF7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */; };
 		D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */; };
 		D8F2D1331DB65EA400BDB634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1321DB65EA400BDB634 /* ViewController.swift */; };
@@ -285,6 +289,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D894B8961DEA281B00625D61 /* RxSwift.framework in Embed Frameworks */,
+				D8A07F1F1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Embed Frameworks */,
 				D894B8941DEA281B00625D61 /* RxCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -318,14 +323,14 @@
 		19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
 		19BC06E420FE8226113420F7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		19BC0700AF182C98E8EEB02D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		19BC072A16B1D22E37E52868 /* MathematicaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicaService.swift; sourceTree = "<group>"; };
 		19BC082318735F11BFE7793F /* PersistantTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistantTimer.swift; sourceTree = "<group>"; };
 		19BC084F76E446B43449A668 /* AlertDispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDispatch.swift; sourceTree = "<group>"; };
-		19BC095D9583110DE2526440 /* Apollo.hz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apollo.hz; sourceTree = "<group>"; };
 		19BC0B25DEE952D065E8D86C /* ApolloServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloServerTests.swift; sourceTree = "<group>"; };
 		19BC0C3FC579D012F4829E72 /* HeartCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartCapture.swift; sourceTree = "<group>"; };
 		19BC0C4B0F41703289A1B793 /* MotionCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture.swift; sourceTree = "<group>"; };
 		19BC0C4D18590D7D677FBD97 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
-		19BC0CDC33A65EE5C1F8A309 /* RuBeeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuBeeSupport.h; sourceTree = "<group>"; };
+		19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloSupport.h; sourceTree = "<group>"; };
 		D816C1001DF7986F00EFDE1D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
 		D81D539A1E11F71900377BD5 /* RailsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsApp.swift; sourceTree = "<group>"; };
@@ -369,6 +374,11 @@
 		D869C59E1DB8471700E1C072 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		D894B8881DEA194500625D61 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		D894B88A1DEA195500625D61 /* ItinerarySchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItinerarySchedulerTests.swift; sourceTree = "<group>"; };
+		D8A07F161E5F7ACB0092F1EB /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
+		D8A07F171E5F7ACB0092F1EB /* Mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Mac; path = Carthage/Build/Mac; sourceTree = "<group>"; };
+		D8A07F181E5F7ACB0092F1EB /* tvOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tvOS; path = Carthage/Build/tvOS; sourceTree = "<group>"; };
+		D8A07F191E5F7ACB0092F1EB /* watchOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = watchOS; path = Carthage/Build/watchOS; sourceTree = "<group>"; };
+		D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/Mac/SwiftProtobuf.framework; sourceTree = "<group>"; };
 		D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		D8E50C7E1DFA39D800A18861 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		D8F2D12D1DB65EA400BDB634 /* ApolloM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,8 +523,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D894B8951DEA281B00625D61 /* RxSwift.framework in Frameworks */,
-				D85569981DDCE28100B70D8C /* RxCocoa.framework in Frameworks */,
+				D8A07F1D1E5F7AE00092F1EB /* SwiftProtobuf.framework in Frameworks */,
+				D8A07F1A1E5F7AE00092F1EB /* RxCocoa.framework in Frameworks */,
+				D8A07F1E1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Frameworks */,
+				D8A07F1B1E5F7AE00092F1EB /* RxSwift.framework in Frameworks */,
 				D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +591,14 @@
 				19BC082318735F11BFE7793F /* PersistantTimer.swift */,
 			);
 			path = RX;
+			sourceTree = "<group>";
+		};
+		19BC050E8E138D322F9DFF48 /* Mathematica */ = {
+			isa = PBXGroup;
+			children = (
+				19BC072A16B1D22E37E52868 /* MathematicaService.swift */,
+			);
+			path = Mathematica;
 			sourceTree = "<group>";
 		};
 		19BC059D71A03DC3C26D8C61 /* Extensions */ = {
@@ -657,7 +677,7 @@
 		19BC09376AEF23FAD9706157 /* ApolloSupport */ = {
 			isa = PBXGroup;
 			children = (
-				19BC0CDC33A65EE5C1F8A309 /* RuBeeSupport.h */,
+				19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */,
 				19BC012529D2B9658C5DA306 /* module.modulemap */,
 			);
 			path = ApolloSupport;
@@ -692,7 +712,6 @@
 			isa = PBXGroup;
 			children = (
 				19BC0C850BBA3C7F419BDD43 /* Services */,
-				19BC095D9583110DE2526440 /* Apollo.hz */,
 				19BC0C4D18590D7D677FBD97 /* Apollo.swift */,
 				19BC02208AC89A3EC5469A82 /* Node.swift */,
 				19BC0B133F321944FDFF4EC5 /* extensions */,
@@ -714,6 +733,7 @@
 				19BC0F9B9D6C1B1490BB3622 /* NSTaskService */,
 				19BC0971EABAE5161F0DFB1E /* OSX */,
 				19BC0888EF89E14B34C95C1D /* XPC */,
+				19BC050E8E138D322F9DFF48 /* Mathematica */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -952,6 +972,11 @@
 		D8F2D1741DB6637A00BDB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */,
+				D8A07F161E5F7ACB0092F1EB /* iOS */,
+				D8A07F171E5F7ACB0092F1EB /* Mac */,
+				D8A07F181E5F7ACB0092F1EB /* tvOS */,
+				D8A07F191E5F7ACB0092F1EB /* watchOS */,
 				D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */,
 				D81B7F431DB98B2700DD62B6 /* Ruby.framework */,
 				D8F2D1751DB6637A00BDB634 /* NotificationCenter.framework */,
@@ -1017,7 +1042,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BC03D08D0D020A5CD82D82 /* Apollo.hz in Headers */,
 				19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1026,7 +1050,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BC0622DD8DD94D84BDC853 /* Apollo.hz in Headers */,
+				D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,15 +1351,17 @@
 					};
 					D869C5351DB7BDE400E1C072 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D869C5521DB7D54200E1C072 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D869C55A1DB7D54300E1C072 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D8F2D18A1DB664BF00BDB634;
 					};
@@ -1394,21 +1420,25 @@
 					};
 					D8F2D1721DB6637A00BDB634 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D8F2D18A1DB664BF00BDB634 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D8F2D19A1DB664BF00BDB634 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 55WZH7L5M4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D8F2D18A1DB664BF00BDB634;
 					};
 					D8F2D1A51DB664BF00BDB634 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 55WZH7L5M4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D8F2D18A1DB664BF00BDB634;
 					};
@@ -1609,6 +1639,7 @@
 				19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */,
 				19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */,
 				19BC0C80FCC7DD2A8A122C6F /* ObjCRuntime.m in Sources */,
+				19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1626,11 +1657,9 @@
 				19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */,
 				19BC01415DC852BB2C8E51E5 /* HeartCapture.swift in Sources */,
 				D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */,
-				19BC065E7C08A44C3B627DAA /* MotionCapture.swift in Sources */,
 				19BC040AAAC954AAD791C667 /* PersistantTimer.swift in Sources */,
 				19BC0FF85218F5358E31302B /* XPCService.swift in Sources */,
-				19BC0067FA33ACB9480E0CCF /* Box.swift in Sources */,
-				19BC035CF206C7767DCD2401 /* ObjCRuntime.m in Sources */,
+				19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1644,11 +1673,14 @@
 				19BC0B30DCFDCBC402F20BC1 /* SimpleService.swift in Sources */,
 				19BC06801CB0C34E5BE1A247 /* Apollo.swift in Sources */,
 				19BC0C6E767B8BF916523382 /* Node.swift in Sources */,
+				D835893D1E5F8811002CD57A /* Box.swift in Sources */,
+				D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */,
 				19BC0A6004BA78F6CD2F13B0 /* AlertDispatch.swift in Sources */,
 				19BC0188F4BAB254B22481D0 /* HeartCapture.swift in Sources */,
 				D81D539E1E11F7B700377BD5 /* RailsApp.swift in Sources */,
 				19BC071368DD05DCC751AF48 /* MotionCapture.swift in Sources */,
 				19BC0E2C269DF2F3B559C7FF /* PersistantTimer.swift in Sources */,
+				19BC00E4BC0D3CA162EFB44C /* MathematicaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,9 +1699,9 @@
 				19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */,
 				19BC07F51A7B3D43E6977362 /* AlertDispatch.swift in Sources */,
 				19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */,
-				19BC061B8C23FDE302767002 /* MotionCapture.swift in Sources */,
 				19BC0BB9BE419B4DBC282041 /* PersistantTimer.swift in Sources */,
 				D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */,
+				19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1983,7 +2015,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2000,7 +2031,7 @@
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = /usr/lib;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2018,7 +2049,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
-				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2035,7 +2065,7 @@
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = /usr/lib;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2107,6 +2137,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2135,6 +2166,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2226,7 +2258,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = /Users/joe/Projects/Mine/RuBee/.build/debug;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
@@ -2272,7 +2304,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_INCLUDE_PATHS = /Users/joe/Projects/Mine/RuBee/.build/debug;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2405,6 +2437,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2424,6 +2457,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2483,6 +2517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -2507,6 +2542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

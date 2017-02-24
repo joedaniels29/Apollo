@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Box<T> {
+public class Box<T> {
     var val:T
     init(_ x:T){
         val = x

@@ -31,20 +31,20 @@ import Glibc
 #endif
 class A {
     static let title: String = "Apollo"
-    static func wrap(string: String) -> String {
+    static func wrap(_ string: String) -> String {
         return "\(A.title)::\(string)"
     }
 
     static func warn(_ string: String) -> String {
-        return wrap(string: "WARN::\(string)")
+        return wrap("WARN::\(string)")
     }
 
     static func err(_ string: String) -> String {
-        return wrap(string: "WARN::\(string)")
+        return wrap("WARN::\(string)")
     }
 
     static func info(_ string: String) -> String {
-        return wrap(string: "WARN::\(string)")
+        return wrap("WARN::\(string)")
     }
 }
 public protocol Node {
@@ -59,7 +59,7 @@ public final class RemoteNode: Node {
 }
 public final class LocalNode: Node {
 
-    static let name: String = A.wrap(string: "LocalNode")
+    static let name: String = A.wrap("LocalNode")
 
     var context: AnyObject!
     public let scheduler: SerialDispatchQueueScheduler
@@ -74,8 +74,8 @@ public final class LocalNode: Node {
     }
 
     public static let instance = LocalNode()
-    var started: Bool = false
-    public func start(context: NSObject) {
+    public var started: Bool = false
+    public func start(_ context: NSObject) {
         guard !started  else {
             fatalError()
         }
@@ -88,7 +88,7 @@ public final class LocalNode: Node {
     }
     var services = [Service]()
     var disposeBag = DisposeBag()
-    subscript(type:Service.Type) -> Service? {
+    public subscript(type:Service.Type) -> Service? {
         return services.first { type(of: $0) == type}
     }
 
@@ -139,13 +139,13 @@ public final class LocalNode: Node {
     }
 
 
-    private func service(_ service: Service, didError: Any) {
-		    fmt(service: service, print: "Completed")
+    fileprivate func service(_ service: Service, didError: Any) {
+		    fmt(service, print: "Completed")
     }
-    fileprivate func fmt(service:Service, print msg:String) {
+    fileprivate func fmt(_ service:Service, print msg:String) {
         print("[\(service.name)] — \(DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .medium)) ::: \(msg)")
     }
-    private func serviceDidComplete(_ service: Service) {
-        fmt(service: service, print: "Completed")
+    fileprivate func serviceDidComplete(_ service: Service) {
+        fmt(service, print: "Completed")
     }
 }

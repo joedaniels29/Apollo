@@ -14,11 +14,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationWillFinishLaunching(_ notification: Notification) {
-        Itinerary.scheduler(named: .willFinishLaunching).flush()
+        LocalNode.instance.start(self)
     }
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        Itinerary.scheduler(named: .didFinishLaunching).flush()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
