@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationWillFinishLaunching(_ notification: Notification) {
-        LocalNode.instance.start(self)
+        LocalNode.instance.start(context: self)
     }
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application

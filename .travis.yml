@@ -10,7 +10,7 @@ env:
         - IS_TRAVIS=true
     matrix:
         - SWIFT_VERSION=3.0.2 BUILDTYPE=swiftbuild
-        - SWIFT_VERSION=3.1-DEV  BUILDTYPE=swiftbuild
+        - SWIFT_VERSION=3.0.1  BUILDTYPE=swiftbuild
         - BUILDTYPE=xcrun
 matrix:
     exclude:

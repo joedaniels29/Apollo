@@ -75,7 +75,7 @@ public final class LocalNode: Node {
 
     public static let instance = LocalNode()
     public var started: Bool = false
-    public func start(_ context: NSObject) {
+    public func start(context: NSObject) {
         guard !started  else {
             fatalError()
         }

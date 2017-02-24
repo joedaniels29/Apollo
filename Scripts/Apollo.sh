@@ -13,7 +13,7 @@ if [[ $BUILDTYPE == "xcrun" ]]; then
     EXAMPLE_SCHEME="iOS Example"
 
 
-    gem install carthage
+    brew install carthage
     carthage update -no-use-binaries
     set -o pipefail
     xcodebuild -version
