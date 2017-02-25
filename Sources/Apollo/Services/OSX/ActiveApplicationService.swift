@@ -5,7 +5,16 @@
 
 import Foundation
 
-class ActiveApplicationService:Service {
+#if os(macOS)
 
-
+import AppKit
+import RxSwift
+import RxCocoa
+class ActiveApplicationService: Service {
+    var observable: Observable<ServiceStatusable> {
+        return NSWorkspace.shared().notificationCenter.rx.notification(.NSWorkspaceDidActivateApplication).map{ _ in
+            	return ServiceRecord.running
+            }
+        }
 }
+#endif
