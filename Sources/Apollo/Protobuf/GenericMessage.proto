@@ -8,6 +8,7 @@ message NodeDescription {
 }
 
 
+
 message Address {
     string nodeUUID = 1;
     optional string serviceUUID = 2;
@@ -56,4 +57,15 @@ message GenericMessage {
 //    string name = 2;
 //    repeated BookInfo books = 3;
 //    map<string,string> keys = 4;
+//}
+
+
+//message Persona {
+// heartrate for all day
+// current motion
+// active node
+// locationNode all day
+// schedule
+// itinerary/path
+//
 //}
