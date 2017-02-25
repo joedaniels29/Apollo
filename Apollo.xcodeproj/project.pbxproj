@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19BC007AA8AFD3F73528CBC7 /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
 		19BC00E4BC0D3CA162EFB44C /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
@@ -16,6 +17,7 @@
 		19BC0188F4BAB254B22481D0 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
 		19BC01983073395483CCB862 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC01DEEC437B0CC7971E21 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
+		19BC0212B17B03299A6B9D15 /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC028A6F4BF3A09BA135DB /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
 		19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
@@ -322,6 +324,7 @@
 		19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntime.m; sourceTree = "<group>"; };
 		19BC02208AC89A3EC5469A82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
+		19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveApplicationService.swift; sourceTree = "<group>"; };
 		19BC0336CF4CDBC83A62F8ED /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protobuf; sourceTree = "<group>"; };
 		19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		19BC0384847193CE65D7659A /* ObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCRuntime.h; sourceTree = "<group>"; };
@@ -728,6 +731,7 @@
 		19BC0971EABAE5161F0DFB1E /* OSX */ = {
 			isa = PBXGroup;
 			children = (
+				19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */,
 			);
 			path = OSX;
 			sourceTree = "<group>";
@@ -1818,6 +1822,7 @@
 				19BC0E6F78B3F14F45EE9823 /* NodeConsoleViewController.swift in Sources */,
 				19BC0596A1F86C029549C342 /* NodeConnectionsViewController.swift in Sources */,
 				19BC028A6F4BF3A09BA135DB /* NodeServiceListViewController.swift in Sources */,
+				19BC0212B17B03299A6B9D15 /* ActiveApplicationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1829,6 +1834,7 @@
 				19BC073AA65D7128AE081685 /* NodeConsoleViewController.swift in Sources */,
 				19BC08F53011118B0AFD4208 /* NodeConnectionsViewController.swift in Sources */,
 				19BC05E51793ECB9EE4570D3 /* NodeServiceListViewController.swift in Sources */,
+				19BC007AA8AFD3F73528CBC7 /* ActiveApplicationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

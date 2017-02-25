@@ -10,7 +10,7 @@ bower_components/
 /vendor/bundle
 disabledServer/
 /public/
-
+*.xcuserstate
 #CocoaPods
 Pods/
 GpeneratedDocumentation/
