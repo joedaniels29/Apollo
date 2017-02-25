@@ -49,7 +49,7 @@ platform :ios do
   end
   desc "CI Script"
   lane :ciTests do
-    certificates
+    certificates_ro
     # gym(scheme:"Apollo")
     # gym(scheme:"ApolloIOS")
     gym(scheme: "ApolloM", export_method: 'app-store')
