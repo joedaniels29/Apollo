@@ -42,7 +42,7 @@ end
 
 platform :ios do
   before_all do
-    xcversion(version: "8.2.1") # Selects Xcode 8.1.0
+    # xcversion(version: "8.2.1") # Selects Xcode 8.1.0
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
 
     # carthage
