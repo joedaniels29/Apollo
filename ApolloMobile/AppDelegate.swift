@@ -17,7 +17,7 @@ import WatchKit
 #elseif os(macOS)
 import AppKit
 #elseif os(Linux)
-import Glibc //something like that
+import Glibc
 #endif
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,9 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     var window: UIWindow?
-    var o:Observable<[Any]>?
-    var o2:Observable<[Any]>?
-    var d = DisposeBag()
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         LocalNode.instance.start(context: self)
         return false
