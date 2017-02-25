@@ -17,6 +17,5 @@ matrix:
         env: BUILDTYPE=xcrun
         os: linux
 
-
 script:
   - ./Scripts/Apollo.sh

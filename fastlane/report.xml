@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.000916">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.000873">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: xcversion" time="0.456722">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: match" time="3.99056">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: match" time="3.95049">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: match" time="3.900909">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: match" time="3.859389">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: match" time="4.66368">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: match" time="3.832139">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: match" time="3.838709">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: match" time="4.109647">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: match" time="3.894321">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: match" time="4.172696">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: match" time="4.153298">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: match" time="4.060094">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

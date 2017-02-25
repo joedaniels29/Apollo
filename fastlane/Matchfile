@@ -1,0 +1,19 @@
+
+match_repo_access = ENV["CI_USER_TOKEN"] ?  "https://#{ENV.fetch("CI_USER_TOKEN")}@github.com/#{repo_name}.git" : "git@github.com:joedaniels29/match.git"
+git_url match_repo_access
+
+type "development" # The default type, can be: appstore, adhoc or development
+
+app_identifier ["io.joedaniels.apollo.*",
+        "io.joedaniels.apollo.mobile",
+        "io.joedaniels.apollo.mobile.watchkitapp",
+        "io.joedaniels.apollo.mobile.watchkitapp.watchkitextension",
+        #"io.joedaniels.apollo.app",
+        #"io.joedaniels.apollo.service",
+        #"io.joedaniels.apollo.app.monitor",
+        #"io.joedaniels.apollo.app.ApolloPickaxe"
+        ]
+username "joedaniels29@me.com" # Your Apple Developer Portal username
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options

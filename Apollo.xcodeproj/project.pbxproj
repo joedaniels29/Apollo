@@ -1343,11 +1343,11 @@
 				TargetAttributes = {
 					D869C5081DB7BBF100E1C072 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D869C5141DB7BBF100E1C072 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D869C5351DB7BDE400E1C072 = {
 						CreatedOnToolsVersion = 8.0;
@@ -1377,8 +1377,7 @@
 					};
 					D8F2D12C1DB65EA400BDB634 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 55WZH7L5M4;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1906,11 +1905,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				IBSC_MODULE = ApolloMicro_Extension;
 				INFOPLIST_FILE = ApolloMicro/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7beee4af-9094-43be-833f-58265322f9aa";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.joedaniels.apollo.mobile.watchkitapp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1924,11 +1926,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				IBSC_MODULE = ApolloMicro_Extension;
 				INFOPLIST_FILE = ApolloMicro/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e03d3a00-81ea-4f47-a11d-8a0e82159f02";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.joedaniels.apollo.mobile.watchkitapp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1941,11 +1946,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "9ad5f735-c41b-4cee-9394-05b225ebf61b";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.joedaniels.apollo.mobile.watchkitapp.watchkitextension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1958,11 +1966,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "a3993d3e-305d-4569-9a9f-3c8dd75e56ae";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.joedaniels.apollo.mobile.watchkitapp.watchkitextension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -2030,7 +2041,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2064,7 +2074,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2136,7 +2145,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
-				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2165,7 +2173,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
-				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2318,6 +2325,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApolloM.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2327,6 +2335,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8cb77ab3-5598-43f2-8c90-93c071f2f4c9";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.joedaniels.apollo.mobile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -2337,6 +2347,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApolloM.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2346,6 +2357,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5fc40a9b-61f2-4197-ac67-7ecce03d6c8d";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.joedaniels.apollo.mobile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

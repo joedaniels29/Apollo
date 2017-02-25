@@ -79,7 +79,7 @@ public class MotionCapture: Service {
             ).map { _ in
             let bootTime = Date(timeIntervalSinceNow: -ProcessInfo.processInfo.systemUptime)
 
-            var box: MotionResult = MotionResult(result:(bootTime, [Acceleration]()), record:.running)
+            let box: MotionResult = MotionResult(result:(bootTime, [Acceleration]()), record:.running)
             if self.ableToHistoricallyRecord {
                 try ObjC.catchException {
                     if let data = CMSensorRecorder().accelerometerData(from: Date().addingTimeInterval(-1 * self.period), to: Date()) {
