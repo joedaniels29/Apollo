@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+import "google/protobuf/any.proto";
 
 message NodeDescription {
     string nodeUUID = 1;
@@ -10,21 +10,34 @@ message NodeDescription {
 
 message Address {
     string nodeUUID = 1;
-    string serviceUUID = 2;
+    optional string serviceUUID = 2;
 }
 
-
-message Letter {
+message LetterHead{
     string uuid = 1;
     Adress from = 2;
     Adress to = 3;
+    enum Priority {
+        LOW = 0;
+        MEDIUM = 1;
+        HIGH = 2;
+        CRITICAL = 3;
+        DOUBLECRITICAL = 4;
+    }
+    Priority priority = 4;
+    Date sendDate = 5;
+    double timeout = 6;
+
+}
+message Letter {
+    LetterHead head = 1;
     repeated LetterPage contents = 4;
 }
 
 message LetterPage {
     string uuid = 1;
     string messageKind = 2;
-    Any datum = 3;
+    google.protobuf.Any datum = 3;
 }
 
 
