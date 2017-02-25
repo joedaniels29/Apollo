@@ -1,5 +1,5 @@
 
-match_repo_access = ENV["CI_USER_TOKEN"] ?  "https://#{ENV.fetch("CI_USER_TOKEN")}@github.com/#{repo_name}.git" : "git@github.com:joedaniels29/match.git"
+match_repo_access = ENV["CI_USER_TOKEN"] ?  "https://#{ENV.fetch("CI_USER_TOKEN")}@github.com/match.git" : "git@github.com:joedaniels29/match.git"
 git_url match_repo_access
 
 type "development" # The default type, can be: appstore, adhoc or development
