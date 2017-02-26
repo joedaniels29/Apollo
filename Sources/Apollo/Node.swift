@@ -29,6 +29,7 @@ import Glibc
 
 //something like that
 #endif
+import Dispatch
 class A {
     static let title: String = "Apollo"
     static func wrap(_ string: String) -> String {

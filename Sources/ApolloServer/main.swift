@@ -1,6 +1,7 @@
 import Foundation
 import RxSwift
 import Apollo
+import Dispatch
 
 
 public struct ApolloServer {
