@@ -50,6 +50,7 @@ platform :ios do
   desc "CI Script"
   lane :ciTests do
     certificates_ro
+    carthage
     # gym(scheme:"Apollo")
     # gym(scheme:"ApolloIOS")
     gym(scheme: "ApolloM", export_method: 'app-store')
