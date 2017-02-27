@@ -5,10 +5,8 @@
 
 import Foundation
 
-import RxSwift
-
 #if os(iOS) || os(watchOS)
-
+import RxSwift
 import UserNotifications
 
 public class UNUserNotificationAuthorization: Service {

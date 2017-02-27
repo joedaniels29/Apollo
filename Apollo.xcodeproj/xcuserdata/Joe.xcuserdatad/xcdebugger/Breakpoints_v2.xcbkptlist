@@ -90,11 +90,11 @@
                   moduleName = "Apollo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "509726796.734553"
+                  timestampString = "509856497.018284"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "121"
-                  endingLineNumber = "121"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
                   offsetFromSymbolStart = "15">
                </Location>
                <Location
@@ -105,11 +105,11 @@
                   moduleName = "Apollo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "509726796.737303"
+                  timestampString = "509856497.024785"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>

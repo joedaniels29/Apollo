@@ -10,17 +10,17 @@ import RxSwift
 
 class ReachabilityService:Service {
     #if os(iOS) || os(macOS)
-    var observable: Observable<Apollo.ServiceStatusable> {
-        return .create { (observer: AnyObserver<Apollo.ServiceStatusable>) in
+    var observable: Observable<ServiceStatusable> {
+        return .create { (observer: AnyObserver<ServiceStatusable>) in
 
-
+            return SingleAssignmentDisposable()
 
 
         }
     }
     #elseif os(watchOS)
-    #elseif os(linux)
-    var observable: Observable<Apollo.ServiceStatusable> {
+    #elseif os(Linux)
+    var observable: Observable<ServiceStatusable> {
         return .just(.running)
     }
 

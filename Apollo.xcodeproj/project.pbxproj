@@ -39,7 +39,6 @@
 		19BC095725C6CCE195179DAD /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC099B313D86B812A9DB07 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
 		19BC09A87E569BB330991637 /* MotionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4B0F41703289A1B793 /* MotionCapture.swift */; };
-		19BC09CDA0C6D3CDC2A10CFC /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		19BC0A6004BA78F6CD2F13B0 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC0A67DE0FF94DBA968440 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
 		19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
@@ -67,6 +66,8 @@
 		19BC0FC998D932AA4B8E76A4 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
 		19BC0FF85218F5358E31302B /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
 		D814254A1E61124700520C82 /* NodeConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81425491E61124700520C82 /* NodeConfigViewController.swift */; };
+		D814254B1E62797400520C82 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D814254C1E62797500520C82 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
@@ -76,6 +77,10 @@
 		D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
 		D835893D1E5F8811002CD57A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D85487311E63BB8D008637E8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
+		D85487321E63BB8D008637E8 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D85487331E63BB8D008637E8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
+		D85487341E63BB8D008637E8 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D85569991DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699A1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699B1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
@@ -91,7 +96,6 @@
 		D85569AA1DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
 		D85569AB1DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
 		D856D4401DEDF3AA00778A43 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
-		D856D4411DEDF3AB00778A43 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D869C50B1DB7BBF100E1C072 /* Interface.storyboard */; };
 		D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C50E1DB7BBF100E1C072 /* Assets.xcassets */; };
 		D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -251,6 +255,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D85487351E63BB8D008637E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D85487341E63BB8D008637E8 /* RxSwift.framework in Embed Frameworks */,
+				D85487321E63BB8D008637E8 /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D869C52F1DB7BBF200E1C072 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +371,8 @@
 		D816C1001DF7986F00EFDE1D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
 		D81D539A1E11F71900377BD5 /* RailsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsApp.swift; sourceTree = "<group>"; };
+		D854872D1E63BB16008637E8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		D854872E1E63BB16008637E8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		D85569961DDCE28100B70D8C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D85569971DDCE28100B70D8C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		D85569A21DDCE2A000B70D8C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
@@ -446,6 +464,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85487331E63BB8D008637E8 /* RxSwift.framework in Frameworks */,
+				D85487311E63BB8D008637E8 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +690,15 @@
 				19BC05B7F23303A00C42E910 /* Box.swift */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		19BC06BDA713A5F5F61BA6B2 /* ApolloWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				D854872D1E63BB16008637E8 /* RxCocoa.framework */,
+				D854872E1E63BB16008637E8 /* RxSwift.framework */,
+			);
+			path = ApolloWatchOS;
 			sourceTree = "<group>";
 		};
 		19BC06FC0A3AA5715D9F372C /* Scripts */ = {
@@ -978,6 +1007,7 @@
 				D8F2D1741DB6637A00BDB634 /* Frameworks */,
 				D8F2D12E1DB65EA400BDB634 /* Products */,
 				19BC06FC0A3AA5715D9F372C /* Scripts */,
+				19BC06BDA713A5F5F61BA6B2 /* ApolloWatchOS */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1126,6 +1156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */,
+				D814254B1E62797400520C82 /* ApolloSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,6 +1165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */,
+				D814254C1E62797500520C82 /* ApolloSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,6 +1196,7 @@
 				D869C5111DB7BBF100E1C072 /* Sources */,
 				D869C5121DB7BBF100E1C072 /* Frameworks */,
 				D869C5131DB7BBF100E1C072 /* Resources */,
+				D85487351E63BB8D008637E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1731,7 +1764,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D856D4411DEDF3AB00778A43 /* NotificationsRequest.swift in Sources */,
 				D894B89B1DEA288400625D61 /* ServiceTests.swift in Sources */,
 				D894B89A1DEA288400625D61 /* ApolloTests.swift in Sources */,
 				D894B89C1DEA288400625D61 /* ItinerarySchedulerTests.swift in Sources */,
@@ -1780,7 +1812,6 @@
 				D894B8A11DEA288500625D61 /* ItinerarySchedulerTests.swift in Sources */,
 				D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */,
 				D894B89F1DEA288500625D61 /* ApolloTests.swift in Sources */,
-				19BC09CDA0C6D3CDC2A10CFC /* NotificationsRequest.swift in Sources */,
 				19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */,
 				19BC043971A8F3F52CE917B5 /* Service.swift in Sources */,
 				19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */,
@@ -2046,6 +2077,11 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp.watchkitextension;
@@ -2066,6 +2102,11 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.mobile.watchkitapp.watchkitextension;
@@ -2339,6 +2380,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -2393,6 +2435,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

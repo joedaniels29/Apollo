@@ -122,6 +122,8 @@ public final class LocalNode: Node {
     return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))).map { _ in
         return ()
         }.take(1)
+#elseif os(Linux)
+        return .just(())
 #endif
     }
 
@@ -136,6 +138,8 @@ public final class LocalNode: Node {
         return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationWillTerminate(_:))).map { _ in
             return ()
         }.take(1)
+#elseif os(Linux)
+        return .just(())
 #endif
     }
 

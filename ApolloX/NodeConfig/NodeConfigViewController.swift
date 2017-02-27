@@ -10,47 +10,37 @@ import Foundation
 import AppKit
 
 
+class Datum:NSObject{
+    dynamic var head:NSString = ""
+    dynamic var content:NSString = ""
+
+    init(header:String, content:String){
+        self.head = header as NSString
+        self.content = content as NSString
+    }
+}
+
 class NodeConfigViewController : NSViewController, NSTableViewDelegate, NSTableViewDataSource{
     
+    @IBOutlet var dataController: NSArrayController!
+   
     @IBOutlet weak var tableView: NSTableView!
+//    var data:NSArrayController = NSArrayController()
+//    var data:[Datum] = []
+
     override func viewDidLoad() {
         tableView.delegate = self
-        tableView.dataSource = self
-        
+//        tableView.dataSource = self
+        self.dataController.content = [
+            Datum(header: "bbc", content: "yas."),
+                Datum(header: "duu", content: "yas."),
+        ]
     }
 
-
-    public func numberOfRows(in tableView: NSTableView) -> Int {
-        return 1
-    }
-
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-
-        var image: NSImage?
-        var text: String = ""
-        var cellIdentifier: String = ""
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-        dateFormatter.timeStyle = .long
-
-        
-        // 2
-        if tableColumn == tableView.tableColumns[0] {
-            text = "header"//item.name
-            cellIdentifier = "header"
-        } else if tableColumn == tableView.tableColumns[1] {
-            text = "content"
-            cellIdentifier = "value"
-        }
-
-        // 3
-        if let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
-            cell.textField?.stringValue = text
-            cell.imageView?.image = image ?? nil
-            return cell
-        }
-        return nil
-    }
-
+//
+//    public func numberOfRows(in tableView: NSTableView) -> Int {
+//        return 1
+//    }
+//
+    
 }
