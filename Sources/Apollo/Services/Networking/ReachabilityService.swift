@@ -21,7 +21,7 @@ class ReachabilityService:Service {
     #elseif os(watchOS)
     #elseif os(Linux)
     var observable: Observable<ServiceStatusable> {
-        return .just(.running)
+        return .just(ServiceRecord.running) as Observable<ServiceStatusable>
     }
 
     #endif
