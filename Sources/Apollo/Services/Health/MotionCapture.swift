@@ -6,7 +6,7 @@
 #if os(iOS) || os(watchOS)
 
 import Foundation
-import RxSwift
+import RxSwift 
 import UIKit
 import Dispatch
 import CoreMotion

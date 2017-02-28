@@ -67,10 +67,14 @@
 		D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
 		D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D85487311E63BB8D008637E8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
-		D85487321E63BB8D008637E8 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D85487331E63BB8D008637E8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
-		D85487341E63BB8D008637E8 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83F8AC41E65C8CB00715C74 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
+		D83F8AC51E65C8CB00715C74 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83F8AC61E65C8CB00715C74 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
+		D83F8AC71E65C8CB00715C74 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83F8AC91E65C8D300715C74 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89625831E65190B00C867D1 /* Apollo.framework */; };
+		D83F8ACA1E65C8D300715C74 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89625831E65190B00C867D1 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83F8AD01E65CA8000715C74 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
+		D83F8AD11E65CA8000715C74 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
 		D85569991DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699A1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D855699B1DDCE28100B70D8C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
@@ -87,13 +91,12 @@
 		D85569AB1DDCE2A000B70D8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569A31DDCE2A000B70D8C /* RxSwift.framework */; };
 		D856D4401DEDF3AA00778A43 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D869C50B1DB7BBF100E1C072 /* Interface.storyboard */; };
-		D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C50E1DB7BBF100E1C072 /* Assets.xcassets */; };
 		D869C5161DB7BBF100E1C072 /* ApolloMicro Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D869C51D1DB7BBF200E1C072 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C51C1DB7BBF200E1C072 /* InterfaceController.swift */; };
 		D869C51F1DB7BBF200E1C072 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */; };
 		D869C5211DB7BBF200E1C072 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5201DB7BBF200E1C072 /* NotificationController.swift */; };
 		D869C5231DB7BBF200E1C072 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C5221DB7BBF200E1C072 /* ComplicationController.swift */; };
-		D869C5251DB7BBF200E1C072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C5241DB7BBF200E1C072 /* Assets.xcassets */; };
+		D869C5251DB7BBF200E1C072 /* WatchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D869C5241DB7BBF200E1C072 /* WatchAssets.xcassets */; };
 		D869C5291DB7BBF200E1C072 /* ApolloMicro.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D869C5091DB7BBF100E1C072 /* ApolloMicro.app */; };
 		D869C5381DB7BDE400E1C072 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D869C5371DB7BDE400E1C072 /* Cocoa.framework */; };
 		D869C53D1DB7BDE400E1C072 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869C53C1DB7BDE400E1C072 /* SafariExtensionHandler.swift */; };
@@ -118,8 +121,6 @@
 		D894B8941DEA281B00625D61 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D894B8961DEA281B00625D61 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D89625871E65190B00C867D1 /* ApolloWatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D89625851E65190B00C867D1 /* ApolloWatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D896258A1E65190B00C867D1 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89625831E65190B00C867D1 /* Apollo.framework */; };
-		D896258B1E65190B00C867D1 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89625831E65190B00C867D1 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D896258F1E6519E500C867D1 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */; };
 		D89625901E6519E500C867D1 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
 		D89625911E6519E500C867D1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
@@ -155,21 +156,20 @@
 		D89625B01E6519EC00C867D1 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		D89625B11E6519EC00C867D1 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		D89625B21E6519EC00C867D1 /* MirrorDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */; };
-		D89625B31E651A3400C867D1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
-		D89625B41E651A3400C867D1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
 		D89625B51E651A8C00C867D1 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
 		D89625B61E651A9800C867D1 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D89625B71E651AA500C867D1 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8A07F1A1E5F7AE00092F1EB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D8A07F1B1E5F7AE00092F1EB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; };
 		D8A07F1D1E5F7AE00092F1EB /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; };
-		D8A07F1E1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; };
 		D8A07F1F1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D21CB51E65ECA500B92563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1911DB664BF00BDB634 /* Assets.xcassets */; };
+		D8D21CB61E65ECB000B92563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1911DB664BF00BDB634 /* Assets.xcassets */; };
+		D8D21CB71E65ECB400B92563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1911DB664BF00BDB634 /* Assets.xcassets */; };
 		D8E16EE21DC837C1003EDFF7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E16EE11DC837C1003EDFF7 /* UserNotifications.framework */; };
 		D8F2D1311DB65EA400BDB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */; };
 		D8F2D1331DB65EA400BDB634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1321DB65EA400BDB634 /* ViewController.swift */; };
 		D8F2D1361DB65EA400BDB634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1341DB65EA400BDB634 /* Main.storyboard */; };
-		D8F2D1381DB65EA400BDB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1371DB65EA400BDB634 /* Assets.xcassets */; };
 		D8F2D13B1DB65EA400BDB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2D1391DB65EA400BDB634 /* LaunchScreen.storyboard */; };
 		D8F2D1511DB65EA400BDB634 /* ApolloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1501DB65EA400BDB634 /* ApolloUITests.swift */; };
 		D8F2D1681DB662F700BDB634 /* ApolloService.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D1671DB662F700BDB634 /* ApolloService.m */; };
@@ -194,6 +194,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D869C5521DB7D54200E1C072;
 			remoteInfo = "Apollo macOS";
+		};
+		D83F8ACB1E65C8D300715C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89625821E65190B00C867D1;
+			remoteInfo = ApolloWatchOS;
 		};
 		D869C5171DB7BBF100E1C072 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -244,13 +251,6 @@
 			remoteGlobalIDString = D869C5751DB7D5E600E1C072;
 			remoteInfo = ApolloIOS;
 		};
-		D89625881E65190B00C867D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D89625821E65190B00C867D1;
-			remoteInfo = ApolloWatchOS;
-		};
 		D8F2D1421DB65EA400BDB634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8F2D1251DB65EA400BDB634 /* Project object */;
@@ -289,15 +289,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D85487351E63BB8D008637E8 /* Embed Frameworks */ = {
+		D83F8AC81E65C8CB00715C74 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D85487341E63BB8D008637E8 /* RxSwift.framework in Embed Frameworks */,
-				D85487321E63BB8D008637E8 /* RxCocoa.framework in Embed Frameworks */,
-				D896258B1E65190B00C867D1 /* Apollo.framework in Embed Frameworks */,
+				D83F8ACA1E65C8D300715C74 /* Apollo.framework in Embed Frameworks */,
+				D83F8AC71E65C8CB00715C74 /* RxSwift.framework in Embed Frameworks */,
+				D83F8AC51E65C8CB00715C74 /* RxCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +415,6 @@
 		D86545341DC8137F00E066D8 /* ApolloM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApolloM.entitlements; sourceTree = "<group>"; };
 		D869C5091DB7BBF100E1C072 /* ApolloMicro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloMicro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C50C1DB7BBF100E1C072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		D869C50E1DB7BBF100E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D869C5101DB7BBF100E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D869C5151DB7BBF100E1C072 /* ApolloMicro Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ApolloMicro Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C51B1DB7BBF100E1C072 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -423,7 +422,7 @@
 		D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D869C5201DB7BBF200E1C072 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D869C5221DB7BBF200E1C072 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		D869C5241DB7BBF200E1C072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D869C5241DB7BBF200E1C072 /* WatchAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WatchAssets.xcassets; sourceTree = "<group>"; };
 		D869C5261DB7BBF200E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D869C5361DB7BDE400E1C072 /* ApolloPickaxe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ApolloPickaxe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D869C5371DB7BDE400E1C072 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -458,7 +457,6 @@
 		D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F2D1321DB65EA400BDB634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8F2D1351DB65EA400BDB634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8F2D1371DB65EA400BDB634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F2D13A1DB65EA400BDB634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F2D13C1DB65EA400BDB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F2D1411DB65EA400BDB634 /* ApolloMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -498,9 +496,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85487331E63BB8D008637E8 /* RxSwift.framework in Frameworks */,
-				D85487311E63BB8D008637E8 /* RxCocoa.framework in Frameworks */,
-				D896258A1E65190B00C867D1 /* Apollo.framework in Frameworks */,
+				D83F8AC91E65C8D300715C74 /* Apollo.framework in Frameworks */,
+				D83F8AC61E65C8CB00715C74 /* RxSwift.framework in Frameworks */,
+				D83F8AC41E65C8CB00715C74 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,8 +554,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D89625B31E651A3400C867D1 /* RxCocoa.framework in Frameworks */,
-				D89625B41E651A3400C867D1 /* RxSwift.framework in Frameworks */,
+				D83F8AD01E65CA8000715C74 /* RxCocoa.framework in Frameworks */,
+				D83F8AD11E65CA8000715C74 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +608,6 @@
 			files = (
 				D8A07F1D1E5F7AE00092F1EB /* SwiftProtobuf.framework in Frameworks */,
 				D8A07F1A1E5F7AE00092F1EB /* RxCocoa.framework in Frameworks */,
-				D8A07F1E1E5F7B1F0092F1EB /* SwiftProtobuf.framework in Frameworks */,
 				D8A07F1B1E5F7AE00092F1EB /* RxSwift.framework in Frameworks */,
 				D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */,
 			);
@@ -891,7 +888,6 @@
 			children = (
 				D869C50B1DB7BBF100E1C072 /* Interface.storyboard */,
 				D8E50C7E1DFA39D800A18861 /* MyPlayground.playground */,
-				D869C50E1DB7BBF100E1C072 /* Assets.xcassets */,
 				D869C5101DB7BBF100E1C072 /* Info.plist */,
 			);
 			path = ApolloMicro;
@@ -904,7 +900,7 @@
 				D869C51E1DB7BBF200E1C072 /* ExtensionDelegate.swift */,
 				D869C5201DB7BBF200E1C072 /* NotificationController.swift */,
 				D869C5221DB7BBF200E1C072 /* ComplicationController.swift */,
-				D869C5241DB7BBF200E1C072 /* Assets.xcassets */,
+				D869C5241DB7BBF200E1C072 /* WatchAssets.xcassets */,
 				D869C5261DB7BBF200E1C072 /* Info.plist */,
 				D869C51A1DB7BBF100E1C072 /* Supporting Files */,
 			);
@@ -1005,6 +1001,7 @@
 			children = (
 				D86545341DC8137F00E066D8 /* ApolloM.entitlements */,
 				D869C5981DB8471700E1C072 /* Package.swift */,
+				D8F2D1911DB664BF00BDB634 /* Assets.xcassets */,
 				D869C5991DB8471700E1C072 /* Sources */,
 				D8F2D12F1DB65EA400BDB634 /* ApolloMobile */,
 				D8F2D1441DB65EA400BDB634 /* ApolloMobileTests */,
@@ -1058,7 +1055,6 @@
 				D8F2D1301DB65EA400BDB634 /* AppDelegate.swift */,
 				D8F2D1321DB65EA400BDB634 /* ViewController.swift */,
 				D8F2D1341DB65EA400BDB634 /* Main.storyboard */,
-				D8F2D1371DB65EA400BDB634 /* Assets.xcassets */,
 				D8F2D1391DB65EA400BDB634 /* LaunchScreen.storyboard */,
 				D8F2D13C1DB65EA400BDB634 /* Info.plist */,
 			);
@@ -1136,7 +1132,6 @@
 			children = (
 				D8F2D18D1DB664BF00BDB634 /* AppDelegate.swift */,
 				D8F2D18F1DB664BF00BDB634 /* ViewController.swift */,
-				D8F2D1911DB664BF00BDB634 /* Assets.xcassets */,
 				D8F2D1931DB664BF00BDB634 /* Main.storyboard */,
 				D8F2D1961DB664BF00BDB634 /* Info.plist */,
 				19BC05B9D8D3BC3E3591903D /* NodeConfig */,
@@ -1225,12 +1220,12 @@
 				D869C5111DB7BBF100E1C072 /* Sources */,
 				D869C5121DB7BBF100E1C072 /* Frameworks */,
 				D869C5131DB7BBF100E1C072 /* Resources */,
-				D85487351E63BB8D008637E8 /* Embed Frameworks */,
+				D83F8AC81E65C8CB00715C74 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D89625891E65190B00C867D1 /* PBXTargetDependency */,
+				D83F8ACC1E65C8D300715C74 /* PBXTargetDependency */,
 			);
 			name = "ApolloMicro Extension";
 			productName = "ApolloMicro Extension";
@@ -1502,7 +1497,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joseph Daniels";
 				TargetAttributes = {
 					D869C5081DB7BBF100E1C072 = {
@@ -1649,7 +1644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C50F1DB7BBF100E1C072 /* Assets.xcassets in Resources */,
+				D8D21CB61E65ECB000B92563 /* Assets.xcassets in Resources */,
 				D869C50D1DB7BBF100E1C072 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1658,7 +1653,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D869C5251DB7BBF200E1C072 /* Assets.xcassets in Resources */,
+				D8D21CB71E65ECB400B92563 /* Assets.xcassets in Resources */,
+				D869C5251DB7BBF200E1C072 /* WatchAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1717,8 +1713,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D21CB51E65ECA500B92563 /* Assets.xcassets in Resources */,
 				D8F2D13B1DB65EA400BDB634 /* LaunchScreen.storyboard in Resources */,
-				D8F2D1381DB65EA400BDB634 /* Assets.xcassets in Resources */,
 				D8F2D1361DB65EA400BDB634 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1994,6 +1990,11 @@
 			target = D869C5521DB7D54200E1C072 /* Apollo macOS */;
 			targetProxy = D81B7F4C1DB99B7500DD62B6 /* PBXContainerItemProxy */;
 		};
+		D83F8ACC1E65C8D300715C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89625821E65190B00C867D1 /* ApolloWatchOS */;
+			targetProxy = D83F8ACB1E65C8D300715C74 /* PBXContainerItemProxy */;
+		};
 		D869C5181DB7BBF100E1C072 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D869C5141DB7BBF100E1C072 /* ApolloMicro Extension */;
@@ -2028,11 +2029,6 @@
 			isa = PBXTargetDependency;
 			target = D869C5751DB7D5E600E1C072 /* Apollo iOS */;
 			targetProxy = D869C5891DB7D5E700E1C072 /* PBXContainerItemProxy */;
-		};
-		D89625891E65190B00C867D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D89625821E65190B00C867D1 /* ApolloWatchOS */;
-			targetProxy = D89625881E65190B00C867D1 /* PBXContainerItemProxy */;
 		};
 		D8F2D1431DB65EA400BDB634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2171,7 +2167,6 @@
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
@@ -2196,7 +2191,6 @@
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				INFOPLIST_FILE = "ApolloMicro Extension/Info.plist";
@@ -2252,7 +2246,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2285,7 +2279,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2527,6 +2521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2583,6 +2578,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2619,6 +2615,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ApolloM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
@@ -2641,6 +2638,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ApolloM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
@@ -3018,6 +3016,7 @@
 				D896258D1E65190B00C867D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F2D1281DB65EA400BDB634 /* Build configuration list for PBXProject "Apollo" */ = {
 			isa = XCConfigurationList;

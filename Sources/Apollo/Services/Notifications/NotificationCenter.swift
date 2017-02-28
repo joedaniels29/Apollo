@@ -26,13 +26,13 @@ open class NotificationCenter: NSObject, UNUserNotificationCenterDelegate {
             $0.onNext("Cool, a notification!")
             $0.onCompleted()
             return BooleanDisposable()
-        }.subscribe(onNext: { print($0) }, onCompleted: { completion.connect() }).addDisposableTo(d)
+        }.subscribe(onNext: { print($0) }, onCompleted: { completion.connect().addDisposableTo(d) }).addDisposableTo(d)
         default: _ = completion.connect()
         }
 
         completion.subscribe(onCompleted: {
             completionHandler([])
-        })
+        }).addDisposableTo(d)
     }
 
 

@@ -63,8 +63,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -81,38 +81,6 @@
             endingLineNumber = "119"
             landmarkName = "LocalNode"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Apollo.LocalNode.didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;"
-                  moduleName = "Apollo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "509942871.72848"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "15">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Apollo.LocalNode.(didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;).(closure #3)"
-                  moduleName = "Apollo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "509942871.731223"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

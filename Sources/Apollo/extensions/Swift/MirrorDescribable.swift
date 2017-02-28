@@ -27,6 +27,6 @@ extension MirrorDescribable{
         return objectDictionary
     }
     var preservingChildren:[String]{
-        return (try? Mirror(reflecting: self).children.flatMap { $0.0 }) ?? []
+        return ( Mirror(reflecting: self).children.flatMap { $0.0 }) 
     }
 }
