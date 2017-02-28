@@ -81,6 +81,38 @@
             endingLineNumber = "119"
             landmarkName = "LocalNode"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Apollo.LocalNode.didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;"
+                  moduleName = "Apollo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
+                  timestampString = "509999620.139813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Apollo.LocalNode.(didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;).(closure #3)"
+                  moduleName = "Apollo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
+                  timestampString = "509999620.141336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
