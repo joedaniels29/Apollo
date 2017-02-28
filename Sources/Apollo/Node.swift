@@ -111,7 +111,7 @@ public final class LocalNode: Node {
 
     var didFinishLaunching: Observable<()> {
 #if os(watchOS)
-        return Reactive(self.context).sentMessage(#selector(WKExtensionDelegate.applicationDidFinishLaunching())).map { _ in
+        return Reactive(self.context).sentMessage(#selector(WKExtensionDelegate.applicationDidFinishLaunching)).map { _ in
             return ()
         }.take(1)
 #elseif os(iOS)
@@ -140,6 +140,8 @@ public final class LocalNode: Node {
         }.take(1)
 #elseif os(Linux)
         return .just(())
+#elseif os(watchOS)
+    	return .just(())
 #endif
     }
 
