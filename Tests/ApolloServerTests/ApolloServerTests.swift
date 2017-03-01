@@ -5,7 +5,7 @@ class ApolloServerTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(ApolloServer().text, "Hello, World!")
+        XCTAssertEqual(ApolloServe().text, "Hello, World!")
     }
 
 

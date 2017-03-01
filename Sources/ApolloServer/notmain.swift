@@ -4,7 +4,7 @@ import Apollo
 import Dispatch
 
 
-public struct ApolloServer {
+public struct ApolloServe {
 
     var text = Apollo(text: "abc").text
 
@@ -13,7 +13,7 @@ public struct ApolloServer {
 
 
 
-dispatchMain()
+//dispatchMain()
 
 
 //class ApolloQueue:

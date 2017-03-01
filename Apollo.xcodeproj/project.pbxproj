@@ -391,7 +391,7 @@
 		19BC06AF41BE8C40B50A0B3F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		19BC06B595ED0F30CB4717E1 /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
 		19BC06E420FE8226113420F7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		19BC0700AF182C98E8EEB02D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		19BC0700AF182C98E8EEB02D /* notmain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notmain.swift; sourceTree = "<group>"; };
 		19BC072A16B1D22E37E52868 /* MathematicaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicaService.swift; sourceTree = "<group>"; };
 		19BC082318735F11BFE7793F /* PersistantTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistantTimer.swift; sourceTree = "<group>"; };
 		19BC084F76E446B43449A668 /* AlertDispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDispatch.swift; sourceTree = "<group>"; };
@@ -406,6 +406,7 @@
 		D81425491E61124700520C82 /* NodeConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConfigViewController.swift; sourceTree = "<group>"; };
 		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
 		D81D539A1E11F71900377BD5 /* RailsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsApp.swift; sourceTree = "<group>"; };
+		D81E50EC1E66632A00FD64E7 /* ApolloXTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApolloXTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D854872D1E63BB16008637E8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D854872E1E63BB16008637E8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		D85569961DDCE28100B70D8C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
@@ -744,7 +745,7 @@
 		19BC0795B30088CE533ADEE2 /* ApolloServer */ = {
 			isa = PBXGroup;
 			children = (
-				19BC0700AF182C98E8EEB02D /* main.swift */,
+				19BC0700AF182C98E8EEB02D /* notmain.swift */,
 			);
 			path = ApolloServer;
 			sourceTree = "<group>";
@@ -1149,6 +1150,7 @@
 			children = (
 				D8F2D19F1DB664BF00BDB634 /* ApolloXTests.swift */,
 				D8F2D1A11DB664BF00BDB634 /* Info.plist */,
+				D81E50EC1E66632A00FD64E7 /* ApolloXTests-Bridging-Header.h */,
 			);
 			path = ApolloXTests;
 			sourceTree = "<group>";
@@ -2858,6 +2860,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
@@ -2871,6 +2874,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JD.ApolloXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApolloXTests/ApolloXTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApolloX.app/Contents/MacOS/ApolloX";
 			};
@@ -2881,6 +2886,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 55WZH7L5M4;
@@ -2894,6 +2900,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JD.ApolloXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApolloXTests/ApolloXTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApolloX.app/Contents/MacOS/ApolloX";
 			};

@@ -61,7 +61,7 @@ public final class RemoteNode: Node {
 public final class LocalNode: Node {
 
     static let name: String = A.wrap("LocalNode")
-
+    
     var context: AnyObject!
     public let scheduler: SerialDispatchQueueScheduler
     public let q: DispatchQueue
@@ -141,7 +141,8 @@ public final class LocalNode: Node {
 #elseif os(Linux)
         return .just(())
 #elseif os(watchOS)
-    	return .just(())
+    
+    	return .never()
 #endif
     }
 
@@ -155,4 +156,8 @@ public final class LocalNode: Node {
     fileprivate func serviceDidComplete(_ service: Service) {
         fmt(service, print: "Completed")
     }
+    
+    lazy var activeNeighbors: Variable<[Node]>  = Variable([self])
+    lazy var reachableNodes: Variable<[Node]>  = Variable([self])
+//    lazy var : Variable<[Node]>  = Variable([self])
 }
