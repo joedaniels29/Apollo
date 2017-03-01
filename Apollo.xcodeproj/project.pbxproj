@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC00B72B923D482902AD85 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
 		19BC00DD85AFDD69CA6793CE /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
 		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
 		19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
@@ -19,14 +20,18 @@
 		19BC028A6F4BF3A09BA135DB /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
 		19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC040985A0E6611B783DB5 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
 		19BC040AAAC954AAD791C667 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC043971A8F3F52CE917B5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC043AA303D70EB3ADBB5F /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
 		19BC0482AFDBCE84AC5F843C /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
+		19BC054106B2415FB9615FB3 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC0596A1F86C029549C342 /* NodeConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */; };
 		19BC05E51793ECB9EE4570D3 /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
 		19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
 		19BC06BDBA9773ABF7A05302 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC06F8DD5AF4AE99EA2ABA /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC073AA65D7128AE081685 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
 		19BC07F51A7B3D43E6977362 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
 		19BC07F7738E37AE04D55BEB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
@@ -46,7 +51,7 @@
 		19BC0C606E19F41A47BAEB95 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0A5A119663840F3B1DAB /* Tests */; };
 		19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
 		19BC0C7195B5FBEEFA7FEE56 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
-		19BC0C80FCC7DD2A8A122C6F /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
+		19BC0C93C2E8266C802FD312 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC0CEC154CA7EF672D071B /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0D1FC887D02DAF04AF8D /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
@@ -54,7 +59,6 @@
 		19BC0E6F78B3F14F45EE9823 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
 		19BC0ECFD253A421EFC6A4FB /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0A5A119663840F3B1DAB /* Tests */; };
 		19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
-		19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC0FC1DD6B274C998760A4 /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC0FF85218F5358E31302B /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
 		D814254A1E61124700520C82 /* NodeConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81425491E61124700520C82 /* NodeConfigViewController.swift */; };
@@ -65,8 +69,6 @@
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
-		D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
-		D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D83F8AC41E65C8CB00715C74 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
 		D83F8AC51E65C8CB00715C74 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D83F8AC61E65C8CB00715C74 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
@@ -156,8 +158,6 @@
 		D89625B01E6519EC00C867D1 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		D89625B11E6519EC00C867D1 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		D89625B21E6519EC00C867D1 /* MirrorDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */; };
-		D89625B51E651A8C00C867D1 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */; };
-		D89625B61E651A9800C867D1 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0384847193CE65D7659A /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D89625B71E651AA500C867D1 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8A07F1A1E5F7AE00092F1EB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; };
 		D8A07F1B1E5F7AE00092F1EB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; };
@@ -378,13 +378,13 @@
 /* Begin PBXFileReference section */
 		19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConsoleViewController.swift; sourceTree = "<group>"; };
 		19BC012529D2B9658C5DA306 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntime.m; sourceTree = "<group>"; };
 		19BC02208AC89A3EC5469A82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
 		19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveApplicationService.swift; sourceTree = "<group>"; };
 		19BC0336CF4CDBC83A62F8ED /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protobuf; sourceTree = "<group>"; };
 		19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
-		19BC0384847193CE65D7659A /* ObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCRuntime.h; sourceTree = "<group>"; };
+		19BC03D971ECB02821893FAA /* ObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntime.m; sourceTree = "<group>"; };
+		19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCRuntime.h; sourceTree = "<group>"; };
 		19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeServiceListViewController.swift; sourceTree = "<group>"; };
 		19BC05B7F23303A00C42E910 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		19BC068366FCFE41FEB0AF49 /* XPCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
@@ -786,6 +786,7 @@
 			children = (
 				19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */,
 				19BC012529D2B9658C5DA306 /* module.modulemap */,
+				19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */,
 			);
 			path = ApolloSupport;
 			sourceTree = "<group>";
@@ -809,8 +810,7 @@
 		19BC0A6AA27F2FDC736D3F23 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				19BC01C76A00BBBF6B4D64E6 /* ObjCRuntime.m */,
-				19BC0384847193CE65D7659A /* ObjCRuntime.h */,
+				19BC03D971ECB02821893FAA /* ObjCRuntime.m */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -1171,8 +1171,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BC0F8B4A19525B32CEE7DA /* ObjCRuntime.h in Headers */,
 				D814254B1E62797400520C82 /* ApolloSupport.h in Headers */,
+				19BC054106B2415FB9615FB3 /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1180,8 +1180,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83589401E5F92B9002CD57A /* ObjCRuntime.h in Headers */,
 				D814254C1E62797500520C82 /* ApolloSupport.h in Headers */,
+				19BC06F8DD5AF4AE99EA2ABA /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,8 +1190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89625871E65190B00C867D1 /* ApolloWatchOS.h in Headers */,
-				D89625B61E651A9800C867D1 /* ObjCRuntime.h in Headers */,
 				D89625B71E651AA500C867D1 /* ApolloSupport.h in Headers */,
+				19BC0C93C2E8266C802FD312 /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1814,11 +1814,11 @@
 				19BC0CEC154CA7EF672D071B /* PersistantTimer.swift in Sources */,
 				19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */,
 				19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */,
-				19BC0C80FCC7DD2A8A122C6F /* ObjCRuntime.m in Sources */,
 				19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */,
 				19BC0D1FC887D02DAF04AF8D /* ActiveApplicationService.swift in Sources */,
 				19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */,
 				19BC0C13004A3A4233E885F5 /* MirrorDescribable.swift in Sources */,
+				19BC00B72B923D482902AD85 /* ObjCRuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1858,11 +1858,11 @@
 				D89625A81E6519EC00C867D1 /* HeartCapture.swift in Sources */,
 				D89625AD1E6519EC00C867D1 /* ReachabilityService.swift in Sources */,
 				D89625AE1E6519EC00C867D1 /* Apollo.swift in Sources */,
-				D835893A1E5F87B1002CD57A /* ObjCRuntime.m in Sources */,
 				D89625B11E6519EC00C867D1 /* Box.swift in Sources */,
 				D89625AC1E6519EC00C867D1 /* MathematicaService.swift in Sources */,
 				D89625B01E6519EC00C867D1 /* PersistantTimer.swift in Sources */,
 				D89625A71E6519EC00C867D1 /* RailsApp.swift in Sources */,
+				19BC040985A0E6611B783DB5 /* ObjCRuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1896,7 +1896,6 @@
 				D896258F1E6519E500C867D1 /* NotificationsRequest.swift in Sources */,
 				D89625981E6519E500C867D1 /* XPCService.swift in Sources */,
 				D896259B1E6519E500C867D1 /* Apollo.swift in Sources */,
-				D89625B51E651A8C00C867D1 /* ObjCRuntime.m in Sources */,
 				D89625931E6519E500C867D1 /* AlertDispatch.swift in Sources */,
 				D89625921E6519E500C867D1 /* SimpleService.swift in Sources */,
 				D89625941E6519E500C867D1 /* RailsApp.swift in Sources */,
@@ -1908,6 +1907,7 @@
 				D89625991E6519E500C867D1 /* MathematicaService.swift in Sources */,
 				D896259F1E6519E500C867D1 /* MirrorDescribable.swift in Sources */,
 				D896259C1E6519E500C867D1 /* Node.swift in Sources */,
+				19BC043AA303D70EB3ADBB5F /* ObjCRuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2260,6 +2260,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2293,6 +2294,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2367,6 +2369,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = ApolloIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2395,6 +2398,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = ApolloIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2460,6 +2464,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = ApolloWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2490,6 +2495,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
 				INFOPLIST_FILE = ApolloWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

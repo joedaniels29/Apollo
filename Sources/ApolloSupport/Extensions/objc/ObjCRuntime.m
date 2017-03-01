@@ -2,8 +2,12 @@
 // Created by Joseph Daniels on 2/19/17.
 // Copyright (c) 2017 Joseph Daniels. All rights reserved.
 //
+//#if SWIFT_PACKAGE
+#import "ApolloSupport/ObjCRuntime.h"
+//#else 
+//#import "ObjCRuntime.h"
+//#endif
 
-#import "ObjCRuntime.h"
 
 id dynamicCast_(id x, Class objClass) {
 

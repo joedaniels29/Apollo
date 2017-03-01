@@ -9,9 +9,9 @@ class ApolloServerTests: XCTestCase {
     }
 
 
-    static var allTests : [(String, (ApolloServerTests) -> () throws -> Void)] {
+    static var allTests: [(String, (ApolloServerTests) -> () throws -> Void)] {
         return [
-            ("testExample", testExample),
+                ("testExample", testExample),
         ]
     }
 }
