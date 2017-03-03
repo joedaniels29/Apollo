@@ -27,15 +27,15 @@ class LocalNodeTests: XCTestCase {
 
     override class func setUp() {
         super.setUp()
-        LocalNode.instance.start(context:self)
+//        LocalNode.instance.start(context:self)
 
         //        startup!
-        _ = self.send(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:)))
+//        _ = self.send(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:)))
 
     }
 
     override class func tearDown() {
-        objc_msgSend(self, #selector(NSApplicationDelegate.applicationWillTerminate(_:)))
+//        objc_msgSend(self, #selector(NSApplicationDelegate.applicationWillTerminate(_:)))
         super.tearDown()
     }
 
