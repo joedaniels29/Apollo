@@ -49,7 +49,7 @@ platform :ios do
   end
   desc "CI Script"
   lane :ciTests do
-    certificates_ro
+    certificates_travis
     carthage
     # gym(scheme:"Apollo")
     # gym(scheme:"ApolloIOS")
@@ -74,6 +74,30 @@ platform :ios do
         }
       }
     }
+  end
+  desc "checkout certs"
+  lane :certificates_travis do
+      create_keychain(
+       name: ENV["MATCH_KEYCHAIN_NAME"],
+       password: ENV["MATCH_PASSWORD"],
+       default_keychain: true,
+       unlock: true,
+       timeout: 3600,
+       add_to_search_list: true
+     )
+
+     ["development", "adhoc", "appstore"].each { |x|
+       application_identifiers.each { |y|
+         with_captured_stdout {
+           match(
+           app_identifier: y,
+           keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+           keychain_password: ENV["MATCH_PASSWORD"],
+           type: x,
+           readonly: true)
+         }
+       }
+     }
   end
 
   desc "checkout certs"
