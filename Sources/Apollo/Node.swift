@@ -29,6 +29,7 @@ import Glibc
 
 //something like that
 #endif
+
 import Dispatch
 class A {
     static let title: String = "Apollo"
@@ -49,23 +50,23 @@ class A {
     }
 }
 public protocol Node {
-//
+    //
 }
 
 public final class RemoteNode: Node {
 
-//    subscript(type:Service.Type) -> Service? {
-//        return services.first { type(of: $0) == type}
-//    }
+    //    subscript(type:Service.Type) -> Service? {
+    //        return services.first { type(of: $0) == type}
+    //    }
 }
 public final class LocalNode: Node {
 
     static let name: String = A.wrap("LocalNode")
-    
+
     var context: AnyObject!
     public let scheduler: SerialDispatchQueueScheduler
     public let q: DispatchQueue
-	
+
     //    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
     init() {
         q = DispatchQueue.init(label: LocalNode.name)
@@ -77,87 +78,90 @@ public final class LocalNode: Node {
     public static let instance = LocalNode()
     public var started: Bool = false
     public func start(context: NSObject) {
-        guard !started  else {
+        guard !started else {
             fatalError()
         }
-            guard !self.started  else {
-                fatalError()
-            }
-            self.started = true
-            self.context = context
-                self.startServices()
+        guard !self.started else {
+            fatalError()
+        }
+        self.started = true
+        self.context = context
+        self.startServices()
     }
     var services = [Service]()
     var disposeBag = DisposeBag()
-    public subscript(type:Service.Type) -> Service? {
-        return services.first { type(of: $0) == type}
+    public subscript(type: Service.Type) -> Service? {
+        return services.first {
+            type(of: $0) == type
+        }
     }
-
-
-
 
 
     func startServices() {
         for s in self.services {
             s.observable.subscribe {
-                        switch ($0) {
-                        case .next(_):() //print(s.name)
-                        case .error(let error): self.service(s, didError: error)
-                        case .completed: self.serviceDidComplete(s)
-                        }
-                    }.addDisposableTo(self.disposeBag)
+                switch ($0) {
+                case .next(_):() //print(s.name)
+                case .error(let error): self.service(s, didError: error)
+                case .completed: self.serviceDidComplete(s)
+                }
+            }.addDisposableTo(self.disposeBag)
         }
     }
 
-    var didFinishLaunching: Observable<()> {
-#if os(watchOS)
-        return Reactive(self.context).sentMessage(#selector(WKExtensionDelegate.applicationDidFinishLaunching)).map { _ in
-            return ()
-        }.take(1)
-#elseif os(iOS)
-        return Reactive(self.context).sentMessage(#selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))).map { _ in
-            return ()
-        }.take(1)
-#elseif os(macOS)
-    return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))).map { _ in
-        return ()
-        }.take(1)
-#elseif os(Linux)
-        return .just(())
+
+    var platformHasLifeCycle: Bool {
+#if os(macOS) || os(iOS)
+        return true
+#elseif os(Linux) || os(watchOS)
+        return false
 #endif
     }
 
+
+
+
+    var didFinishLaunching: Observable<()> {
+        if platformHasLifeCycle {
+#if os(iOS)
+            let selector: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
+#elseif os(macOS)
+            let selector: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
+#else
+            let selector: Selector = "willStart"//but not actually
+#endif
+            return Reactive(self.context).sentMessage(selector).map { _ in
+                return ()
+            }.take(1)
+        } else {
+            return .just(())
+        }
+    }
 
 
     var willTerminate: Observable<()> {
+        if platformHasLifeCycle {
 #if os(iOS)
-        return Reactive(self.context).sentMessage(#selector(UIApplicationDelegate.applicationWillTerminate(_ :))).map { _ in
-            return ()
-        }.take(1)
+            let selector: Selector = #selector(UIApplicationDelegate.applicationWillTerminate(_:))
 #elseif os(macOS)
-        return Reactive(self.context).sentMessage(#selector(NSApplicationDelegate.applicationWillTerminate(_:))).map { _ in
-            return ()
-        }.take(1)
-#elseif os(Linux)
-        return .just(())
-#elseif os(watchOS)
-    
-    	return .never()
+            let selector: Selector = #selector(NSApplicationDelegate.applicationWillTerminate(_:))
+#else
+            let selector: Selector = "willTerminate"//but not actually
 #endif
+            return Reactive(self.context).sentMessage(selector).map { _ in
+                return ()
+            }.take(1)
+        } else {
+            return .never()
+        }
     }
 
+//Communication
+    lazy var activeNeighbors: Variable<[Node]> = Variable([self])
+    lazy var nodes: Variable<[Node]> = Variable([self])
+    lazy var description: Variable<[Node]> = Variable(self.)
 
-    fileprivate func service(_ service: Service, didError: Any) {
-		    fmt(service, print: "Completed")
-    }
-    fileprivate func fmt(_ service:Service, print msg:String) {
-        print("[\(service.name)] — \(DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .medium)) ::: \(msg)")
-    }
-    fileprivate func serviceDidComplete(_ service: Service) {
-        fmt(service, print: "Completed")
-    }
-    
-    lazy var activeNeighbors: Variable<[Node]>  = Variable([self])
-    lazy var reachableNodes: Variable<[Node]>  = Variable([self])
-//    lazy var : Variable<[Node]>  = Variable([self])
+
+
+//    Services
 }
