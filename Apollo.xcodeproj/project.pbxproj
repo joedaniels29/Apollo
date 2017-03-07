@@ -28,6 +28,7 @@
 		19BC054106B2415FB9615FB3 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC0596A1F86C029549C342 /* NodeConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */; };
+		19BC05C4D18A5578DFF34DBA /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
 		19BC05E51793ECB9EE4570D3 /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
 		19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
 		19BC06BDBA9773ABF7A05302 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
@@ -56,6 +57,8 @@
 		19BC0D1FC887D02DAF04AF8D /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
 		19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
 		19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0DC898E0369DCC5CC744 /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
+		19BC0E2F25E694F3C906413B /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
 		19BC0E6F78B3F14F45EE9823 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
 		19BC0ECFD253A421EFC6A4FB /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0A5A119663840F3B1DAB /* Tests */; };
 		19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
@@ -413,6 +416,7 @@
 		19BC0A275C184429EAFD937D /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		19BC0A5A119663840F3B1DAB /* Tests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorDescribable.swift; sourceTree = "<group>"; };
+		19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+Services.swift"; sourceTree = "<group>"; };
 		19BC0C3FC579D012F4829E72 /* HeartCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartCapture.swift; sourceTree = "<group>"; };
 		19BC0C4B0F41703289A1B793 /* MotionCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture.swift; sourceTree = "<group>"; };
 		19BC0C4D18590D7D677FBD97 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
@@ -863,6 +867,7 @@
 				19BC02208AC89A3EC5469A82 /* Node.swift */,
 				19BC0B133F321944FDFF4EC5 /* extensions */,
 				19BC0336CF4CDBC83A62F8ED /* Protobuf */,
+				19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -1877,6 +1882,7 @@
 				19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */,
 				19BC0C13004A3A4233E885F5 /* MirrorDescribable.swift in Sources */,
 				19BC00B72B923D482902AD85 /* ObjCRuntime.m in Sources */,
+				19BC0E2F25E694F3C906413B /* Node+Services.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1921,6 +1927,7 @@
 				D89625B01E6519EC00C867D1 /* PersistantTimer.swift in Sources */,
 				D89625A71E6519EC00C867D1 /* RailsApp.swift in Sources */,
 				19BC040985A0E6611B783DB5 /* ObjCRuntime.m in Sources */,
+				19BC05C4D18A5578DFF34DBA /* Node+Services.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1966,6 +1973,7 @@
 				D896259F1E6519E500C867D1 /* MirrorDescribable.swift in Sources */,
 				D896259C1E6519E500C867D1 /* Node.swift in Sources */,
 				19BC043AA303D70EB3ADBB5F /* ObjCRuntime.m in Sources */,
+				19BC0DC898E0369DCC5CC744 /* Node+Services.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
