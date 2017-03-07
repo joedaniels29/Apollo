@@ -17,12 +17,12 @@ class LocalNodeTests: XCTestCase {
     let bag = DisposeBag()
     let bgQueue = DispatchQueue(label: "bgQueue")
 
-    func send(_ selector:Selector) -> Any?{
-        let v = NSInvocation()
-        v.target = self
-        v.selector = selector
-        return v.invoke()
-    }
+//    func send(_ selector:Selector) -> Any?{
+//        let v = NSInvocation()
+//        v.target = self
+//        v.selector = selector
+//        return v.invoke()
+//    }
 
 
     override class func setUp() {
@@ -52,13 +52,13 @@ class LocalNodeTests: XCTestCase {
     func testSimply() {
     }
 
-    override func doesNotRecognizeSelector(_ aSelector: Selector!) {
+//    override func doesNotRecognizeSelector(_ aSelector: Selector!) {
 
 //        super.doesNotRecognizeSelector(aSelector)
-    }
+//    }
 
 
-    static var allTests: [(String, (ItinerarySchedulerTests) -> () throws -> Void)] {
+    static var allTests: [(String, (LocalNodeTests) -> () throws -> Void)] {
         return [
             ("testSimply", testSimply),
             ("testDescriptionUpdate", testDescriptionUpdate),
