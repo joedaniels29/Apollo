@@ -16,7 +16,7 @@ Pods/
 GpeneratedDocumentation/
 Carthage.checkout/
 /.bundle
-
+*.xcbkptlist
 #ios injection Project
 iOSInjectionProject/
 
