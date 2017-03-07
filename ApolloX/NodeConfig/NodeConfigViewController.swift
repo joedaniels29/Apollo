@@ -8,6 +8,7 @@
 
 import Foundation
 import AppKit
+import Apollo
 
 
 class Datum:NSObject{
@@ -27,14 +28,16 @@ class NodeConfigViewController : NSViewController, NSTableViewDelegate, NSTableV
     @IBOutlet weak var tableView: NSTableView!
 //    var data:NSArrayController = NSArrayController()
 //    var data:[Datum] = []
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        self.view.setNeedsDisplay(self.view.frame)
+
+    }
 
     override func viewDidLoad() {
         tableView.delegate = self
 //        tableView.dataSource = self
-        self.dataController.content = [
-            Datum(header: "bbc", content: "yas."),
-                Datum(header: "duu", content: "yas."),
-        ]
+        self.dataController.content = LocalNode.instance.
     }
 
 //
