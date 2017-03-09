@@ -1148,7 +1148,7 @@
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                                                             <prototypeCellViews>
                                                                                 <tableCellView id="tSF-OX-W1j">
-                                                                                    <rect key="frame" x="1" y="1" width="192.5" height="17"/>
+                                                                                    <rect key="frame" x="1" y="1" width="192" height="17"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                     <subviews>
                                                                                         <textField verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiB-GD-IuB">
@@ -1188,7 +1188,7 @@
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                                                             <prototypeCellViews>
                                                                                 <tableCellView id="dfM-JP-neg">
-                                                                                    <rect key="frame" x="196.5" y="1" width="252.5" height="17"/>
+                                                                                    <rect key="frame" x="196.5" y="1" width="252" height="17"/>
                                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                     <subviews>
                                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fms-W6-Ts7">
@@ -1222,7 +1222,7 @@
                                                             </subviews>
                                                         </clipView>
                                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="vfX-ZL-FsO">
-                                                            <rect key="frame" x="1" y="252" width="85" height="16"/>
+                                                            <rect key="frame" x="1" y="292" width="451" height="16"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="aJV-If-HSD">
