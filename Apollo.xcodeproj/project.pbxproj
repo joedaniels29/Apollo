@@ -1025,6 +1025,7 @@
 				19BC06FC0A3AA5715D9F372C /* Scripts */,
 				19BC0A5A119663840F3B1DAB /* Tests */,
 			);
+			indentWidth = 6;
 			sourceTree = "<group>";
 		};
 		D8F2D12E1DB65EA400BDB634 /* Products */ = {
@@ -2375,6 +2376,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
+				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2404,6 +2406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
+				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
