@@ -23,17 +23,29 @@ if [[ $BUILDTYPE == "xcrun" ]]; then
     fastlane ciTests
 elif [[ $BUILDTYPE == "swiftbuild" ]]; then
     eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
-    swift build --verbose
+    swift build
     RESP=$?;
     if (( RESP != 0 )); then
+        echo "******************************************************************"
+        echo "******************************************************************"
+        echo "************************SWIFT BUILD ERROR ************************"
+        echo "******************************************************************"
+        echo "******************************************************************"
+
+        swift build --verbose
         cat .build/debug.yaml;
         exit RESP
     fi
-    swift test --verbose
+    swift test
     RESP=$?;
     if (( RESP != 0 )); then
+        echo "******************************************************************"
+        echo "******************************************************************"
+        echo "************************SWIFT TEST ERROR *************************"
+        echo "******************************************************************"
+        echo "******************************************************************"
+        swift test --verbose
         cat .build/debug.yaml;
-
         exit RESP
      fi
 fi
