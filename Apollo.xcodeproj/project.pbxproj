@@ -2280,6 +2280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2314,6 +2315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.macOS;
 				PRODUCT_NAME = Apollo;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
