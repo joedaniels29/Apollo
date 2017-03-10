@@ -1,9 +1,7 @@
 import PackageDescription
 
 
-var targets = [
-
-]
+var targets = [Target]()
 
 #if os(Linux)
 targets.append(Target(name: "Apollo"))
