@@ -27,3 +27,11 @@ let package = Package(
                 //        .Package(url: "https://github.com/Alamofire/Alamofire", Version(4, 0, 1))
         ]
 )
+#if os(Linux)
+
+// Avoid computing the objc target on linux.
+package.exclude = [
+        "Sources/ApolloSupport",
+        "Tests/ApolloSupport"
+]
+#endif
