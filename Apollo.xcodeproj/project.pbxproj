@@ -444,6 +444,7 @@
 		D869C5851DB7D5E700E1C072 /* ApolloIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloIOSTests.swift; sourceTree = "<group>"; };
 		D869C5871DB7D5E700E1C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D869C5981DB8471700E1C072 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D87B83901E725B0700754181 /* Exceptions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exceptions.playground; sourceTree = "<group>"; };
 		D89625831E65190B00C867D1 /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89625851E65190B00C867D1 /* ApolloWatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApolloWatchOS.h; sourceTree = "<group>"; };
 		D89625861E65190B00C867D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -870,6 +871,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		19BC0CE4595911637D43A8C4 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				D87B83901E725B0700754181 /* Exceptions.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 		19BC0DE11FB6FF92F8C48B92 /* Recording */ = {
 			isa = PBXGroup;
 			children = (
@@ -1024,6 +1033,7 @@
 				D8F2D12E1DB65EA400BDB634 /* Products */,
 				19BC06FC0A3AA5715D9F372C /* Scripts */,
 				19BC0A5A119663840F3B1DAB /* Tests */,
+				19BC0CE4595911637D43A8C4 /* Playgrounds */,
 			);
 			indentWidth = 6;
 			sourceTree = "<group>";
