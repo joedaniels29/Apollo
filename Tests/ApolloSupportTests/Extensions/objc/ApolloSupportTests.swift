@@ -1,7 +1,18 @@
 import XCTest
+#if !os(Linux)
 @testable import ApolloSupport
+#endif
 
-class ApolloServerTests: XCTestCase {
+
+class ApolloSupportTests: XCTestCase {
+#if os(Linux)
+    func testNothing() {
+
+    }
+    static var allTests : [(String, (ApolloSupportTests) -> () throws -> Void)] {
+        return []
+    }
+#else
     func testExceptionCatch() {
         var  e:Error?
         do {
@@ -15,9 +26,10 @@ class ApolloServerTests: XCTestCase {
         
         XCTAssert(e != nil);
     }
-    static var allTests : [(String, (ApolloServerTests) -> () throws -> Void)] {
+    static var allTests : [(String, (ApolloSupportTests) -> () throws -> Void)] {
         return [
             ("testExceptionCatch", testExceptionCatch),
         ]
     }
+ #endif
 }
