@@ -54,10 +54,10 @@ platform :ios do
     # gym(scheme:"Apollo")
     # gym(scheme:"ApolloIOS")
     gym(scheme: "ApolloM", export_method: 'app-store')
-    gym(scheme: "ApolloX")
-    gym(scheme: "ApolloService")
-    gym(scheme: "ApolloPickaxe")
-    gym(scheme: "ApolloMonitor")
+    # gym(scheme: "ApolloX")
+    # gym(scheme: "ApolloService")
+    # gym(scheme: "ApolloPickaxe")
+    # gym(scheme: "ApolloMonitor")
     # gym(scheme:"ApolloMicro")
   end
   desc "Runs all the tests"
