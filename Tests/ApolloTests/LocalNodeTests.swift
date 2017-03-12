@@ -16,7 +16,7 @@ import XCTest
 class LocalNodeTests: XCTestCase {
     let bag = DisposeBag()
     let bgQueue = DispatchQueue(label: "bgQueue")
-
+	let localNode = LocalNode()
 //    func send(_ selector:Selector) -> Any?{
 //        let v = NSInvocation()
 //        v.target = self
@@ -27,13 +27,15 @@ class LocalNodeTests: XCTestCase {
 
     override class func setUp() {
         super.setUp()
-//        LocalNode.instance.start(context:self)
+      
 
         //        startup!
 //        _ = self.send(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:)))
 
     }
-
+      override func setUp() {
+            localNode.start()
+      }
     override class func tearDown() {
 //        objc_msgSend(self, #selector(NSApplicationDelegate.applicationWillTerminate(_:)))
         super.tearDown()

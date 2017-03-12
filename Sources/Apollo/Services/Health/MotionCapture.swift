@@ -102,7 +102,7 @@ public class MotionCapture: Service {
     }
 
     private var ableToHistoricallyRecord: Bool {
-        guard let mr = LocalNode.instance[MotionRequest.self] as? MotionCapture else {
+        guard let mr = ApplicationNode.instance[MotionRequest.self] as? MotionCapture else {
             return false
         }
         return mr.ableToHistoricallyRecord

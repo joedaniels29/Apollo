@@ -14,7 +14,7 @@ public class UNUserNotificationAuthorization: Service {
     public var observable: Observable<ServiceStatusable> {
         return .create { o in
             let d = BooleanDisposable()
-            LocalNode
+            ApplicationNode
                 .instance
                     .didFinishLaunching
                     .subscribe(onNext: { _ in

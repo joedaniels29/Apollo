@@ -7,71 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC00172C7C2691B304E9EC /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02ECDD9565B6E82FA3BC /* BoxTests.swift */; };
+		19BC006AEF3AABE5F2278A2E /* MathematicaServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01293087424C849F4E84 /* MathematicaServiceTests.swift */; };
+		19BC007209F73FBB09C982CC /* MirrorDescribableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0D15F7AFE7147E4D22CA /* MirrorDescribableTests.swift */; };
 		19BC00B72B923D482902AD85 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
-		19BC00DD85AFDD69CA6793CE /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
+		19BC00DB139959CC9F145F24 /* NotificationsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0EFD5CAE9A9EB2077536 /* NotificationsRequestTests.swift */; };
 		19BC010CD895EC1D8B77B09A /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
+		19BC0122D3A497B1024399DA /* ReachabilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0FE732D9C47A08471446 /* ReachabilityServiceTests.swift */; };
 		19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
-		19BC01415DC852BB2C8E51E5 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC015AAC5F756A09E9213A /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC041665A252B9B9851890 /* ApolloTests.swift */; };
+		19BC01769B33C23FCF18B99F /* RailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0F1A6C590EFFD11F7F97 /* RailsAppTests.swift */; };
 		19BC01814011562A1453CFC5 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
 		19BC01983073395483CCB862 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
+		19BC01A41E9BF1148F3824EE /* XPCServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0299E560580E66EA764F /* XPCServiceTests.swift */; };
+		19BC01BDF7E3B7426F4E0429 /* NotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC083047025A0A600E2DF7 /* NotificationCenterTests.swift */; };
+		19BC01CCBD3FE5DB0B6FB182 /* SimpleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC00EA12D4CF4318C2A5B8 /* SimpleServiceTests.swift */; };
+		19BC01D88A51D2C4345C0403 /* PersistantTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0EC837D50964FB46B182 /* PersistantTimerTests.swift */; };
 		19BC01DEEC437B0CC7971E21 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
-		19BC0288AFCCAE29B9928F9D /* MirrorDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */; };
+		19BC01E37C476FB1595ACF88 /* ApolloSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC017705D7D53683DD679A /* ApolloSupportTests.swift */; };
+		19BC01F8A3CFD447914BC8D6 /* MirrorDescribableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0D15F7AFE7147E4D22CA /* MirrorDescribableTests.swift */; };
+		19BC02078AC7C1E2FCDFE7D8 /* ItinerarySchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AED47E014FB75261BE6 /* ItinerarySchedulerTests.swift */; };
+		19BC022EF49BB0EE34176AC9 /* NotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC083047025A0A600E2DF7 /* NotificationCenterTests.swift */; };
 		19BC028A6F4BF3A09BA135DB /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
-		19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
-		19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC03B7387DE5B92EFF72D1 /* MotionCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0765547C1CAF841EBA97 /* MotionCaptureTests.swift */; };
+		19BC03C6C815CA70B213B297 /* AlertDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC073D151EE99D59109F70 /* AlertDispatchTests.swift */; };
+		19BC03F0CC7EAD2200A95FB9 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC002AFBAD33C527D980CE /* ServiceTests.swift */; };
 		19BC040985A0E6611B783DB5 /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
-		19BC040AAAC954AAD791C667 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
-		19BC043971A8F3F52CE917B5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
 		19BC043AA303D70EB3ADBB5F /* ObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC03D971ECB02821893FAA /* ObjCRuntime.m */; };
-		19BC0482AFDBCE84AC5F843C /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
+		19BC04837692A4145D7FFFBD /* ReachabilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0FE732D9C47A08471446 /* ReachabilityServiceTests.swift */; };
+		19BC050308E6DEF5AFDFF761 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC002AFBAD33C527D980CE /* ServiceTests.swift */; };
 		19BC054106B2415FB9615FB3 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
+		19BC0568E907DDBF0997D814 /* ActiveApplicationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02BE4B07AA98DA27B2DA /* ActiveApplicationServiceTests.swift */; };
+		19BC05799D3750309C2FB667 /* NotificationsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0EFD5CAE9A9EB2077536 /* NotificationsRequestTests.swift */; };
 		19BC0596A1F86C029549C342 /* NodeConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */; };
 		19BC05C4D18A5578DFF34DBA /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
 		19BC05E51793ECB9EE4570D3 /* NodeServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */; };
+		19BC05F7EE0AB763070939FA /* ActiveApplicationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02BE4B07AA98DA27B2DA /* ActiveApplicationServiceTests.swift */; };
 		19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0A275C184429EAFD937D /* ReachabilityService.swift */; };
 		19BC06BDBA9773ABF7A05302 /* HeartCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C3FC579D012F4829E72 /* HeartCapture.swift */; };
+		19BC06F389CBB0DC9BF49C7A /* RailsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0F1A6C590EFFD11F7F97 /* RailsAppTests.swift */; };
 		19BC06F8DD5AF4AE99EA2ABA /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BC07185E144BD51E599222 /* PersistantTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0EC837D50964FB46B182 /* PersistantTimerTests.swift */; };
+		19BC072B32A457DC8E5F8A9D /* MathematicaServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01293087424C849F4E84 /* MathematicaServiceTests.swift */; };
 		19BC073AA65D7128AE081685 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
-		19BC07F51A7B3D43E6977362 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
-		19BC07F7738E37AE04D55BEB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
+		19BC0777F2FABB7C4A3220B2 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02ECDD9565B6E82FA3BC /* BoxTests.swift */; };
+		19BC08249B0AF4EB52B083D0 /* LocalNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C906D6620313865D00F /* LocalNodeTests.swift */; };
 		19BC08AFE4CA7AC4E197E830 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC06E420FE8226113420F7 /* Service.swift */; };
 		19BC08F53011118B0AFD4208 /* NodeConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */; };
+		19BC096D9C749595A873CEC8 /* AlertDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC073D151EE99D59109F70 /* AlertDispatchTests.swift */; };
 		19BC099B313D86B812A9DB07 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
 		19BC09A87E569BB330991637 /* MotionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4B0F41703289A1B793 /* MotionCapture.swift */; };
-		19BC0A67DE0FF94DBA968440 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0A7B3AC5CB472571C550 /* LocalNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C906D6620313865D00F /* LocalNodeTests.swift */; };
 		19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
-		19BC0AE77378708EA38DFCE7 /* MirrorDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */; };
 		19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC05B7F23303A00C42E910 /* Box.swift */; };
 		19BC0B13E68A29383BBBABB0 /* Protobuf in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0336CF4CDBC83A62F8ED /* Protobuf */; };
-		19BC0B4FC87C09DC49737392 /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
-		19BC0BB9BE419B4DBC282041 /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0C13004A3A4233E885F5 /* MirrorDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */; };
 		19BC0C2789301E13FB93EEE8 /* AlertDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC084F76E446B43449A668 /* AlertDispatch.swift */; };
-		19BC0C606E19F41A47BAEB95 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0A5A119663840F3B1DAB /* Tests */; };
-		19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */; };
+		19BC0C506F401A15EC8F9618 /* MotionCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0765547C1CAF841EBA97 /* MotionCaptureTests.swift */; };
 		19BC0C7195B5FBEEFA7FEE56 /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */; };
 		19BC0C93C2E8266C802FD312 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BC0CB32B1DDAE03114C09A /* ItinerarySchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0AED47E014FB75261BE6 /* ItinerarySchedulerTests.swift */; };
 		19BC0CEC154CA7EF672D071B /* PersistantTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC082318735F11BFE7793F /* PersistantTimer.swift */; };
 		19BC0D1FC887D02DAF04AF8D /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
-		19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC072A16B1D22E37E52868 /* MathematicaService.swift */; };
-		19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02208AC89A3EC5469A82 /* Node.swift */; };
+		19BC0D29030D21A484317636 /* XPCServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0299E560580E66EA764F /* XPCServiceTests.swift */; };
+		19BC0DAC8A9514E42B92256F /* ApolloSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC017705D7D53683DD679A /* ApolloSupportTests.swift */; };
 		19BC0DC898E0369DCC5CC744 /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
 		19BC0E2F25E694F3C906413B /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */; };
 		19BC0E6F78B3F14F45EE9823 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
-		19BC0ECFD253A421EFC6A4FB /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0A5A119663840F3B1DAB /* Tests */; };
-		19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C4D18590D7D677FBD97 /* Apollo.swift */; };
-		19BC0FC1DD6B274C998760A4 /* ActiveApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */; };
-		19BC0FF85218F5358E31302B /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC068366FCFE41FEB0AF49 /* XPCService.swift */; };
+		19BC0E70E61FA132C7A73127 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC041665A252B9B9851890 /* ApolloTests.swift */; };
+		19BC0E8562C6326EFE64B1EA /* SimpleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC00EA12D4CF4318C2A5B8 /* SimpleServiceTests.swift */; };
+		19BC0ECB22E820AB774A6738 /* HeartCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0D01AD024BC1884CC415 /* HeartCaptureTests.swift */; };
+		19BC0FAF2715701E7692E160 /* HeartCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0D01AD024BC1884CC415 /* HeartCaptureTests.swift */; };
 		D814254A1E61124700520C82 /* NodeConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81425491E61124700520C82 /* NodeConfigViewController.swift */; };
 		D814254B1E62797400520C82 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D814254C1E62797500520C82 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81945371E75AB5D00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81945381E75AB5D00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81945391E75AB5E00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
-		D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
-		D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D8269F1F1E74E4EA00DB8AD4 /* SwiftProtobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8269F201E74E4FA00DB8AD4 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8269F211E74E4FA00DB8AD4 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -394,15 +409,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19BC002AFBAD33C527D980CE /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConsoleViewController.swift; sourceTree = "<group>"; };
+		19BC00EA12D4CF4318C2A5B8 /* SimpleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleServiceTests.swift; sourceTree = "<group>"; };
 		19BC012529D2B9658C5DA306 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		19BC01293087424C849F4E84 /* MathematicaServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicaServiceTests.swift; sourceTree = "<group>"; };
+		19BC017705D7D53683DD679A /* ApolloSupportTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloSupportTests.swift; sourceTree = "<group>"; };
 		19BC02208AC89A3EC5469A82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		19BC0299E560580E66EA764F /* XPCServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCServiceTests.swift; sourceTree = "<group>"; };
+		19BC02BE4B07AA98DA27B2DA /* ActiveApplicationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveApplicationServiceTests.swift; sourceTree = "<group>"; };
 		19BC02D8FE3E2FAE9F974889 /* SimpleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleService.swift; sourceTree = "<group>"; };
+		19BC02ECDD9565B6E82FA3BC /* BoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxTests.swift; sourceTree = "<group>"; };
 		19BC0330473545EDB7A5438C /* ActiveApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveApplicationService.swift; sourceTree = "<group>"; };
 		19BC0336CF4CDBC83A62F8ED /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protobuf; sourceTree = "<group>"; };
 		19BC033CC50CAEB66F304F9B /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		19BC03D971ECB02821893FAA /* ObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntime.m; sourceTree = "<group>"; };
 		19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCRuntime.h; sourceTree = "<group>"; };
+		19BC041665A252B9B9851890 /* ApolloTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloTests.swift; sourceTree = "<group>"; };
 		19BC04C3707CCF2C836E0106 /* NodeServiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeServiceListViewController.swift; sourceTree = "<group>"; };
 		19BC05B7F23303A00C42E910 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		19BC068366FCFE41FEB0AF49 /* XPCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
@@ -411,18 +434,29 @@
 		19BC06E420FE8226113420F7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		19BC0700AF182C98E8EEB02D /* notmain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notmain.swift; sourceTree = "<group>"; };
 		19BC072A16B1D22E37E52868 /* MathematicaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicaService.swift; sourceTree = "<group>"; };
+		19BC073D151EE99D59109F70 /* AlertDispatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDispatchTests.swift; sourceTree = "<group>"; };
+		19BC0765547C1CAF841EBA97 /* MotionCaptureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCaptureTests.swift; sourceTree = "<group>"; };
 		19BC082318735F11BFE7793F /* PersistantTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistantTimer.swift; sourceTree = "<group>"; };
+		19BC083047025A0A600E2DF7 /* NotificationCenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterTests.swift; sourceTree = "<group>"; };
 		19BC084F76E446B43449A668 /* AlertDispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDispatch.swift; sourceTree = "<group>"; };
 		19BC0A275C184429EAFD937D /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
-		19BC0A5A119663840F3B1DAB /* Tests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		19BC0AA7B9A74545F58E674B /* MirrorDescribable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorDescribable.swift; sourceTree = "<group>"; };
+		19BC0AED47E014FB75261BE6 /* ItinerarySchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItinerarySchedulerTests.swift; sourceTree = "<group>"; };
 		19BC0BF75F8B1C8BD323C50C /* Node+Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+Services.swift"; sourceTree = "<group>"; };
 		19BC0C3FC579D012F4829E72 /* HeartCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartCapture.swift; sourceTree = "<group>"; };
 		19BC0C4B0F41703289A1B793 /* MotionCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionCapture.swift; sourceTree = "<group>"; };
 		19BC0C4D18590D7D677FBD97 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConnectionsViewController.swift; sourceTree = "<group>"; };
+		19BC0C906D6620313865D00F /* LocalNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNodeTests.swift; sourceTree = "<group>"; };
 		19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloSupport.h; sourceTree = "<group>"; };
+		19BC0D01AD024BC1884CC415 /* HeartCaptureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartCaptureTests.swift; sourceTree = "<group>"; };
+		19BC0D15F7AFE7147E4D22CA /* MirrorDescribableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorDescribableTests.swift; sourceTree = "<group>"; };
+		19BC0EC837D50964FB46B182 /* PersistantTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistantTimerTests.swift; sourceTree = "<group>"; };
+		19BC0EFD5CAE9A9EB2077536 /* NotificationsRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequestTests.swift; sourceTree = "<group>"; };
+		19BC0F1A6C590EFFD11F7F97 /* RailsAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsAppTests.swift; sourceTree = "<group>"; };
+		19BC0FE732D9C47A08471446 /* ReachabilityServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceTests.swift; sourceTree = "<group>"; };
 		D81425491E61124700520C82 /* NodeConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConfigViewController.swift; sourceTree = "<group>"; };
+		D81945361E75AB4300CFE6F2 /* Apollo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
 		D81B7F431DB98B2700DD62B6 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Ruby.framework; sourceTree = DEVELOPER_DIR; };
 		D81D539A1E11F71900377BD5 /* RailsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsApp.swift; sourceTree = "<group>"; };
 		D81E50EC1E66632A00FD64E7 /* ApolloXTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApolloXTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -655,6 +689,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BC00FF04B24F9F16AF0FE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0679A7CAA5A2E78BE7AA /* OSX */,
+				19BC021A32EA42D4FCCDA6C0 /* XPC */,
+				19BC0EDC60D9C69700E8EB46 /* Alert */,
+				19BC03D6A14C4E2E2067CF61 /* Health */,
+				19BC0931F7EFEBB1AA8DE6B2 /* Networking */,
+				19BC0F48B56D6099C5F5F383 /* Mathematica */,
+				19BC0AE3DD92656ECA2A8CB8 /* RubyService */,
+				19BC0942E933E0E4DE702289 /* Notifications */,
+				19BC002AFBAD33C527D980CE /* ServiceTests.swift */,
+				19BC00EA12D4CF4318C2A5B8 /* SimpleServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		19BC01BA006C80F38F9BEF6C /* ServiceList */ = {
 			isa = PBXGroup;
 			children = (
@@ -671,11 +722,48 @@
 			path = RubyService;
 			sourceTree = "<group>";
 		};
+		19BC01ED7EA7EA6D5D71BF3B /* RX */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0EC837D50964FB46B182 /* PersistantTimerTests.swift */,
+			);
+			path = RX;
+			sourceTree = "<group>";
+		};
+		19BC021A32EA42D4FCCDA6C0 /* XPC */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0299E560580E66EA764F /* XPCServiceTests.swift */,
+			);
+			path = XPC;
+			sourceTree = "<group>";
+		};
+		19BC03005CE220DFAE20B4AC /* ApolloTests */ = {
+			isa = PBXGroup;
+			children = (
+				19BC00FF04B24F9F16AF0FE8 /* Services */,
+				19BC0763E7463C55584894BF /* Extensions */,
+				19BC041665A252B9B9851890 /* ApolloTests.swift */,
+				19BC0C906D6620313865D00F /* LocalNodeTests.swift */,
+				19BC0AED47E014FB75261BE6 /* ItinerarySchedulerTests.swift */,
+			);
+			path = ApolloTests;
+			sourceTree = "<group>";
+		};
 		19BC032F9C438E69D4429ECF /* Health */ = {
 			isa = PBXGroup;
 			children = (
 				19BC0C3FC579D012F4829E72 /* HeartCapture.swift */,
 				19BC0C4B0F41703289A1B793 /* MotionCapture.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		19BC03D6A14C4E2E2067CF61 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0D01AD024BC1884CC415 /* HeartCaptureTests.swift */,
+				19BC0765547C1CAF841EBA97 /* MotionCaptureTests.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -692,6 +780,14 @@
 			isa = PBXGroup;
 			children = (
 				D81D539A1E11F71900377BD5 /* RailsApp.swift */,
+			);
+			path = RailsApp;
+			sourceTree = "<group>";
+		};
+		19BC045CD1135E2BF20788D1 /* RailsApp */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0F1A6C590EFFD11F7F97 /* RailsAppTests.swift */,
 			);
 			path = RailsApp;
 			sourceTree = "<group>";
@@ -729,6 +825,14 @@
 			path = NodeConfig;
 			sourceTree = "<group>";
 		};
+		19BC05C7C98743C591905A56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0B1DC7CD242304EC4943 /* objc */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		19BC05D04AA9F43F34A5DAF0 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +850,14 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		19BC0679A7CAA5A2E78BE7AA /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				19BC02BE4B07AA98DA27B2DA /* ActiveApplicationServiceTests.swift */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
 		19BC06B7811D65E4868DDA07 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +872,15 @@
 			children = (
 			);
 			path = Scripts;
+			sourceTree = "<group>";
+		};
+		19BC0763E7463C55584894BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19BC01ED7EA7EA6D5D71BF3B /* RX */,
+				19BC0B2E57C34B46AE5398C0 /* Swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		19BC0795B30088CE533ADEE2 /* ApolloServer */ = {
@@ -801,6 +922,14 @@
 			path = ApolloSupport;
 			sourceTree = "<group>";
 		};
+		19BC0931F7EFEBB1AA8DE6B2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0FE732D9C47A08471446 /* ReachabilityServiceTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		19BC09376AEF23FAD9706157 /* ApolloSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,6 +938,15 @@
 				19BC03FDD5E619DCBB4A94F3 /* ObjCRuntime.h */,
 			);
 			path = ApolloSupport;
+			sourceTree = "<group>";
+		};
+		19BC0942E933E0E4DE702289 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				19BC083047025A0A600E2DF7 /* NotificationCenterTests.swift */,
+				19BC0EFD5CAE9A9EB2077536 /* NotificationsRequestTests.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		19BC09515E4D1299E78C6343 /* Networking */ = {
@@ -850,6 +988,14 @@
 			path = Globe;
 			sourceTree = "<group>";
 		};
+		19BC0AE3DD92656ECA2A8CB8 /* RubyService */ = {
+			isa = PBXGroup;
+			children = (
+				19BC045CD1135E2BF20788D1 /* RailsApp */,
+			);
+			path = RubyService;
+			sourceTree = "<group>";
+		};
 		19BC0B133F321944FDFF4EC5 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -857,6 +1003,32 @@
 				19BC06B7811D65E4868DDA07 /* Swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		19BC0B1DC7CD242304EC4943 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				19BC017705D7D53683DD679A /* ApolloSupportTests.swift */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		19BC0B2E57C34B46AE5398C0 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				19BC02ECDD9565B6E82FA3BC /* BoxTests.swift */,
+				19BC0D15F7AFE7147E4D22CA /* MirrorDescribableTests.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		19BC0B633773428B3244D9FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				19BC0CAAB7FA15DBE9D08901 /* ApolloSupportTests */,
+				19BC03005CE220DFAE20B4AC /* ApolloTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		19BC0BB5938033EE7E77160C /* Apollo */ = {
@@ -891,6 +1063,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		19BC0CAAB7FA15DBE9D08901 /* ApolloSupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				19BC05C7C98743C591905A56 /* Extensions */,
+			);
+			path = ApolloSupportTests;
+			sourceTree = "<group>";
+		};
 		19BC0CE4595911637D43A8C4 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,6 +1084,22 @@
 			children = (
 			);
 			path = Recording;
+			sourceTree = "<group>";
+		};
+		19BC0EDC60D9C69700E8EB46 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				19BC073D151EE99D59109F70 /* AlertDispatchTests.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		19BC0F48B56D6099C5F5F383 /* Mathematica */ = {
+			isa = PBXGroup;
+			children = (
+				19BC01293087424C849F4E84 /* MathematicaServiceTests.swift */,
+			);
+			path = Mathematica;
 			sourceTree = "<group>";
 		};
 		19BC0F9B9D6C1B1490BB3622 /* NSTaskService */ = {
@@ -974,6 +1170,7 @@
 				D85569971DDCE28100B70D8C /* RxSwift.framework */,
 				D869C5561DB7D54300E1C072 /* Info.plist */,
 				19BC06AF41BE8C40B50A0B3F /* MyPlayground.playground */,
+				D81945361E75AB4300CFE6F2 /* Apollo.h */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -1052,8 +1249,8 @@
 				D8F2D1741DB6637A00BDB634 /* Frameworks */,
 				D8F2D12E1DB65EA400BDB634 /* Products */,
 				19BC06FC0A3AA5715D9F372C /* Scripts */,
-				19BC0A5A119663840F3B1DAB /* Tests */,
 				19BC0CE4595911637D43A8C4 /* Playgrounds */,
+				19BC0B633773428B3244D9FA /* Tests */,
 			);
 			indentWidth = 6;
 			sourceTree = "<group>";
@@ -1203,6 +1400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D814254B1E62797400520C82 /* ApolloSupport.h in Headers */,
+				D81945371E75AB5D00CFE6F2 /* Apollo.h in Headers */,
 				19BC054106B2415FB9615FB3 /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1212,6 +1410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D814254C1E62797500520C82 /* ApolloSupport.h in Headers */,
+				D81945381E75AB5D00CFE6F2 /* Apollo.h in Headers */,
 				19BC06F8DD5AF4AE99EA2ABA /* ObjCRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1221,6 +1420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89625871E65190B00C867D1 /* ApolloWatchOS.h in Headers */,
+				D81945391E75AB5E00CFE6F2 /* Apollo.h in Headers */,
 				D89625B71E651AA500C867D1 /* ApolloSupport.h in Headers */,
 				19BC0C93C2E8266C802FD312 /* ObjCRuntime.h in Headers */,
 			);
@@ -1709,7 +1909,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BC01814011562A1453CFC5 /* Protobuf in Resources */,
-				19BC0C606E19F41A47BAEB95 /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1734,7 +1933,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BC01983073395483CCB862 /* Protobuf in Resources */,
-				19BC0ECFD253A421EFC6A4FB /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1890,18 +2088,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BC07F7738E37AE04D55BEB /* Service.swift in Sources */,
-				19BC0F4F9042F10FA277A028 /* Apollo.swift in Sources */,
-				19BC0A67DE0FF94DBA968440 /* Node.swift in Sources */,
-				19BC02A0F03678F09CD3B1A2 /* AlertDispatch.swift in Sources */,
-				19BC01415DC852BB2C8E51E5 /* HeartCapture.swift in Sources */,
-				D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */,
-				19BC040AAAC954AAD791C667 /* PersistantTimer.swift in Sources */,
-				19BC0FF85218F5358E31302B /* XPCService.swift in Sources */,
-				19BC0D4BA3EEDD1B0F988E29 /* MathematicaService.swift in Sources */,
-				19BC0B4FC87C09DC49737392 /* ActiveApplicationService.swift in Sources */,
-				19BC0482AFDBCE84AC5F843C /* ReachabilityService.swift in Sources */,
-				19BC0288AFCCAE29B9928F9D /* MirrorDescribable.swift in Sources */,
+				19BC01E37C476FB1595ACF88 /* ApolloSupportTests.swift in Sources */,
+				19BC0568E907DDBF0997D814 /* ActiveApplicationServiceTests.swift in Sources */,
+				19BC0D29030D21A484317636 /* XPCServiceTests.swift in Sources */,
+				19BC03C6C815CA70B213B297 /* AlertDispatchTests.swift in Sources */,
+				19BC0ECB22E820AB774A6738 /* HeartCaptureTests.swift in Sources */,
+				19BC0C506F401A15EC8F9618 /* MotionCaptureTests.swift in Sources */,
+				19BC04837692A4145D7FFFBD /* ReachabilityServiceTests.swift in Sources */,
+				19BC006AEF3AABE5F2278A2E /* MathematicaServiceTests.swift in Sources */,
+				19BC01769B33C23FCF18B99F /* RailsAppTests.swift in Sources */,
+				19BC01BDF7E3B7426F4E0429 /* NotificationCenterTests.swift in Sources */,
+				19BC00DB139959CC9F145F24 /* NotificationsRequestTests.swift in Sources */,
+				19BC03F0CC7EAD2200A95FB9 /* ServiceTests.swift in Sources */,
+				19BC0E8562C6326EFE64B1EA /* SimpleServiceTests.swift in Sources */,
+				19BC01D88A51D2C4345C0403 /* PersistantTimerTests.swift in Sources */,
+				19BC0777F2FABB7C4A3220B2 /* BoxTests.swift in Sources */,
+				19BC007209F73FBB09C982CC /* MirrorDescribableTests.swift in Sources */,
+				19BC015AAC5F756A09E9213A /* ApolloTests.swift in Sources */,
+				19BC0A7B3AC5CB472571C550 /* LocalNodeTests.swift in Sources */,
+				19BC02078AC7C1E2FCDFE7D8 /* ItinerarySchedulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1936,18 +2141,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D869C5861DB7D5E700E1C072 /* ApolloIOSTests.swift in Sources */,
-				19BC0C6090569E464B2C5FDF /* NotificationCenter.swift in Sources */,
-				19BC043971A8F3F52CE917B5 /* Service.swift in Sources */,
-				19BC009FCFDAEFC06087DB6D /* Apollo.swift in Sources */,
-				19BC0DAFAF7D22A7E4A892E7 /* Node.swift in Sources */,
-				19BC07F51A7B3D43E6977362 /* AlertDispatch.swift in Sources */,
-				19BC02EE286DCD48CC53EB30 /* HeartCapture.swift in Sources */,
-				19BC0BB9BE419B4DBC282041 /* PersistantTimer.swift in Sources */,
-				D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */,
-				19BC057E0FB0633AF35A9217 /* MathematicaService.swift in Sources */,
-				19BC0FC1DD6B274C998760A4 /* ActiveApplicationService.swift in Sources */,
-				19BC00DD85AFDD69CA6793CE /* ReachabilityService.swift in Sources */,
-				19BC0AE77378708EA38DFCE7 /* MirrorDescribable.swift in Sources */,
+				19BC0DAC8A9514E42B92256F /* ApolloSupportTests.swift in Sources */,
+				19BC05F7EE0AB763070939FA /* ActiveApplicationServiceTests.swift in Sources */,
+				19BC01A41E9BF1148F3824EE /* XPCServiceTests.swift in Sources */,
+				19BC096D9C749595A873CEC8 /* AlertDispatchTests.swift in Sources */,
+				19BC0FAF2715701E7692E160 /* HeartCaptureTests.swift in Sources */,
+				19BC03B7387DE5B92EFF72D1 /* MotionCaptureTests.swift in Sources */,
+				19BC0122D3A497B1024399DA /* ReachabilityServiceTests.swift in Sources */,
+				19BC072B32A457DC8E5F8A9D /* MathematicaServiceTests.swift in Sources */,
+				19BC06F389CBB0DC9BF49C7A /* RailsAppTests.swift in Sources */,
+				19BC022EF49BB0EE34176AC9 /* NotificationCenterTests.swift in Sources */,
+				19BC05799D3750309C2FB667 /* NotificationsRequestTests.swift in Sources */,
+				19BC050308E6DEF5AFDFF761 /* ServiceTests.swift in Sources */,
+				19BC01CCBD3FE5DB0B6FB182 /* SimpleServiceTests.swift in Sources */,
+				19BC07185E144BD51E599222 /* PersistantTimerTests.swift in Sources */,
+				19BC00172C7C2691B304E9EC /* BoxTests.swift in Sources */,
+				19BC01F8A3CFD447914BC8D6 /* MirrorDescribableTests.swift in Sources */,
+				19BC0E70E61FA132C7A73127 /* ApolloTests.swift in Sources */,
+				19BC08249B0AF4EB52B083D0 /* LocalNodeTests.swift in Sources */,
+				19BC0CB32B1DDAE03114C09A /* ItinerarySchedulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2327,7 +2539,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/ApolloSupport/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Sources/ApolloSupport/include",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2338,7 +2553,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Apollo/$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2364,7 +2579,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/ApolloSupport/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Sources/ApolloSupport/include",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2375,7 +2593,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Apollo/$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

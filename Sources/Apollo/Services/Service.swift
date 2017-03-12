@@ -47,7 +47,7 @@ extension Service{
         return String(describing: type(of:self))
     }
     public var node: Node{
-        return LocalNode.instance
+        return ApplicationNode.instance
     }
 }
 //public enum Timelyness{

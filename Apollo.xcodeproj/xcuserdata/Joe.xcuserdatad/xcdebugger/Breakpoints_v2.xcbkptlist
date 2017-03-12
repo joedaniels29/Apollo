@@ -38,22 +38,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sources/Apollo/Node.swift"
-            timestampString = "504392145.431784"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "start(context:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -70,47 +54,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/Apollo/Node.swift"
-            timestampString = "504392145.431784"
+            timestampString = "511026814.834959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "LocalNode"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "ApplicationNode"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Apollo.LocalNode.didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;"
+                  symbolName = "Apollo.ApplicationNode.__allocating_init () -&gt; Apollo.ApplicationNode"
                   moduleName = "Apollo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "510025944.117066"
+                  timestampString = "511026936.968065"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "15">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Apollo.LocalNode.(didFinishLaunching.getter : RxSwift.Observable&lt;()&gt;).(closure #3)"
+                  symbolName = "Apollo.ApplicationNode.init () -&gt; Apollo.ApplicationNode"
                   moduleName = "Apollo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
-                  timestampString = "510025944.118732"
+                  timestampString = "511026936.969524"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "12">
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ApolloTests.ApplicationNode.__allocating_init () -&gt; ApolloTests.ApplicationNode"
+                  moduleName = "ApolloTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
+                  timestampString = "511026937.043006"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ApolloTests.ApplicationNode.init () -&gt; ApolloTests.ApplicationNode"
+                  moduleName = "ApolloTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joe/Projects/Mine/Apollo/Sources/Apollo/Node.swift"
+                  timestampString = "511026937.044657"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>

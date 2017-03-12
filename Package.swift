@@ -19,7 +19,7 @@ let package = Package(
         name: "Apollo",
         targets: targets,
         dependencies: [
-                .Package(url: "https://github.com/ReactiveX/RxSwift.git", Version(3, 0, 0, prereleaseIdentifiers: ["rc"])),
+                .Package(url: "https://github.com/ReactiveX/RxSwift.git", majorVersion: 3),
                 .Package(url: "https://github.com/IBM-Swift/BlueSocket.git", Version(0, 12, 3)),
                 .Package(url: "https://github.com/apple/swift-protobuf.git", Version(0, 9, 24)),
                 .Package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", majorVersion: 1)

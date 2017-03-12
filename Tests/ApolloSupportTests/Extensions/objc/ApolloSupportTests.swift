@@ -1,7 +1,9 @@
 import XCTest
-#if !os(Linux)
+#if !os(Linux) && SWIFT_PACKAGE
 @testable import ApolloSupport
+#elseif os(macOS) || os(iOS)
 #endif
+@testable import Apollo
 
 
 class ApolloSupportTests: XCTestCase {

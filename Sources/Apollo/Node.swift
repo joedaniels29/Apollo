@@ -59,43 +59,31 @@ public final class RemoteNode: Node {
     //        return services.first { type(of: $0) == type}
     //    }
 }
-public final class LocalNode: Node {
-
-    static let name: String = A.wrap("LocalNode")
-
-    var context: AnyObject!
+open class LocalNode: NSObject, Node {
+    class var name: String { return A.wrap("AbstractNode") }
+    var bag: DisposeBag = DisposeBag()
     public let scheduler: SerialDispatchQueueScheduler
     public let q: DispatchQueue
-
-    //    let queue: DispatchQueue = DispatchQueue(label: MainNode.name, qos: .userInitiated, autoreleaseFrequency: .workItem)
-    init() {
-        q = DispatchQueue.init(label: LocalNode.name)
-        scheduler = SerialDispatchQueueScheduler(queue: q,
-                                                 internalSerialQueueName: LocalNode.name)
-        services.append(Welcome())
-    }
-
-    public static let instance = LocalNode()
     public var started: Bool = false
-    public func start(context: NSObject) {
-        guard !started else {
-            fatalError()
-        }
-        guard !self.started else {
-            fatalError()
-        }
-        self.started = true
-        self.context = context
-        self.startServices()
+
+    let didFinishLaunchingSubject = PublishSubject<()>()
+    public var didFinishLaunching: Observable<()> { return didFinishLaunchingSubject.asObservable() }
+    func setDidFinishLaunching() {
+        didFinishLaunchingSubject.onNext()
+    }
+    let willTerminateSubject = PublishSubject<()>()
+    public var willTerminate: Observable<()> { return willTerminateSubject.asObservable() }
+    public func setWillTerminate() {
+        willTerminateSubject.onNext()
     }
     var services = [Service]()
-    var disposeBag = DisposeBag()
-    public subscript(type: Service.Type) -> Service? {
-        return services.first {
-            type(of: $0) == type
-        }
-    }
+    public subscript(type: Service.Type) -> Service? { return services.first { type(of: $0) == type } }
 
+    public func start() {
+        startServices()
+        setDidFinishLaunching()
+        updateDescription.map(currentNodeDescription).bindTo(nodeDescription).disposed(by: bag)
+    }
 
     func startServices() {
         for s in self.services {
@@ -105,63 +93,99 @@ public final class LocalNode: Node {
                 case .error(let error): self.service(s, didError: error)
                 case .completed: self.serviceDidComplete(s)
                 }
-            }.addDisposableTo(self.disposeBag)
+            }.disposed(by: bag)
         }
     }
 
+    public override init() {
+        q = DispatchQueue.init(label: ApplicationNode.name)
+        scheduler = SerialDispatchQueueScheduler(queue: q,
+                                                 internalSerialQueueName: ApplicationNode.name)
+        services.append(Welcome())
+        super.init()
+        updateDescription.onNext()
+    }
+    var updateDescription = PublishSubject<()>()
+    lazy public var nodeDescription: Variable<[String: String]> = Variable(["Status": "Not yet loaded"])
+    func currentNodeDescription() -> [String: String] {
+        return [:]
+    }
+}
+public final class ApplicationNode: LocalNode {
 
-    var platformHasLifeCycle: Bool {
-#if os(macOS) || os(iOS)
-        return true
-#elseif os(Linux) || os(watchOS)
-        return false
-#endif
+    public static let instance = ApplicationNode()
+    class override var name: String { return A.wrap("LocalNode") }
+    var context: AnyObject?
+    var platformHasLifeCycle: Bool = false
+
+    override init() {
+
+        super.init()
     }
 
+    public override func start() {
+        platformHasLifeCycle = false
+        super.start()
+    }
+
+    public func start(context: AnyObject) {
+        platformHasLifeCycle = true
+        guard !started else {
+            fatalError()
+        }
+        guard !self.started else {
+            fatalError()
+        }
+        self.started = true
+        self.context = context
 
 
 
-    var didFinishLaunching: Observable<()> {
         if platformHasLifeCycle {
 #if os(iOS)
-            let selector: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
+            let willFinishLaunching: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
 #elseif os(macOS)
-            let selector: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
+            let willFinishLaunching: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
 #else
-            let selector: Selector = "willStart"//but not actually
+            let willFinishLaunching: Selector = "willStart"//but not actually
 #endif
-            return Reactive(self.context).sentMessage(selector).map { _ in
+            _ = Reactive(context).sentMessage(willFinishLaunching).map { _ in
                 return ()
-            }.take(1)
-        } else {
-            return .just(())
-        }
-    }
+            }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
 
-
-    var willTerminate: Observable<()> {
-        if platformHasLifeCycle {
 #if os(iOS)
-            let selector: Selector = #selector(UIApplicationDelegate.applicationWillTerminate(_:))
+            let willTerminate: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
 #elseif os(macOS)
-            let selector: Selector = #selector(NSApplicationDelegate.applicationWillTerminate(_:))
+            let willTerminate: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
 #else
-            let selector: Selector = "willTerminate"//but not actually
+            let willTerminate: Selector = "Die"
 #endif
-            return Reactive(self.context).sentMessage(selector).map { _ in
+            _ = Reactive(context).sentMessage(willTerminate).map { _ in
                 return ()
-            }.take(1)
+            }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
         } else {
-            return .never()
+            setDidFinishLaunching()
         }
+
+        self.startServices()
     }
 
-//Communication
-    lazy var activeNeighbors: Variable<[Node]> = Variable([self])
+
+    override func currentNodeDescription() -> [String: String] {
+        var d = super.currentNodeDescription()
+        let newer = [String: String]()
+        for (k, v) in newer {
+            d[k] = v
+        }
+        return d
+    }
+
+
+
+    //Communication
+    //    lazy var activeNeighbors: Variable<[Node]> = Variable([self])
     lazy var nodes: Variable<[Node]> = Variable([self])
-    lazy var description: Variable<[Node]> = Variable(self.)
 
 
-
-//    Services
+    //    Services
 }
