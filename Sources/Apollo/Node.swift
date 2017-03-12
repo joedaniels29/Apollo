@@ -112,14 +112,14 @@ open class LocalNode: NSObject, Node {
     var startupDate: Date? = nil
     lazy var systemDateFormatter: DateFormatter = {
         let v = DateFormatter()
-        v.dateFormat = ""
+        v.dateFormat = "M/d/yy H:m:s"
         return v
     }()
 
     lazy public var nodeDescription: Variable<[String: String]> = Variable(["Status": "Not yet loaded"])
 
     func currentNodeDescription() -> [String: String] {
-        return ["InstantiationDate":instantiationDate]
+        return ["InstantiationDate":systemDateFormatter.string(from: instantiationDate)]
     }
 }
 public final class ApplicationNode: LocalNode {
