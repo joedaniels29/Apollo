@@ -69,6 +69,9 @@
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539D1E11F7B700377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D81D539F1E11F7B800377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
+		D8269F1F1E74E4EA00DB8AD4 /* SwiftProtobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8269F201E74E4FA00DB8AD4 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8269F211E74E4FA00DB8AD4 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569971DDCE28100B70D8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D83F8AC41E65C8CB00715C74 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; };
 		D83F8AC51E65C8CB00715C74 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D854872D1E63BB16008637E8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D83F8AC61E65C8CB00715C74 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D854872E1E63BB16008637E8 /* RxSwift.framework */; };
@@ -289,6 +292,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D8269F1C1E74E4D600DB8AD4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8269F1F1E74E4EA00DB8AD4 /* SwiftProtobuf.framework in CopyFiles */,
+				D8269F201E74E4FA00DB8AD4 /* RxCocoa.framework in CopyFiles */,
+				D8269F211E74E4FA00DB8AD4 /* RxSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D83F8AC81E65C8CB00715C74 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1270,6 +1285,9 @@
 				D869C54F1DB7D54200E1C072 /* Frameworks */,
 				D869C5501DB7D54200E1C072 /* Headers */,
 				D869C5511DB7D54200E1C072 /* Resources */,
+				D8269F1C1E74E4D600DB8AD4 /* CopyFiles */,
+				D8269F1A1E74D18C00DB8AD4 /* ShellScript */,
+				D8269F1B1E74DCD600DB8AD4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1787,6 +1805,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8269F1A1E74D18C00DB8AD4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p ${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Resources/BridgeSupport\n\ngen_bridge_metadata --64-bit -f ${TARGET_BUILD_DIR}/${WRAPPER_NAME} -o ${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Resources/BridgeSupport/${PRODUCT_NAME}.bridgesupport";
+		};
+		D8269F1B1E74DCD600DB8AD4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#touch \"$SOURCE_ROOT/MyApplication.sdef\"\n#/usr/bin/sdp -fast -o \"$BUILD_DIR/$BUILD_STYLE/$FULL_PRODUCT_NAME/Contents/Resources\" \"$SOURCE_ROOT/MyApplication.sdef\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D869C5111DB7BBF100E1C072 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2257,6 +2304,7 @@
 		D869C56B1DB7D54300E1C072 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -2271,7 +2319,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/ApolloSupport/include";
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2282,6 +2330,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2292,6 +2341,7 @@
 		D869C56C1DB7D54300E1C072 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -2306,7 +2356,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)//Sources/ApolloSupport/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/ApolloSupport/include";
 				INFOPLIST_FILE = Apollo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2317,6 +2367,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

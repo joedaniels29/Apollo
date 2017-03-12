@@ -8,7 +8,22 @@ import RxSwift
 import RxCocoa
 
 #if os(macOS)
-
+      /*
+      import AppKit
+      
+      @objc(DoWrap) open class DoWrap:NSObject{
+            @objc public override init(){
+                  super.init()
+            }
+            @objc public func doWithADoWrap(_ doit:((NSString)->())){
+                  print("We Gonna do it!")
+                  NSBeep()
+                  doit("YA")
+                  print("We Gonna did it!")
+            }
+      }
+      
+      */
 @objc protocol ApolloServiceProtocol {
 }
 class ApolloXPCService: Service {
