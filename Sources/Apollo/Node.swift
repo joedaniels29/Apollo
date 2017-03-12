@@ -106,9 +106,20 @@ open class LocalNode: NSObject, Node {
         updateDescription.onNext()
     }
     var updateDescription = PublishSubject<()>()
+
+
+    var instantiationDate = Date()
+    var startupDate: Date? = nil
+    lazy var systemDateFormatter: DateFormatter = {
+        let v = DateFormatter()
+        v.dateFormat = ""
+        return v
+    }()
+
     lazy public var nodeDescription: Variable<[String: String]> = Variable(["Status": "Not yet loaded"])
+
     func currentNodeDescription() -> [String: String] {
-        return [:]
+        return ["InstantiationDate":instantiationDate]
     }
 }
 public final class ApplicationNode: LocalNode {
@@ -144,25 +155,20 @@ public final class ApplicationNode: LocalNode {
         if platformHasLifeCycle {
 #if os(iOS)
             let willFinishLaunching: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
+            let willTerminate: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
 #elseif os(macOS)
             let willFinishLaunching: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
-#else
-            let willFinishLaunching: Selector = "willStart"//but not actually
-#endif
+      		let willTerminate: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
+
             _ = Reactive(context).sentMessage(willFinishLaunching).map { _ in
                 return ()
             }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
-
-#if os(iOS)
-            let willTerminate: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
-#elseif os(macOS)
-            let willTerminate: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
-#else
-            let willTerminate: Selector = "Die"
-#endif
             _ = Reactive(context).sentMessage(willTerminate).map { _ in
-                return ()
+                  return ()
             }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
+#else
+	      fatalError("cant get here")
+#endif
         } else {
             setDidFinishLaunching()
         }
