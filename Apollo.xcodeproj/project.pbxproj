@@ -83,7 +83,7 @@
 		D814254C1E62797500520C82 /* ApolloSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BC0CDC33A65EE5C1F8A309 /* ApolloSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D81945371E75AB5D00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D81945381E75AB5D00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D81945391E75AB5E00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; };
+		D81945391E75AB5E00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
@@ -2666,7 +2666,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2696,7 +2696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.joedaniels.apollo.iOS;
 				PRODUCT_NAME = Apollo;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2764,7 +2764,7 @@
 				PRODUCT_NAME = Apollo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2795,7 +2795,7 @@
 				PRODUCT_NAME = Apollo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = ./Sources/ApolloSupport/include/ApolloSupport/ApolloSupport.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
