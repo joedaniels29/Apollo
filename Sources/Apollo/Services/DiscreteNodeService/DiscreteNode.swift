@@ -5,6 +5,36 @@
 
 import Foundation
 #if false
-class DiscreteNode:Node {
+
+
+
+
+class DiscreteNode:LocalNode{
+    var service:Service
+    init(service:Service){
+
+        self.service = service
+        super.init()
+    }
+
+
+
+
+}
+
+class BlockDiscreteNode:LocalNode{
+    let block:(()->())
+    init(block:()->()){
+        self.block = block
+        super.init()
+
+    }
+
+
+
+    static func run(block:()->()){
+        let node = self.init(block)
+        node.start()
+    }
 }
 #endif

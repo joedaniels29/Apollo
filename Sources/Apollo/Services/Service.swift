@@ -26,14 +26,25 @@ public enum ServiceRecord: ServiceStatusable {
     case loading, stopping, error
     public var record: ServiceRecord {
         return self
-    }
+    }]
+}
+
+public enum ServiceKind{
+    case ofType(ServiceConvertible.Type)
+    case instance(Service)
+}
+
+public protocol ServiceConvertible {
+    var service: Service{get}
 }
 
 //Service Scheduler is where the work happens.
 //extension SchedulerType
 
 //Itinerary.scheduler(named:.)
-public protocol Service:class {
+public typealias ServiceObservableBlock = @escaping (RxSwift.AnyObserver<ServiceStatusable>) -> Disposable
+//public typealias ServiceObservableDoBlock = @escaping (RxSwift.AnyObserver<ServiceStatusable>) -> Disposable
+public protocol Service:class, ServiceConvertible {
     var observable: Observable<ServiceStatusable> { get }
     var name: String { get }
     var node: Node { get }
@@ -42,7 +53,8 @@ public protocol Service:class {
 //    init(serviceRequest:ServiceRequest): UUID { get }
 }
 extension Service{
-    
+
+    public var service
     public var name: String{
         return String(describing: type(of:self))
     }
@@ -67,7 +79,7 @@ public protocol LazyPeriodicService: Service{
 public protocol EagerPeriodicService: Service{
 
 }
-
+//todo: remove?
 open class Itinerary: ImmediateSchedulerType {
     public struct Name {
         public var name: String
@@ -125,3 +137,7 @@ open class Itinerary: ImmediateSchedulerType {
 protocol ServiceProvider {
     func runnable() -> Observable<ServiceRecord>
 }
+
+
+
+

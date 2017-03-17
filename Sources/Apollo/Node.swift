@@ -66,6 +66,9 @@ open class LocalNode: NSObject, Node {
     public let q: DispatchQueue
     public var started: Bool = false
 
+    let startingSubject = PublishSubject<()>()
+    public var starting: Observable<()> { return startingSubject.asObservable() }
+
     let didFinishLaunchingSubject = PublishSubject<()>()
     public var didFinishLaunching: Observable<()> { return didFinishLaunchingSubject.asObservable() }
     func setDidFinishLaunching() {
@@ -78,6 +81,9 @@ open class LocalNode: NSObject, Node {
     }
     var services = [Service]()
     public subscript(type: Service.Type) -> Service? { return services.first { type(of: $0) == type } }
+    public func add(service:Service){
+        services.append(service)
+    }
 
     public func start() {
         startServices()
@@ -106,7 +112,6 @@ open class LocalNode: NSObject, Node {
         updateDescription.onNext()
     }
     var updateDescription = PublishSubject<()>()
-
 
     var instantiationDate = Date()
     var startupDate: Date? = nil
