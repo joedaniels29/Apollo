@@ -22,7 +22,7 @@ class StructuredService: Service {
     let bag = DisposeBag()
     convenience init(name: String, starting: ServiceObservableBlock?, loading: ServiceObservableBlock?, running: ServiceObservableBlock, stopping: ServiceObservableBlock?, error: ServiceObservableBlock?, strictLaunch: Bool = false) {
 
-        self.init(name: name, starting: .just(starting), loading: <#T##ServiceObservable?##ServiceObservable?#>, running: <#T##ServiceObservable##ServiceObservable#>, stopping: <#T##ServiceObservable?##ServiceObservable?#>, error: <#T##ServiceObservable?##ServiceObservable?#>, strictLaunch: <#T##Bool##Swift.Bool#>)
+        self.init(name: name, starting: .create <^> starting, loading: .create <^> loading, running: .create(running), stopping: .create <^> stopping, error: .create <^> error , strictLaunch: strictLaunch)
 
     }
     init(name: String, starting: ServiceObservable?, loading: ServiceObservable?, running: ServiceObservable, stopping: ServiceObservable?, error: ServiceObservable?, strictLaunch: Bool = false) {
