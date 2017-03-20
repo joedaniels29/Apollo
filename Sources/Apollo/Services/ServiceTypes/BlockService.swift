@@ -7,7 +7,6 @@ import Foundation
 import RxSwift
 
 
-
 class BlockService: StructuredService {
     init(name: String, block: @escaping () -> ()) {
         super.init(name: name, running: .create { o in
@@ -15,8 +14,5 @@ class BlockService: StructuredService {
             o.onCompleted()
             return BooleanDisposable()
         })
-
     }
-
-
 }
