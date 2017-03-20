@@ -82,7 +82,6 @@
 		19BC0764228B2B6E554C0107 /* StructuredServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC018C0943160858ABD774 /* StructuredServiceTests.swift */; };
 		19BC0777F2FABB7C4A3220B2 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC02ECDD9565B6E82FA3BC /* BoxTests.swift */; };
 		19BC0779768DDBE70B22A97C /* SimpleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0DF2F0E614C9564C7177 /* SimpleService.swift */; };
-		19BC07C2EF03F541B1DC4EEE /* DiscreteNodeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC001F367D6E8D627F0E94 /* DiscreteNodeListenerTests.swift */; };
 		19BC08249B0AF4EB52B083D0 /* LocalNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C906D6620313865D00F /* LocalNodeTests.swift */; };
 		19BC082B2B24A035B80D2556 /* Optional+Monad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0173144973DC603607E3 /* Optional+Monad.swift */; };
 		19BC08F53011118B0AFD4208 /* NodeConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0C7EC2CBCAE8E0596DF4 /* NodeConnectionsViewController.swift */; };
@@ -125,7 +124,6 @@
 		19BC0D30068CEEEABA7012F7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC023E66E22CC1B4F56ED8 /* Node.swift */; };
 		19BC0D6BB836796CDAF5A1BD /* Node+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC01FA44150B42156AC801 /* Node+Services.swift */; };
 		19BC0D70ACF0B9A38A5A5522 /* DiscreteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0BA7138AFCFF06BA2046 /* DiscreteNode.swift */; };
-		19BC0D7A7F379347047B7269 /* DiscreteNodeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC001F367D6E8D627F0E94 /* DiscreteNodeListenerTests.swift */; };
 		19BC0DAC8A9514E42B92256F /* ApolloSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC017705D7D53683DD679A /* ApolloSupportTests.swift */; };
 		19BC0E6F78B3F14F45EE9823 /* NodeConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0086F7D19B49DAFA6C84 /* NodeConsoleViewController.swift */; };
 		19BC0E70E61FA132C7A73127 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC041665A252B9B9851890 /* ApolloTests.swift */; };
@@ -145,6 +143,9 @@
 		D81945391E75AB5E00CFE6F2 /* Apollo.h in Headers */ = {isa = PBXBuildFile; fileRef = D81945361E75AB4300CFE6F2 /* Apollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D81B7F441DB98B2700DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
 		D81B7F461DB9980300DD62B6 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B7F431DB98B2700DD62B6 /* Ruby.framework */; };
+		D81C5CF61E7F6D07008A3319 /* DiscreteNodeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC001F367D6E8D627F0E94 /* DiscreteNodeListenerTests.swift */; };
+		D81C5CF71E7F6D07008A3319 /* DiscreteNodeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC001F367D6E8D627F0E94 /* DiscreteNodeListenerTests.swift */; };
+		D81C5CF81E7F6D08008A3319 /* DiscreteNodeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC001F367D6E8D627F0E94 /* DiscreteNodeListenerTests.swift */; };
 		D81D539C1E11F7B600377BD5 /* RailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D539A1E11F71900377BD5 /* RailsApp.swift */; };
 		D8269F1F1E74E4EA00DB8AD4 /* SwiftProtobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8A07F1C1E5F7AE00092F1EB /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8269F201E74E4FA00DB8AD4 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D85569961DDCE28100B70D8C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -2290,6 +2291,7 @@
 				19BC0CEC154CA7EF672D071B /* PersistantTimer.swift in Sources */,
 				19BC0126468E5CF0FE1BC1CB /* XPCService.swift in Sources */,
 				19BC0B10FF7455C9BB4C7906 /* Box.swift in Sources */,
+				D81C5CF61E7F6D07008A3319 /* DiscreteNodeListenerTests.swift in Sources */,
 				19BC0AB9677669A94A969162 /* MathematicaService.swift in Sources */,
 				19BC0D1FC887D02DAF04AF8D /* ActiveApplicationService.swift in Sources */,
 				19BC06BAC543C4FEC23CDA59 /* ReachabilityService.swift in Sources */,
@@ -2341,7 +2343,6 @@
 				19BC0AF9384F6C9902AD24FE /* TestNodeTests.swift in Sources */,
 				19BC0CCE9BCA1B62F329EC6C /* DiscreteNodeTests.swift in Sources */,
 				19BC0F0F057F27F590365AE1 /* Node+ServicesTests.swift in Sources */,
-				19BC07C2EF03F541B1DC4EEE /* DiscreteNodeListenerTests.swift in Sources */,
 				19BC0C9E59787CFFCB467FE3 /* ServiceTests.swift in Sources */,
 				19BC0AFDC178557CE964CCD9 /* BlockServiceTests.swift in Sources */,
 				19BC026429288C1F1474550E /* SimpleServiceTests.swift in Sources */,
@@ -2363,6 +2364,7 @@
 				D89625A81E6519EC00C867D1 /* HeartCapture.swift in Sources */,
 				D89625AD1E6519EC00C867D1 /* ReachabilityService.swift in Sources */,
 				D89625AE1E6519EC00C867D1 /* Apollo.swift in Sources */,
+				D81C5CF71E7F6D07008A3319 /* DiscreteNodeListenerTests.swift in Sources */,
 				D89625B11E6519EC00C867D1 /* Box.swift in Sources */,
 				D89625AC1E6519EC00C867D1 /* MathematicaService.swift in Sources */,
 				D89625B01E6519EC00C867D1 /* PersistantTimer.swift in Sources */,
@@ -2415,7 +2417,6 @@
 				19BC06ABD8B8FCA0AEC023FA /* TestNodeTests.swift in Sources */,
 				19BC0C407695D1C86140F054 /* DiscreteNodeTests.swift in Sources */,
 				19BC0B855A4712B9642A2514 /* Node+ServicesTests.swift in Sources */,
-				19BC0D7A7F379347047B7269 /* DiscreteNodeListenerTests.swift in Sources */,
 				19BC072A536E95DD442C0652 /* ServiceTests.swift in Sources */,
 				19BC09E57C0244889A06FD65 /* BlockServiceTests.swift in Sources */,
 				19BC062EE473520B203990C8 /* SimpleServiceTests.swift in Sources */,
@@ -2437,6 +2438,7 @@
 				D89625941E6519E500C867D1 /* RailsApp.swift in Sources */,
 				D896259D1E6519E500C867D1 /* PersistantTimer.swift in Sources */,
 				D89625901E6519E500C867D1 /* NotificationCenter.swift in Sources */,
+				D81C5CF81E7F6D08008A3319 /* DiscreteNodeListenerTests.swift in Sources */,
 				D89625951E6519E500C867D1 /* HeartCapture.swift in Sources */,
 				D896259E1E6519E500C867D1 /* Box.swift in Sources */,
 				D89625991E6519E500C867D1 /* MathematicaService.swift in Sources */,

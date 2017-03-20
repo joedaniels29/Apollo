@@ -7,35 +7,29 @@
 import Foundation
 import RxSwift
 import RxCocoa
-
+import XPC
 public enum DiscreteNodeTask{
     case osascript(NSURL)
 //    case block(NSURL)
 
 }
+//
+// Created by Joseph Daniels on 3/19/17.
+// Copyright (c) 2017 Joseph Daniels. All rights reserved.
+//
 
-public class DiscreteNodeService: Service{
-    var task:DiscreteNodeTask
-    public init(task:DiscreteTask){
-        self.task = task
+import Foundation
+import RxSwift
+open class DiscreteNodeListenerService: StructuredService {
+    init(name: String,node: Node?) {
+        super.init(name: name, starting: ServiceObservable? = nil,
+                   loading: ServiceObservable? = nil,
+                   running: ServiceObservable,
+                   stopping: ServiceObservable? = nil,
+                   error: ServiceObservable? = nil,
+                   strictLaunch: Bool = false,
+                   node:Node? = nil)
     }
-    public var observable: Observable<ServiceStatusable> {
-        return .create{ o in
-            //S = create service.
-//            observe S for exits.
-//            s.abnormalExit.subscribe{ o.sendError()}
-//            wait / poll for S to become registered with OS via XPC
-//            N = register RemoteNode(S) as an xpc node
-//             ...toil
-//            remote should send closing time.subscribe{
-//                  unregister N
-//            }
-//            o.onCompleted()
-
-            return SingleAssignmentDisposable()
-
-        }
-    }
-
 }
+
 #endif
