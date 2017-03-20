@@ -16,55 +16,54 @@ import XCTest
 class LocalNodeTests: XCTestCase {
     let bag = DisposeBag()
     let bgQueue = DispatchQueue(label: "bgQueue")
-	let localNode = LocalNode()
-//    func send(_ selector:Selector) -> Any?{
-//        let v = NSInvocation()
-//        v.target = self
-//        v.selector = selector
-//        return v.invoke()
-//    }
+    let localNode = LocalNode()
+    //    func send(_ selector:Selector) -> Any?{
+    //        let v = NSInvocation()
+    //        v.target = self
+    //        v.selector = selector
+    //        return v.invoke()
+    //    }
 
 
     override class func setUp() {
         super.setUp()
-      
-
         //        startup!
-//        _ = self.send(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:)))
-
+        //        _ = self.send(#selector(NSApplicationDelegate.applicationDidFinishLaunching(_:)))
     }
-      override func setUp() {
-            localNode.start()
-      }
+
+    override func setUp() {
+        localNode.start()
+    }
+
     override class func tearDown() {
-//        objc_msgSend(self, #selector(NSApplicationDelegate.applicationWillTerminate(_:)))
+        //        objc_msgSend(self, #selector(NSApplicationDelegate.applicationWillTerminate(_:)))
         super.tearDown()
     }
 
 
     func testNodeNeighbors() {
     }
-    
-    
-    func testDescriptionUpdate(){
+
+
+    func testDescriptionUpdate() {
 
 
     }
-    
+
     func testSimply() {
     }
 
-//    override func doesNotRecognizeSelector(_ aSelector: Selector!) {
+    //    override func doesNotRecognizeSelector(_ aSelector: Selector!) {
 
-//        super.doesNotRecognizeSelector(aSelector)
-//    }
+    //        super.doesNotRecognizeSelector(aSelector)
+    //    }
 
 
     static var allTests: [(String, (LocalNodeTests) -> () throws -> Void)] {
         return [
-            ("testSimply", testSimply),
-            ("testDescriptionUpdate", testDescriptionUpdate),
-            ("testNodeNeighbors", testNodeNeighbors),
+                ("testSimply", testSimply),
+                ("testDescriptionUpdate", testDescriptionUpdate),
+                ("testNodeNeighbors", testNodeNeighbors),
         ]
     }
 }

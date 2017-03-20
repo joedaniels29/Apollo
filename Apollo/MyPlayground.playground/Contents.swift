@@ -11,7 +11,7 @@ NSWorkspace.shared().notificationCenter.addObserver(forName: .NSWorkspaceDidActi
                                                     object: nil,
                                                     queue: .main,
                                                     using: { notification in
-    print(notification.userInfo)
+    print(notification.userInfo ?? "")
 })
 
 

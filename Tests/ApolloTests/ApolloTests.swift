@@ -1,6 +1,10 @@
 import XCTest
 @testable import Apollo
 
+extension XCTestCase{
+      var yodog:String{ return "Dog!"}
+}
+
 class ApolloTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.

@@ -26,7 +26,7 @@ public enum ServiceRecord: ServiceStatusable {
     case loading, stopping, error
     public var record: ServiceRecord {
         return self
-    }]
+    }
 }
 
 public enum ServiceKind{
@@ -42,25 +42,30 @@ public protocol ServiceConvertible {
 //extension SchedulerType
 
 //Itinerary.scheduler(named:.)
-public typealias ServiceObservableBlock = @escaping (RxSwift.AnyObserver<ServiceStatusable>) -> Disposable
+public typealias ServiceObservableBlock = (RxSwift.AnyObserver<ServiceStatusable>) -> Disposable
+public typealias ServiceObservable = Observable<ServiceStatusable>
 //public typealias ServiceObservableDoBlock = @escaping (RxSwift.AnyObserver<ServiceStatusable>) -> Disposable
-public protocol Service:class, ServiceConvertible {
+public protocol Service:class, ServiceConvertible, LoggableSource {
     var observable: Observable<ServiceStatusable> { get }
     var name: String { get }
     var node: Node { get }
+	static var defaultNode: Node { get }
 //    todo: each service should have a UUID.
 //    var uuid: UUID { get }
 //    init(serviceRequest:ServiceRequest): UUID { get }
 }
 extension Service{
 
-    public var service
+	public var service:Service { return self }
     public var name: String{
         return String(describing: type(of:self))
     }
     public var node: Node{
         return ApplicationNode.instance
     }
+	public static var defaultNode: Node{
+    	return ApplicationNode.instance
+	}
 }
 //public enum Timelyness{
 //    case period(TimeInterval)

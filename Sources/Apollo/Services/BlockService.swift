@@ -6,8 +6,8 @@
 import Foundation
 import RxSwift
 
-typedef ServiceObservableBlock =
-class StructuredService: Service {
+//typedef ServiceObservableBlock = (Observer)
+open class StructuredService: Service {
     //    todo: should be tied to Node Lifecycle.
     //    ie providing a starting: block should run on start()
     //    loading: should run on applicationDidFinishLaunching.
@@ -17,64 +17,39 @@ class StructuredService: Service {
 
     //    strict: if initialization can ONLY happen as part of node lifecycle. (should be a fatal error otherwise.)
 
-    let observable: Observable<ServiceStatusable>
-    let name: String
-    let bag = DisposeBag()
-    convenience init(name: String, starting: ServiceObservableBlock?, loading: ServiceObservableBlock?, running: ServiceObservableBlock, stopping: ServiceObservableBlock?, error: ServiceObservableBlock?, strictLaunch: Bool = false) {
+    public let observable: Observable<ServiceStatusable>
+    public let name: String
+      let bag:DisposeBag
 
-        self.init(name: name, starting: .create <^> starting, loading: .create <^> loading, running: .create(running), stopping: .create <^> stopping, error: .create <^> error , strictLaunch: strictLaunch)
+    public convenience init(name: String, starting: ServiceObservableBlock?, loading: ServiceObservableBlock?, running: @escaping ServiceObservableBlock, stopping: ServiceObservableBlock?, error: ServiceObservableBlock? = nil, strictLaunch: Bool = false, node:Node? = nil) {
+
+        self.init(name: name, starting: ServiceObservable.create <^> starting, loading: ServiceObservable.create <^> loading, running: ServiceObservable.create(running), stopping: ServiceObservable.create <^> stopping, error: ServiceObservable.create <^> error , strictLaunch: strictLaunch, node:node)
 
     }
-    init(name: String, starting: ServiceObservable?, loading: ServiceObservable?, running: ServiceObservable, stopping: ServiceObservable?, error: ServiceObservable?, strictLaunch: Bool = false) {
+    public init(name: String, starting: ServiceObservable? = nil, loading: ServiceObservable? = nil, running: ServiceObservable, stopping: ServiceObservable? = nil, error: ServiceObservable? = nil, strictLaunch: Bool = false, node:Node? = nil) {
         self.name = name
-        if let localNode = self.node as? LocalNode {
-            var collected = ServiceObservable.just(ServiceRecord.starting)
+      let bag = DisposeBag()
+      self.bag = bag
+      let node : Node = node ?? StructuredService.defaultNode
 
-            if let starting = starting?.publish() {
-                var disposable: Disposable? = nil
-                localNode.starting.subscribe { event in
-                    switch (event) {
-                    case .completed:
-                        if disposable != nil {
-                            if strictLaunch { fatalError("Observable subscribed after didFinishLaunching") }
-                            return
-                        }
-                        fallthrough
-                    case .next: disposable = starting.connect()
-                    }
-                    if let disposable = disposable { self.bag.insert(disposable) }
-                }.disposed(by: self.bag)
-                collected = collected.concat(starting)
-            }
+      if let localNode =  node as? LocalNode {
+          var observe = Observable<Observable<ServiceStatusable>>.of(
+                  ServiceObservable.just(ServiceRecord.starting).sample(localNode.starting),
+                  starting ?? .empty(),
+                  ServiceObservable.just(ServiceRecord.loading).sample(localNode.didFinishLaunching),
+                  loading ?? .empty(),
+                  ServiceObservable.just(ServiceRecord.running),
+                  running.takeUntil(localNode.willTerminate),
+                  ServiceObservable.just(ServiceRecord.stopping),
+                  stopping ?? .empty(),
+                  ServiceObservable.just(ServiceRecord.terminated)
+          ).concat()
+          if let error = error {
+              observe = observe.catchError { _ in error }
+          }
+          self.observable = observe
 
-            if let loading = loading?.publish() {
-                var disposable: Disposable? = nil
-                collected = collected.concat(ServiceObservable.just(ServiceRecord.loading))
-                localNode.didFinishLaunching.subscribe { event in
-                    switch (event) {
-                    case .completed:
-                        if disposable != nil {
-                            if strictLaunch { fatalError("Observable subscribed after didFinishLaunching") }
-                            return
-                        }
-                        fallthrough
-                    case .next: disposable = cStarting.connect()
-                    }
-                    if let disposable = disposable { self.bag.insert(disposable) }
-                }.disposed(by: self.bag)
-                collected = collected.concat(loading)
-            }
-            collected = collected.concat(ServiceObservable.just(ServiceRecord.running))
-            collected = collected.concat(running).takeUntil(localNode.willTerminate)
-            if let stopping = stopping {
-                collected = collected.concat(ServiceObservable.just(ServiceRecord.stopping))
-                collected = collected.concat(stopping)
-            }
-            collected = collected.concat(ServiceObservable.just(ServiceRecord.terminated))
-            if let error = error {
-                collected = collected.catchError { _ in error }
-            }
-            self.observable = collected
+
         } else {
 
             self.observable = [starting, loading, running, stopping].flatMap { $0 }.reduce(ServiceObservable.empty()) { $0.concat($1) }
@@ -84,9 +59,9 @@ class StructuredService: Service {
 
 class BlockService: Service {
     let name: String
-    init(name: String, block: () -> ()) {
+    init(name: String, block: @escaping () -> ()) {
         self.name = name
-        observable = .create { ServiceRecord.wrap(observer: $0, block: block) }
+        observable = .never()
     }
 
     let observable: Observable<ServiceStatusable>

@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import SwiftyBeaver
 
 #if os(iOS)
 
@@ -31,82 +32,93 @@ import Glibc
 #endif
 
 import Dispatch
-class A {
-    static let title: String = "Apollo"
-    static func wrap(_ string: String) -> String {
-        return "\(A.title)::\(string)"
-    }
 
-    static func warn(_ string: String) -> String {
-        return wrap("WARN::\(string)")
-    }
+public let log = SwiftyBeaver.self
 
-    static func err(_ string: String) -> String {
-        return wrap("WARN::\(string)")
-    }
 
-    static func info(_ string: String) -> String {
-        return wrap("WARN::\(string)")
-    }
-}
 public protocol Node {
-    //
+    var name: String { get }
 }
 
 public final class RemoteNode: Node {
-
+    public var name: String { return "RemoteNode" }
     //    subscript(type:Service.Type) -> Service? {
     //        return services.first { type(of: $0) == type}
     //    }
 }
 open class LocalNode: NSObject, Node {
-    class var name: String { return A.wrap("AbstractNode") }
+      public class var name: String { return "LocalNode" }
+    public var name: String { return "LocalNode" }
     var bag: DisposeBag = DisposeBag()
     public let scheduler: SerialDispatchQueueScheduler
     public let q: DispatchQueue
     public var started: Bool = false
 
-    let startingSubject = PublishSubject<()>()
-    public var starting: Observable<()> { return startingSubject.asObservable() }
+    let startingSubject = ReplaySubject<()>.create(bufferSize: 1)
+    public var starting: Observable<()> { return startingSubject.asObservable().subscribeOn(self.scheduler) }
 
-    let didFinishLaunchingSubject = PublishSubject<()>()
-    public var didFinishLaunching: Observable<()> { return didFinishLaunchingSubject.asObservable() }
+    let didFinishLaunchingSubject = ReplaySubject<()>.create(bufferSize: 1)
+    public var didFinishLaunching: Observable<()> { return didFinishLaunchingSubject.asObservable().subscribeOn(self.scheduler) }
     func setDidFinishLaunching() {
         didFinishLaunchingSubject.onNext()
+        //        didFinishLaunchingSubject.onCompleted()
     }
-    let willTerminateSubject = PublishSubject<()>()
-    public var willTerminate: Observable<()> { return willTerminateSubject.asObservable() }
+    let willTerminateSubject = ReplaySubject<()>.create(bufferSize: 1)
+    public var willTerminate: Observable<()> { return willTerminateSubject.asObservable().subscribeOn(self.scheduler) }
     public func setWillTerminate() {
+
         willTerminateSubject.onNext()
+        //        willTerminateSubject.onCompleted()
     }
     var services = [Service]()
     public subscript(type: Service.Type) -> Service? { return services.first { type(of: $0) == type } }
-    public func add(service:Service){
-        services.append(service)
+
+    public func add(service: Service) {
+        q.async {
+            self.services.append(service)
+            if (self.started) { self.subscribe(to: service) }
+        }
     }
 
     public func start() {
-        startServices()
-        setDidFinishLaunching()
-        updateDescription.map(currentNodeDescription).bindTo(nodeDescription).disposed(by: bag)
+        q.async {
+            self.startServices()
+            self.startingSubject.onNext()
+            //            self.startingSubject.onCompleted()
+            self.setDidFinishLaunching()
+            self.updateDescription.map(self.currentNodeDescription).bindTo(self.nodeDescription).disposed(by: self.bag)
+            self.started = true
+        }
+    }
+
+    func subscribe(to: Service) {
+        q.async {
+            to.observable.subscribeOn(self.scheduler).subscribe {
+                switch ($0) {
+                case .next(let g): self.service(to, didTransitionTo: g.record)
+                case .error(let error): self.service(to, didError: error)
+                case .completed: self.serviceDidComplete(to)
+                }
+            }.disposed(by: self.bag)
+        }
     }
 
     func startServices() {
         for s in self.services {
-            s.observable.subscribe {
-                switch ($0) {
-                case .next(_):() //print(s.name)
-                case .error(let error): self.service(s, didError: error)
-                case .completed: self.serviceDidComplete(s)
-                }
-            }.disposed(by: bag)
+            subscribe(to: s)
         }
     }
 
     public override init() {
-        q = DispatchQueue.init(label: ApplicationNode.name)
+        let c = ConsoleDestination()
+        c.minLevel = .verbose;
+        c.format = "$DHH:mm:ss.SSS$d $C$L$c - $M"
+
+        log.addDestination(c)
+
+      q = DispatchQueue.init(label: type(of:self).name, qos: .userInitiated)
         scheduler = SerialDispatchQueueScheduler(queue: q,
-                                                 internalSerialQueueName: ApplicationNode.name)
+                                                 internalSerialQueueName:  type(of:self).name)
         services.append(Welcome())
         super.init()
         updateDescription.onNext()
@@ -124,13 +136,13 @@ open class LocalNode: NSObject, Node {
     lazy public var nodeDescription: Variable<[String: String]> = Variable(["Status": "Not yet loaded"])
 
     func currentNodeDescription() -> [String: String] {
-        return ["InstantiationDate":systemDateFormatter.string(from: instantiationDate)]
+        return ["InstantiationDate": systemDateFormatter.string(from: instantiationDate)]
     }
 }
 public final class ApplicationNode: LocalNode {
 
     public static let instance = ApplicationNode()
-    class override var name: String { return A.wrap("LocalNode") }
+    public override var name: String { return "ApplicationNode" }
     var context: AnyObject?
     var platformHasLifeCycle: Bool = false
 
@@ -161,18 +173,24 @@ public final class ApplicationNode: LocalNode {
 #if os(iOS)
             let willFinishLaunching: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
             let willTerminate: Selector = #selector(UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:))
+            _ = Reactive(context).sentMessage(willFinishLaunching).map { _ in
+                return ()
+            }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
+            _ = Reactive(context).sentMessage(willTerminate).map { _ in
+                return ()
+            }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
 #elseif os(macOS)
             let willFinishLaunching: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
-      		let willTerminate: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
+            let willTerminate: Selector = #selector(NSApplicationDelegate.applicationDidFinishLaunching(_:))
 
             _ = Reactive(context).sentMessage(willFinishLaunching).map { _ in
                 return ()
             }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
             _ = Reactive(context).sentMessage(willTerminate).map { _ in
-                  return ()
+                return ()
             }.take(1).multicast(didFinishLaunchingSubject).connect().disposed(by: bag)
 #else
-	      fatalError("cant get here")
+            fatalError("cant get here")
 #endif
         } else {
             setDidFinishLaunching()
