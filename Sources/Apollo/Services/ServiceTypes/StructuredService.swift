@@ -4,7 +4,7 @@
 //
 
 import Foundation
-
+import RxSwift
 open class StructuredService: Service {
     //    todo: should be tied to Node Lifecycle.
     //    ie providing a starting: block should run on start()
